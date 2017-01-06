@@ -9,4 +9,4 @@ Why this project:
 
 
 ###Schema
-![alt text](https://github.com/rynmccrmck/thunderdome/images/icon48.png "Current schema")
+![alt text](https://github.com/rynmccrmck/thunderdome/images/schema.png "Current schema")
