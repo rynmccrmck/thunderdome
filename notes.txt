@@ -1,0 +1,8 @@
+Evaluations to add:
+- Absolute Error (AE)
+- Mean Absolute Error (MAE)
+- Mean Consequential Error (MCE)
+- Root Mean Squared Error (RMSE)
+- Logarithmic Loss (LogLoss)
+- Area Under Curve (AUC)
+- Mean Average Precision @ N (MAP@N)
