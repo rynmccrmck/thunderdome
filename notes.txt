@@ -11,12 +11,29 @@ Evaluations to add:
 Admin functionality:
 -create users
 -create contests (data links (buckets), evaluation, dates)
--oversee private board results
+-Show public leaderboard
+-Show private leaderboard
+-Add Benchmarks
+-View all submissions
+-Download submissions
+-Manage invitations
+-Manage admin users
+-View download log
+-Download emails
+-Download scores
+
 -add evaluations?
 
 User functionality
 -Download data (maybe just bucket links)
+-View Description
+-View Evaluation
+-View Ruls
 -Upload predictions
--View leaderboard
+-View public leaderboard
+-View submissions
+
+-Team discussions?
+
 
 **Do we need private boards?  Make it optional

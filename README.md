@@ -1,6 +1,8 @@
 # thunderdome
 ## Kaggle Contests for Private Use
 
+Kaggle does offer in-class, however seems a bit restricted and people may be hesitant uploading data.
+
 Why this project:
 
  * Organize machine learning projects
