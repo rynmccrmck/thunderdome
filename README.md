@@ -1,5 +1,5 @@
 # thunderdome
-## Kaggle Contests for internal use
+## Kaggle Contests for Private Use
 
 Why this project:
 
