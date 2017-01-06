@@ -6,3 +6,17 @@ Evaluations to add:
 - Logarithmic Loss (LogLoss)
 - Area Under Curve (AUC)
 - Mean Average Precision @ N (MAP@N)
+
+
+Admin functionality:
+-create users
+-create contests (data links (buckets), evaluation, dates)
+-oversee private board results
+-add evaluations?
+
+User functionality
+-Download data (maybe just bucket links)
+-Upload predictions
+-View leaderboard
+
+**Do we need private boards?  Make it optional
