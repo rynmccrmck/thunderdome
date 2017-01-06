@@ -35,5 +35,8 @@ User functionality
 
 -Team discussions?
 
+Someday
+- Integrate with CI tools to deploy once tests passed
+- Allow for more direct use and setting of time thresholds (train and predict) 
 
-**Do we need private boards?  Make it optional
+**Do we need private boards?  Maybe optional
