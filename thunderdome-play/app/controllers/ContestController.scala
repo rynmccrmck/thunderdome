@@ -28,4 +28,11 @@ class ContestController @javax.inject.Inject() (
       Ok(views.html.contests(s.identity, contests))
     }
   }
+  
+  def contest(contest_id:String) = withSession { s =>
+      Database.query(ContestQueries.GetContest(contest_id.toInt)).map { contest =>
+      Ok(views.html.contest(s.identity, contest))
+    }
+  }
+  
 } 

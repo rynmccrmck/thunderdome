@@ -98,7 +98,14 @@ case class SetContestStart(contest_id: Int, contest_start: LocalDateTime) extend
         contest_start,contest_end,evaluator_id,benchmark_value)
   }.toSeq
 }
-  
+
+case class GetContest(contest_id: Int) extends Query[Contest] {
+    override val sql = s"select * from contests where contest_id = ?"
+    override val values =Seq(contest_id)
+    //review this
+    override def reduce(rows: Iterator[Row]) = rows.map(fromRow).toList(0)
+  }
+
 
 /*
   case class FindUserByUsername(username: String) extends FlatSingleRowQuery[User] {

@@ -20,9 +20,9 @@ GET         /admin/edit-users       controllers.UserController.editUsers
 
 # User
 GET         /contests               controllers.ContestController.contests
-GET         /contest                controllers.ContestController.contestForm
-GET         /submissions               controllers.ContestController.contestForm
-GET         /submission               controllers.ContestController.contestForm
+GET         /contest/:contest_id     controllers.ContestController.contest(contest_id)
+GET         /submissions            controllers.ContestController.contestForm
+GET         /submission             controllers.ContestController.contestForm
 
 
 GET         /assets/*file            controllers.Assets.versioned(path="/public", file: Asset)
