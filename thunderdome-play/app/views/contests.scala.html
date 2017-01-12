@@ -53,15 +53,17 @@ contests: Seq[models.contests.Contest])@layout.bootstrap("Play Silhouette Postgr
                     <th>Description</th> 
                     <th>Created</th>
                     <th>Evaluation</th>
+                    <th>Link</th>
                     </tr>
                      </thead>
                      <tbody>
                      @for(contest <- contests){
-                      <tr class='clickable-row' data-href=@routes.ContestController.contest(contest.contest_id.toString)>
+                      <tr>
                         <td>@contest.contest_name</td>
                         <td>@contest.contest_description</td> 
                         <td>@contest.contest_created</td>
                         <td>"RMSE"</td>
+                        <td><a href=@routes.ContestController.contest(contest.contest_id.toString)>Click</a></td>
                       </tr>
                     }
                     </tbody>
