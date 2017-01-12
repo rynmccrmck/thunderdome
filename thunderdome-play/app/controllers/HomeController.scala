@@ -11,7 +11,7 @@ class HomeController @javax.inject.Inject() (override val messagesApi: MessagesA
     Future.successful(Ok(views.html.index(s.identity)))
   }
 
-  def adminTest = withAdminSession{ s =>
-    Future.successful(Ok(views.html.index(s.identity)))
+  def admin = withAdminSession{ s =>
+    Future.successful(Ok(views.html.admin(s.identity)))
   }
 }
