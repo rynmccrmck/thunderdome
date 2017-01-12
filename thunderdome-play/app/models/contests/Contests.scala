@@ -2,6 +2,7 @@ package models.contests
 
 import org.joda.time.LocalDateTime
 
+//ADD problem type, eg regression, classification, recommendation
 case class Contest(
     contest_id: Int,
     contest_name: String,

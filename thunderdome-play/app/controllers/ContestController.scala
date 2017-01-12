@@ -3,6 +3,7 @@ package controllers
 import com.mohiva.play.silhouette.api.{ LoginEvent, LoginInfo, SignUpEvent }
 import com.mohiva.play.silhouette.impl.providers.{ CommonSocialProfile, CredentialsProvider }
 import models.user.{ RegistrationData, UserForms }
+
 import play.api.i18n.{ Messages, MessagesApi }
 import play.api.libs.concurrent.Execution.Implicits.defaultContext
 import play.api.mvc.AnyContent
@@ -18,9 +19,11 @@ class ContestController @javax.inject.Inject() (
     override val messagesApi: MessagesApi,
     override val env: AuthenticationEnvironment
 ) extends BaseController {
+
     
   def contestForm = withSession { implicit request =>
-    Future.successful(Ok(views.html.register(request.identity, UserForms.registrationForm)))
+    Future.successful(Ok(views.html.createContest(request.identity, UserForms.contestForm) ))
+    //, UserForms.registrationForm
   }
   
   def contests = withSession { s =>
