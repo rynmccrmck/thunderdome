@@ -1,9 +1,0 @@
-New log file opened at Thu Jan 12 03:43:34 EST 2017 by 26057@Ryans-MBP
-Sending msg to client play-fork-run-5d1ef483-8054-4782-8d5b-11981284ec6f: DetachedLogEvent(LogMessage(debug,sbt server socket logs are in: /Users/ryanmccormack/Documents/thunderdome/thunderdome-play/.sbtserver/connections/master.log))
-Sending msg to client play-fork-run-5d1ef483-8054-4782-8d5b-11981284ec6f: DetachedLogEvent(LogMessage(debug,sbt client logs are in: /Users/ryanmccormack/Documents/thunderdome/thunderdome-play/.sbtserver/connections/play-fork-run-5d1ef483-8054-4782-8d5b-11981284ec6f.log))
-Sending msg to client play-fork-run-5d1ef483-8054-4782-8d5b-11981284ec6f: DetachedLogEvent(LogMessage(debug,sbt general server logs are in: /Users/ryanmccormack/Documents/thunderdome/thunderdome-play/.sbtserver/master.log))
-Reading next message from client.
-Client play-fork-run-5d1ef483-8054-4782-8d5b-11981284ec6f EOF, shutting down.
-Stopping client.
-Client play-fork-run-5d1ef483-8054-4782-8d5b-11981284ec6f thread exiting.
-Dropping message (0,ReceivedResponse()) to dead client play-fork-run-5d1ef483-8054-4782-8d5b-11981284ec6f

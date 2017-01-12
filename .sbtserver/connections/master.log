@@ -1,0 +1,7 @@
+New log file opened at Thu Jan 12 10:12:51 EST 2017 by 71399@ges-113.local
+Taking next connection to: 62436
+New client attempting to connect on port: 62437-62436
+  Address = /192.168.99.1:62436
+This client on port 62437 has uuid ccb684f1-de71-4dd9-821d-24dca3fe9e54 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: play-fork-run-ccb684f1-de71-4dd9-821d-24dca3fe9e54
+Taking next connection to: 62436
