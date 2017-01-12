@@ -41,6 +41,9 @@ Taking next connection to: 54957
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
 Taking next connection to: 54957
+<<<<<<< HEAD
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
 Taking next connection to: 54957
+=======
+>>>>>>> 710facc0ab71b33cb0f34b87d4eb90619f4722c4
