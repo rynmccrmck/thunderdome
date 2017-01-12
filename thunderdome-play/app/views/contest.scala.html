@@ -15,7 +15,7 @@ contest: models.contests.Contest)@layout.bootstrap("Play Silhouette Postgres Asy
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="@routes.HomeController.index">Home</a></li>
+            <li><a href="@routes.HomeController.index">Home</a></li>
         @if(user.profiles.isEmpty) {
         <li><a href="#about">About</a></li>
         <li><a href="@routes.RegistrationController.registrationForm">Register</a></li>
