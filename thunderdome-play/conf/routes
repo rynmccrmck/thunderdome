@@ -14,12 +14,12 @@ GET         /profile                 controllers.ProfileController.profile
 
 # Admin
 GET         /admin/create-contest   controllers.ContestController.contestForm
-GET         /admin/view-contest     controllers.ContestController.contestView
+GET         /admin/edit-contest     controllers.ContestController.contestForm
 GET         /admin/invite-users     controllers.UserController.userInviteForm
 GET         /admin/edit-users       controllers.UserController.editUsers
 
 # User
-GET         /contests               controllers.ContestController.contestForm
+GET         /contests               controllers.ContestController.contests
 GET         /contest                controllers.ContestController.contestForm
 GET         /submissions               controllers.ContestController.contestForm
 GET         /submission               controllers.ContestController.contestForm

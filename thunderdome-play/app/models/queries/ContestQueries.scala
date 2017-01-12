@@ -2,7 +2,7 @@ package models.queries
 
 import java.util.UUID
 
-import jdub.async.{ FlatSingleRowQuery, Row, Statement }
+import jdub.async.{ FlatSingleRowQuery, Row, Statement, Query }
 import jdub.async.queries.BaseQueries
 import models.contests.{ Contest }
 import org.joda.time.LocalDateTime
@@ -81,6 +81,24 @@ case class SetContestStart(contest_id: Int, contest_start: LocalDateTime) extend
     Seq(c.contest_id, c.contest_name, c.contest_description, c.contest_start, 
         c.contest_end, c.evaluator_id,c.benchmark_value)
   }
+  
+  case object GetContests extends Query[Seq[Contest]] {
+  override val sql = "SELECT* FROM contests"
+  override val values = Nil
+  override def reduce(rows: Iterator[Row]) = rows.map { row =>
+    val contest_id = row.as[Int]("contest_id")
+    val contest_name = row.as[String]("contest_name")
+    val contest_description = row.as[String]("contest_description")
+    val contest_created = row.as[LocalDateTime]("contest_created")
+    val contest_start = row.as[LocalDateTime]("contest_start")
+    val contest_end = row.as[LocalDateTime]("contest_end")
+    val evaluator_id = row.as[Int]("evaluator_id")
+    val benchmark_value = row.asOpt[Double]("benchmark_value")
+    Contest(contest_id,contest_name,contest_description,contest_created,
+        contest_start,contest_end,evaluator_id,benchmark_value)
+  }.toSeq
+}
+  
 
 /*
   case class FindUserByUsername(username: String) extends FlatSingleRowQuery[User] {
