@@ -8,8 +8,9 @@ case object CreateSubmissionsTable extends Statement {
     create table submissions
     (
        submission_id serial primary key, 
-       contest_id int,
-       user_id uuid,
+       contest_id int not null,
+       user_id uuid not null,
+       submission_date timestamp not null,
        submissions_notes character varying(500),
        score float not null
     ) with (oids = false);

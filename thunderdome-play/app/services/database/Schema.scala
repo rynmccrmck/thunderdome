@@ -19,7 +19,7 @@ object Schema {
     "session_info" -> CreateSessionInfoTable,
     "contests" -> CreateContestsTable,
     "submissions" -> CreateSubmissionsTable,
-    "evaluations" -> CreateEvaluationsTable
+    "evaluators" -> CreateEvaluatorsTable
     
   )
 

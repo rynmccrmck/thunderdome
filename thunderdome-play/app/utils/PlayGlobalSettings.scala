@@ -19,7 +19,6 @@ object PlayGlobalSettings extends GlobalSettings {
     val username = cnf.getString("db.username").getOrElse("silhouette")
     val password = cnf.getString("db.password")
     
-    println("WTF "*1000)
     Database.open(username, host, port, password, database)
     Schema.update()
 

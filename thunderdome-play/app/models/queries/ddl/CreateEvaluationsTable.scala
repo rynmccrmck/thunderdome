@@ -5,10 +5,10 @@ import jdub.async.Statement
 
 case object CreateEvaluationsTable extends Statement {
   override val sql = """
-    create table evaluations
+    create table evaluators
     (
-       evaluation_id serial primary key, 
-       evaluation_name character varying(200)
+       evaluator_id serial primary key, 
+       evaluator_name character varying(200)
     ) with (oids = false);
   """
 }
