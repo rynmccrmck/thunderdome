@@ -1,36 +1,7 @@
-@(user: models.user.User, 
+@(user: models.user.User,
 contest: models.contests.Contest)@layout.bootstrap("Play Silhouette Postgres Async Seed") {
 
-      <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-         <a href="/" class="pull-left"><img src="/assets/images/beaker.png" height="40"></a> 
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="@routes.HomeController.index">Thunderdome</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="@routes.HomeController.index">Home</a></li>
-        @if(user.profiles.isEmpty) {
-        <li><a href="#about">About</a></li>
-        <li><a href="@routes.RegistrationController.registrationForm">Register</a></li>
-        <li><a href="@routes.AuthenticationController.signInForm">Sign In</a></li>
-        }else {
-            <li><a href="@routes.ContestController.contests">Contests</a></li>
-            <li><a href="@routes.ProfileController.profile">Profile</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="@routes.AuthenticationController.signOut">Log Out</a></li>
-            <li><a href="@routes.HomeController.admin">Admin</a></li> }
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
+ @(_navBar(user,"home"))
 
 
     <div class="container">
@@ -47,6 +18,7 @@ contest: models.contests.Contest)@layout.bootstrap("Play Silhouette Postgres Asy
                     <h4>Contest Details</h4>
                     <p>Name: @contest.contest_name</p>
                     <p>Created: @contest.contest_created</p>
+                    <li><a href="">View the leaderboard</a></li>
                     <li><a href="">Read the description</a></li>
                     <li><a href="">Get the data</a></li>
                     <li><a href="">Make a submission</a></li>

@@ -7,6 +7,7 @@ import scala.concurrent.Future
 
 @javax.inject.Singleton
 class HomeController @javax.inject.Inject() (override val messagesApi: MessagesApi, override val env: AuthenticationEnvironment) extends BaseController {
+
   def index = withSession { s =>
     Future.successful(Ok(views.html.index(s.identity)))
   }
@@ -14,4 +15,8 @@ class HomeController @javax.inject.Inject() (override val messagesApi: MessagesA
   def admin = withAdminSession{ s =>
     Future.successful(Ok(views.html.admin(s.identity)))
   }
+  /*
+  def userData = withSession { s =>
+    Future.successful(Ok(s.identity.profiles.isEmpty.toString))
+  }*/
 }
