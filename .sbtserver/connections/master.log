@@ -1,66 +1,34 @@
-New log file opened at Thu Jan 12 10:12:51 EST 2017 by 71399@ges-113.local
-Taking next connection to: 62436
-New client attempting to connect on port: 62437-62436
-  Address = /192.168.99.1:62436
-This client on port 62437 has uuid ccb684f1-de71-4dd9-821d-24dca3fe9e54 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
-Connected Clients: play-fork-run-ccb684f1-de71-4dd9-821d-24dca3fe9e54
-Taking next connection to: 62436
+New log file opened at Thu Jan 12 17:11:28 EST 2017 by 85937@ges-113.local
+Taking next connection to: 61571
+New client attempting to connect on port: 61572-61571
+  Address = /192.168.10.155:61571
+This client on port 61572 has uuid 35fdeaf1-d602-47e8-a486-67e5d30540f2 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-35fdeaf1-d602-47e8-a486-67e5d30540f2
+Taking next connection to: 61571
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 62436
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 62436
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 62436
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 62436
-New client attempting to connect on port: 62945-62436
-  Address = /192.168.10.155:62436
-Handshake exception on socket: 62945
+Taking next connection to: 61571
+New client attempting to connect on port: 61737-61571
+  Address = /192.168.10.155:61571
+Handshake exception on socket: 61737
 sbt.impl.ipc.HandshakeException: Unable to perform handshake
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
 	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
 	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
-Caused by: java.net.SocketException: Connection reset
-	at java.net.SocketInputStream.read(SocketInputStream.java:209)
-	at java.net.SocketInputStream.read(SocketInputStream.java:141)
-	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
-	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
-	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
 	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
 	... 2 more
-Taking next connection to: 62436
-New client attempting to connect on port: 62946-62436
-  Address = /192.168.10.155:62436
-This client on port 62946 has uuid 113028ed-6a3a-4ba2-abad-8183babe5393 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
-Connected Clients: play-fork-run-ccb684f1-de71-4dd9-821d-24dca3fe9e54, play-fork-run-113028ed-6a3a-4ba2-abad-8183babe5393
-Taking next connection to: 62436
+Taking next connection to: 61571
+New client attempting to connect on port: 61738-61571
+  Address = /192.168.10.155:61571
+This client on port 61738 has uuid a56e3382-b81f-49c5-a2ce-78da7cbd1c3f configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: activator-35fdeaf1-d602-47e8-a486-67e5d30540f2, play-fork-run-a56e3382-b81f-49c5-a2ce-78da7cbd1c3f
+Taking next connection to: 61571
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 62436
-New client attempting to connect on port: 63023-62436
-  Address = /192.168.10.155:62436
-Handshake exception on socket: 63023
-sbt.impl.ipc.HandshakeException: Unable to perform handshake
-	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
-	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
-	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
-Caused by: java.net.SocketException: Connection reset
-	at java.net.SocketInputStream.read(SocketInputStream.java:209)
-	at java.net.SocketInputStream.read(SocketInputStream.java:141)
-	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
-	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
-	at java.io.DataInputStream.readInt(DataInputStream.java:387)
-	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
-	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
-	... 2 more
-Taking next connection to: 62436
-New client attempting to connect on port: 63024-62436
-  Address = /192.168.10.155:62436
-This client on port 63024 has uuid 23d6c89a-1996-4e52-84bd-6c79ed21c640 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
-Connected Clients: play-fork-run-ccb684f1-de71-4dd9-821d-24dca3fe9e54, play-fork-run-23d6c89a-1996-4e52-84bd-6c79ed21c640
-Taking next connection to: 62436
+Taking next connection to: 61571
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 61571

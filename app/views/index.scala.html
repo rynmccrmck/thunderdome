@@ -1,22 +1,24 @@
 @(user: models.user.User)@layout.bootstrap("Play Silhouette Postgres Async Seed") {
 
-
  @(_navBar(user,"home"))
   <div class="container">
   
     <div class="row">
       <div class="col-md-12">
         <img style="float:right" src="/assets/images/ml-preproc.png" height = 480/>
+        
+        @if(user.profiles.isEmpty) {
         <h2>Welcome to ML Thunderdome!</h2>
         <h4>Many models enter, One model leaves.</h4>
-
-      
         <ul>
-        @if(user.profiles.isEmpty) {
           <li>You are not currently logged, sign in or register!</li>
           <li><a href="@routes.RegistrationController.registrationForm">Register</a></li>
           <li><a href="@routes.AuthenticationController.signInForm">Sign In</a></li>
         } else {
+
+        <h2>Welcome back @user.username!</h2>
+        <h4>You have 0 contests ongoing.</h4>
+        <ul>
           <li>You're signed in as user @user.username.map { un =>: @{un} }</li>
           <li>
             Profiles:
