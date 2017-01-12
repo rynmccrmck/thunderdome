@@ -1,4 +1,4 @@
-name := """play-silhouette-postgres-async-seed"""
+name := """thunderdome-play"""
 
 version := "1.0"
 
