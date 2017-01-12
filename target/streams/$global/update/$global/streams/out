@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for thunderdome-play#thunderdome-play_2.11;1.0 [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies thunderdome-play#thunderdome-play_2.11;1.0->org.scala-lang#scala-library;2.11.7 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.11.7 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2f56927d[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7d801a66[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.7[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.11.7 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m	[2.11.7] org.scala-lang#scala-library;2.11.7[0m
@@ -7834,7 +7834,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#control_2.11;0.13.8-M3!control_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.akka#akka-actor_2.11;2.3.8!akka-actor_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.akka#akka-testkit_2.11;2.3.8!akka-testkit_2.11.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 3800ms :: artifacts dl 105ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 4756ms :: artifacts dl 97ms[0m
 [0m[[0mdebug[0m] [0m	report for thunderdome-play#thunderdome-play_2.11;1.0 compile produced in /Users/ryanmccormack/Documents/thunderdome/target/resolution-cache/reports/thunderdome-play-thunderdome-play_2.11-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for thunderdome-play#thunderdome-play_2.11;1.0 runtime produced in /Users/ryanmccormack/Documents/thunderdome/target/resolution-cache/reports/thunderdome-play-thunderdome-play_2.11-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for thunderdome-play#thunderdome-play_2.11;1.0 test produced in /Users/ryanmccormack/Documents/thunderdome/target/resolution-cache/reports/thunderdome-play-thunderdome-play_2.11-test.xml[0m
@@ -7849,5 +7849,5 @@
 [0m[[0mdebug[0m] [0m	report for thunderdome-play#thunderdome-play_2.11;1.0 pom produced in /Users/ryanmccormack/Documents/thunderdome/target/resolution-cache/reports/thunderdome-play-thunderdome-play_2.11-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for thunderdome-play#thunderdome-play_2.11;1.0 scala-tool produced in /Users/ryanmccormack/Documents/thunderdome/target/resolution-cache/reports/thunderdome-play-thunderdome-play_2.11-scala-tool.xml[0m
 [0m[[0mdebug[0m] [0m	report for thunderdome-play#thunderdome-play_2.11;1.0 fork-run produced in /Users/ryanmccormack/Documents/thunderdome/target/resolution-cache/reports/thunderdome-play-thunderdome-play_2.11-fork-run.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (3800ms resolve - 105ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (4756ms resolve - 97ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

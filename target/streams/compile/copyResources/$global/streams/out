@@ -1,4 +1,0 @@
-[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
-[0m[[0mdebug[0m] [0m	(/Users/ryanmccormack/Documents/thunderdome/conf/application.conf,/Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/classes/application.conf)[0m
-[0m[[0mdebug[0m] [0m	(/Users/ryanmccormack/Documents/thunderdome/conf/logback.xml,/Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/classes/logback.xml)[0m
-[0m[[0mdebug[0m] [0m	(/Users/ryanmccormack/Documents/thunderdome/conf/routes,/Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/classes/routes)[0m
