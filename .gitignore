@@ -1,1 +1,6 @@
-thunderdome-play/conf/application.conf
+RUNNING.pid
+/project/target
+/target
+/logs/
+.cache
+conf/application.conf
