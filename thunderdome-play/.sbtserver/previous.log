@@ -1,22 +1,22 @@
-New log file opened at Wed Jan 11 13:49:12 EST 2017 by 62531@ges-113.local
-jvm 62531@ges-113.local
-jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.72-b15
+New log file opened at Wed Jan 11 19:57:46 EST 2017 by 18192@Ryans-MBP
+jvm 18192@Ryans-MBP
+jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.60-b23
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
 Starting event engine
 Starting sbt command engine
 Waiting for sbt command engine
 Command engine arguments=List()
-Command engine baseDirectory=/Users/ryanmccormack/play-silhouette-postgres-async-seed
+Command engine baseDirectory=/Users/ryanmccormack/Documents/thunderdome/thunderdome-play
 Command engine initial remaining commands List(--initialize, onFailure load-failed, boot, server-send-ready-for-request, server-handle-next-server-request)
 > --initialize
 > initialize
 > onFailure load-failed
 > boot
 > reload
-[Loading] Scanning directory /Users/ryanmccormack/play-silhouette-postgres-async-seed/project
+[Loading] Scanning directory /Users/ryanmccormack/Documents/thunderdome/thunderdome-play/project
 [Loading] Found non-root projects 
-[Loading] Done in /Users/ryanmccormack/play-silhouette-postgres-async-seed/project, returning: ()
+[Loading] Done in /Users/ryanmccormack/Documents/thunderdome/thunderdome-play/project, returning: ()
 deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))))
   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.JUnitXmlReportPlugin)
 sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
@@ -25,9 +25,9 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin) not found List(sbt.plugins.JUnitXmlReportPlugin)
   :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin) not found List()
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
-[Loading] Done in /Users/ryanmccormack/play-silhouette-postgres-async-seed/project, returning: (play-silhouette-postgres-async-seed-build)
-Loading project definition from /Users/ryanmccormack/play-silhouette-postgres-async-seed/project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@6ec8297b, check cycles: false
+[Loading] Done in /Users/ryanmccormack/Documents/thunderdome/thunderdome-play/project, returning: (thunderdome-play-build)
+Loading project definition from /Users/ryanmccormack/Documents/thunderdome/thunderdome-play/project
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@24ae4fe9, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -46,7 +46,7 @@ All initially invalidated sources: Set()
 
 Copy resource mappings: 
 	
-[Loading] Scanning directory /Users/ryanmccormack/play-silhouette-postgres-async-seed
+[Loading] Scanning directory /Users/ryanmccormack/Documents/thunderdome/thunderdome-play
 [Loading] Found root project root w/ remaining 
 deducing auto plugins based on known facts Set(Atom(play.sbt.PlayScala), Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(play.sbt.forkrun.PlayForkRun),Set(Atom(sbt.plugins.BackgroundRunPlugin))), Clause(Atom(play.sbt.forkrun.PlayForkRun),Set(Atom(play.sbt.Play))), Clause(Atom(play.sbt.forkrun.PlayForkRun),Set(Atom(sbt.plugins.SerializersPlugin))), Clause(Atom(play.sbt.Play),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging))), Clause(Atom(play.sbt.Play),Set(Atom(play.sbt.routes.RoutesCompiler))), Clause(Atom(play.sbt.Play),Set(Atom(play.twirl.sbt.SbtTwirl))), Clause(Atom(play.sbt.Play),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(play.sbt.PlayAkkaHttpServer),Set(Atom(play.sbt.Play))), Clause(Atom(play.sbt.PlayJava),Set(Atom(play.sbt.Play))), Clause(Atom(play.sbt.PlayLayoutPlugin),Set(Atom(play.sbt.Play))), Clause(Atom(play.sbt.PlayNettyServer),Set(Atom(play.sbt.Play))), Clause(Atom(play.sbt.PlayScala),Set(Atom(play.sbt.Play))), Clause(Atom(play.sbt.routes.RoutesCompiler),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(play.twirl.sbt.SbtTwirl),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(com.typesafe.sbt.packager.archetypes.AkkaAppPackaging),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging))), Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.windows.WindowsPlugin))), Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.docker.DockerPlugin))), Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin))), Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin))), Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging))), Clause(Atom(com.typesafe.sbt.packager.archetypes.jar.ClasspathJarPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging))), Clause(Atom(com.typesafe.sbt.packager.archetypes.jar.LauncherJarPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging))), Clause(Atom(com.typesafe.sbt.packager.debian.DebianDeployPlugin),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin))), Clause(Atom(com.typesafe.sbt.packager.debian.DebianPlugin),Set(Atom(com.typesafe.sbt.packager.linux.LinuxPlugin))), Clause(Atom(com.typesafe.sbt.packager.debian.JDebPackaging),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin))), Clause(Atom(com.typesafe.sbt.packager.docker.DockerPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin))), Clause(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerDeployPlugin),Set(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin))), Clause(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging))), Clause(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.jar.ClasspathJarPlugin))), Clause(Atom(com.typesafe.sbt.packager.linux.LinuxPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin))), Clause(Atom(com.typesafe.sbt.packager.rpm.RpmDeployPlugin),Set(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin))), Clause(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin),Set(Atom(com.typesafe.sbt.packager.linux.LinuxPlugin))), Clause(Atom(com.typesafe.sbt.packager.universal.UniversalDeployPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin))), Clause(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin),Set(Atom(com.typesafe.sbt.SbtNativePackager))), Clause(Atom(com.typesafe.sbt.packager.windows.WindowsDeployPlugin),Set(Atom(com.typesafe.sbt.packager.windows.WindowsPlugin))), Clause(Atom(com.typesafe.sbt.packager.windows.WindowsPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin))), Clause(Atom(com.typesafe.sbt.web.SbtWeb),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(com.typesafe.sbt.jse.SbtJsEngine),Set(Atom(com.typesafe.sbt.web.SbtWeb))), Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.jse.SbtJsEngine))), Clause(Atom(sbt.plugins.BackgroundRunPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(And(Set(Atom(sbt.plugins.BackgroundRunPlugin), Atom(play.sbt.Play), Atom(sbt.plugins.SerializersPlugin))),Set(Atom(play.sbt.forkrun.PlayForkRun))), Clause(Atom(play.sbt.Play),Set(Atom(play.sbt.PlayLayoutPlugin))), Clause(Atom(play.sbt.Play),Set(Atom(play.sbt.PlayNettyServer))), Clause(Atom(com.typesafe.sbt.web.SbtWeb),Set(Atom(com.typesafe.sbt.jse.SbtJsEngine))), Clause(Atom(com.typesafe.sbt.jse.SbtJsEngine),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.BackgroundRunPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.InteractionServicePlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.SendEventServicePlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.SerializersPlugin)))))
   :: deduced result: Matched(sbt.plugins.CorePlugin,play.sbt.PlayScala,sbt.plugins.InteractionServicePlugin,sbt.plugins.SendEventServicePlugin,play.sbt.Play,sbt.plugins.SerializersPlugin,sbt.plugins.IvyPlugin,com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging,play.twirl.sbt.SbtTwirl,sbt.plugins.JvmPlugin,play.sbt.PlayNettyServer,play.sbt.PlayLayoutPlugin,play.sbt.routes.RoutesCompiler,com.typesafe.sbt.jse.SbtJsTask,sbt.plugins.BackgroundRunPlugin,sbt.plugins.JUnitXmlReportPlugin,com.typesafe.sbt.jse.SbtJsEngine,com.typesafe.sbt.packager.archetypes.JavaAppPackaging,com.typesafe.sbt.packager.rpm.RpmPlugin,com.typesafe.sbt.packager.windows.WindowsPlugin,com.typesafe.sbt.web.SbtWeb,com.typesafe.sbt.packager.docker.DockerPlugin,play.sbt.forkrun.PlayForkRun,com.typesafe.sbt.packager.debian.DebianPlugin,com.typesafe.sbt.packager.universal.UniversalPlugin,com.typesafe.sbt.packager.linux.LinuxPlugin,com.typesafe.sbt.SbtNativePackager)
@@ -60,38 +60,16 @@ sorting: ns: List(sbt.plugins.CorePlugin, play.sbt.PlayScala, sbt.plugins.Intera
   :: sorting:: found: List(sbt.plugins.CorePlugin, com.typesafe.sbt.SbtNativePackager, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.packager.universal.UniversalPlugin, sbt.plugins.JvmPlugin, com.typesafe.sbt.packager.windows.WindowsPlugin, com.typesafe.sbt.packager.docker.DockerPlugin, com.typesafe.sbt.packager.linux.LinuxPlugin, play.twirl.sbt.SbtTwirl, play.sbt.routes.RoutesCompiler, sbt.plugins.BackgroundRunPlugin, sbt.plugins.JUnitXmlReportPlugin, com.typesafe.sbt.packager.rpm.RpmPlugin, com.typesafe.sbt.web.SbtWeb, com.typesafe.sbt.packager.debian.DebianPlugin, com.typesafe.sbt.jse.SbtJsEngine, com.typesafe.sbt.packager.archetypes.JavaAppPackaging, com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging, com.typesafe.sbt.jse.SbtJsTask, play.sbt.Play) not found List(play.sbt.PlayScala, play.sbt.PlayNettyServer, play.sbt.PlayLayoutPlugin, play.sbt.forkrun.PlayForkRun)
   :: sorting:: found: List(sbt.plugins.CorePlugin, com.typesafe.sbt.SbtNativePackager, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.packager.universal.UniversalPlugin, sbt.plugins.JvmPlugin, com.typesafe.sbt.packager.windows.WindowsPlugin, com.typesafe.sbt.packager.docker.DockerPlugin, com.typesafe.sbt.packager.linux.LinuxPlugin, play.twirl.sbt.SbtTwirl, play.sbt.routes.RoutesCompiler, sbt.plugins.BackgroundRunPlugin, sbt.plugins.JUnitXmlReportPlugin, com.typesafe.sbt.packager.rpm.RpmPlugin, com.typesafe.sbt.web.SbtWeb, com.typesafe.sbt.packager.debian.DebianPlugin, com.typesafe.sbt.jse.SbtJsEngine, com.typesafe.sbt.packager.archetypes.JavaAppPackaging, com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging, com.typesafe.sbt.jse.SbtJsTask, play.sbt.Play, play.sbt.PlayScala, play.sbt.PlayNettyServer, play.sbt.PlayLayoutPlugin, play.sbt.forkrun.PlayForkRun) not found List()
   :: sorted deduced result: List(sbt.plugins.CorePlugin, com.typesafe.sbt.SbtNativePackager, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.packager.universal.UniversalPlugin, sbt.plugins.JvmPlugin, com.typesafe.sbt.packager.windows.WindowsPlugin, com.typesafe.sbt.packager.docker.DockerPlugin, com.typesafe.sbt.packager.linux.LinuxPlugin, play.twirl.sbt.SbtTwirl, play.sbt.routes.RoutesCompiler, sbt.plugins.BackgroundRunPlugin, sbt.plugins.JUnitXmlReportPlugin, com.typesafe.sbt.packager.rpm.RpmPlugin, com.typesafe.sbt.web.SbtWeb, com.typesafe.sbt.packager.debian.DebianPlugin, com.typesafe.sbt.jse.SbtJsEngine, com.typesafe.sbt.packager.archetypes.JavaAppPackaging, com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging, com.typesafe.sbt.jse.SbtJsTask, play.sbt.Play, play.sbt.PlayScala, play.sbt.PlayNettyServer, play.sbt.PlayLayoutPlugin, play.sbt.forkrun.PlayForkRun)
-[Loading] Done in /Users/ryanmccormack/play-silhouette-postgres-async-seed, returning: (root)
-Set current project to play-silhouette-postgres-async-seed (in build file:/Users/ryanmccormack/play-silhouette-postgres-async-seed/)
+[Loading] Done in /Users/ryanmccormack/Documents/thunderdome/thunderdome-play, returning: (root)
+Set current project to play-silhouette-postgres-async-seed (in build file:/Users/ryanmccormack/Documents/thunderdome/thunderdome-play/)
 Reapplying settings...
-Set current project to play-silhouette-postgres-async-seed (in build file:/Users/ryanmccormack/play-silhouette-postgres-async-seed/)
+Set current project to play-silhouette-postgres-async-seed (in build file:/Users/ryanmccormack/Documents/thunderdome/thunderdome-play/)
 > iflast shell
 > server-send-ready-for-request
 > server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@40770e53, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Total time: 2 s, completed 11-Jan-2017 1:49:23 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/Users/ryanmccormack/play-silhouette-postgres-async-seed/}root/compile:discoveredMainClasses
+> {file:/Users/ryanmccormack/Documents/thunderdome/thunderdome-play/}root/compile:discoveredMainClasses
 Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@94853eb, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@70475ced, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -108,18 +86,18 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 2 s, completed 11-Jan-2017 1:49:25 PM
+Total time: 1 s, completed 11-Jan-2017 7:57:53 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
-> {file:/Users/ryanmccormack/play-silhouette-postgres-async-seed/}root/compile:mainClass
+> {file:/Users/ryanmccormack/Documents/thunderdome/thunderdome-play/}root/compile:mainClass
 Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@6848590, check cycles: false
-Total time: 0 s, completed 11-Jan-2017 1:49:25 PM
+Running task... Cancel: sbt.server.ServerTaskCancellation@410ec6ec, check cycles: false
+Total time: 0 s, completed 11-Jan-2017 7:57:53 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
-> {file:/Users/ryanmccormack/play-silhouette-postgres-async-seed/}root/compile:discoveredMainClasses
+> {file:/Users/ryanmccormack/Documents/thunderdome/thunderdome-play/}root/compile:discoveredMainClasses
 Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@6e5ac903, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@7814d25d, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -136,809 +114,13 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 1 s, completed 11-Jan-2017 1:49:26 PM
+Total time: 1 s, completed 11-Jan-2017 7:57:54 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
-> backgroundRun
-Evaluating tasks: compile:backgroundRun
-Running task... Cancel: sbt.server.ServerTaskCancellation@6bf52ecc, check cycles: false
-Total time: 0 s, completed 11-Jan-2017 1:50:18 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/Users/ryanmccormack/play-silhouette-postgres-async-seed/}root/*:playForkConfig
-Evaluating tasks: *:playForkConfig
-Running task... Cancel: sbt.server.ServerTaskCancellation@36236f36, check cycles: false
-Total time: 1 s, completed 11-Jan-2017 1:50:22 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> root/playForkNotifyStart http://localhost:9000
-Evaluating tasks: *:playForkNotifyStart
-Running task... Cancel: sbt.server.ServerTaskCancellation@1ad0586, check cycles: false
-Total time: 0 s, completed 11-Jan-2017 1:50:24 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/Users/ryanmccormack/play-silhouette-postgres-async-seed/}root/*:playForkReload
-Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@455ede2e, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Copy resource mappings: 
-	(/Users/ryanmccormack/play-silhouette-postgres-async-seed/conf/application.conf,/Users/ryanmccormack/play-silhouette-postgres-async-seed/target/scala-2.11/classes/application.conf)
-	(/Users/ryanmccormack/play-silhouette-postgres-async-seed/conf/logback.xml,/Users/ryanmccormack/play-silhouette-postgres-async-seed/target/scala-2.11/classes/logback.xml)
-	(/Users/ryanmccormack/play-silhouette-postgres-async-seed/conf/routes,/Users/ryanmccormack/play-silhouette-postgres-async-seed/target/scala-2.11/classes/routes)
-Total time: 2 s, completed 11-Jan-2017 1:50:41 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> jobStop 1
-Evaluating tasks: *:jobStop
-Running task... Cancel: sbt.server.ServerTaskCancellation@37d01cc5, check cycles: false
-Total time: 0 s, completed 11-Jan-2017 1:51:03 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@5cdab8b, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set(/Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateSubmissionsTable.scala)
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateSubmissionsTable.scala)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateSubmissionsTable.scala)
-
-Read from stdout: Compiling 1 Scala source to /Users/ryanmccormack/play-silhouette-postgres-async-seed/target/scala-2.11/classes...
-Compiling 1 Scala source to /Users/ryanmccormack/play-silhouette-postgres-async-seed/target/scala-2.11/classes...
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Running cached compiler cd21f1e, interfacing (CompilerInterface) with Scala compiler version 2.11.7
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/classes:/Users/ryanmccormack/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
-	-classpath
-	/Users/ryanmccormack/play-silhouette-postgres-async-seed/target/scala-2.11/classes:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.1.1.jar:/Users/ryanmccormack/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.4.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.19.0-GA.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.8.1.jar:/Users/ryanmccormack/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.7.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.6.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/bundles/jackson-datatype-jdk8-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/bundles/jackson-datatype-jsr310-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.12.jar:/Users/ryanmccormack/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.12.jar:/Users/ryanmccormack/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.12.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/Users/ryanmccormack/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.3.jar:/Users/ryanmccormack/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.3.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.11.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.11.jar:/Users/ryanmccormack/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.10.jar:/Users/ryanmccormack/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/ryanmccormack/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/ryanmccormack/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/ryanmccormack/.ivy2/cache/com.google.inject/guice/jars/guice-4.0.jar:/Users/ryanmccormack/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar:/Users/ryanmccormack/.ivy2/cache/aopalliance/aopalliance/jars/aopalliance-1.0.jar:/Users/ryanmccormack/.ivy2/cache/com.google.inject.extensions/guice-assistedinject/jars/guice-assistedinject-4.0.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/io.netty/netty/bundles/netty-3.10.3.Final.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.4.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/net.sf.ehcache/ehcache-core/jars/ehcache-core-2.6.11.jar:/Users/ryanmccormack/.ivy2/cache/com.mohiva/play-silhouette_2.11/jars/play-silhouette_2.11-3.0.0-RC2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.4.1.jar:/Users/ryanmccormack/.ivy2/cache/com.google.guava/guava/bundles/guava-18.0.jar:/Users/ryanmccormack/.ivy2/cache/com.ning/async-http-client/jars/async-http-client-1.9.21.jar:/Users/ryanmccormack/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/ryanmccormack/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/ryanmccormack/.ivy2/cache/org.apache.httpcomponents/httpcore/jars/httpcore-4.0.1.jar:/Users/ryanmccormack/.ivy2/cache/org.apache.httpcomponents/httpclient/jars/httpclient-4.0.1.jar:/Users/ryanmccormack/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/ryanmccormack/.ivy2/cache/org.mindrot/jbcrypt/jars/jbcrypt-0.3m.jar:/Users/ryanmccormack/.ivy2/cache/com.atlassian.jwt/jwt-core/jars/jwt-core-1.2.4.jar:/Users/ryanmccormack/.ivy2/cache/com.nimbusds/nimbus-jose-jwt/jars/nimbus-jose-jwt-2.16.jar:/Users/ryanmccormack/.ivy2/cache/net.jcip/jcip-annotations/jars/jcip-annotations-1.0.jar:/Users/ryanmccormack/.ivy2/cache/net.minidev/json-smart/jars/json-smart-1.1.1.jar:/Users/ryanmccormack/.ivy2/cache/javax.mail/mail/jars/mail-1.4.7.jar:/Users/ryanmccormack/.ivy2/cache/javax.activation/activation/jars/activation-1.1.jar:/Users/ryanmccormack/.ivy2/cache/org.bouncycastle/bcprov-jdk15on/jars/bcprov-jdk15on-1.51.jar:/Users/ryanmccormack/.ivy2/cache/com.atlassian.jwt/jwt-api/jars/jwt-api-1.2.4.jar:/Users/ryanmccormack/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.1.jar:/Users/ryanmccormack/.ivy2/cache/com.kyleu/jdub-async_2.11/jars/jdub-async_2.11-1.0.jar:/Users/ryanmccormack/.ivy2/cache/com.github.mauricio/postgresql-async_2.11/jars/postgresql-async_2.11-0.2.16.jar:/Users/ryanmccormack/.ivy2/cache/com.github.mauricio/db-async-common_2.11/jars/db-async-common_2.11-0.2.16.jar:/Users/ryanmccormack/.ivy2/cache/io.netty/netty-all/jars/netty-all-4.0.25.Final.jar:/Users/ryanmccormack/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.3.5.jar:/Users/ryanmccormack/.ivy2/cache/org.webjars/jquery/jars/jquery-1.11.1.jar
-Scala compilation took 3.895821151 s
-Invalidating /Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateSubmissionsTable.scala...
-Invalidating (transitively) by inheritance from /Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateSubmissionsTable.scala...
-Initial set of included nodes: Set(/Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateSubmissionsTable.scala)
-Invalidated by transitive inheritance dependency: Set(/Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateSubmissionsTable.scala)
-The /Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateSubmissionsTable.scala source file has the following regular definitions changed:
-	.
-All member reference dependencies will be considered within this context.
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 5 s, completed 11-Jan-2017 1:51:59 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> backgroundRun
-Evaluating tasks: compile:backgroundRun
-Running task... Cancel: sbt.server.ServerTaskCancellation@68c9a88b, check cycles: false
-Total time: 0 s, completed 11-Jan-2017 1:52:00 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/Users/ryanmccormack/play-silhouette-postgres-async-seed/}root/*:playForkConfig
-Evaluating tasks: *:playForkConfig
-Running task... Cancel: sbt.server.ServerTaskCancellation@3dcb100c, check cycles: false
-Total time: 1 s, completed 11-Jan-2017 1:52:05 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> root/playForkNotifyStart http://localhost:9000
-Evaluating tasks: *:playForkNotifyStart
-Running task... Cancel: sbt.server.ServerTaskCancellation@241f27f6, check cycles: false
-Total time: 0 s, completed 11-Jan-2017 1:52:07 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@63a3be03, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(/Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateSubmissionsTable.scala)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateSubmissionsTable.scala)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateSubmissionsTable.scala)
-
-Read from stdout: Compiling 1 Scala source to /Users/ryanmccormack/play-silhouette-postgres-async-seed/target/scala-2.11/classes...
-Compiling 1 Scala source to /Users/ryanmccormack/play-silhouette-postgres-async-seed/target/scala-2.11/classes...
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Running cached compiler 318ed6ab, interfacing (CompilerInterface) with Scala compiler version 2.11.7
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/classes:/Users/ryanmccormack/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
-	-classpath
-	/Users/ryanmccormack/play-silhouette-postgres-async-seed/target/scala-2.11/classes:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.1.1.jar:/Users/ryanmccormack/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.4.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.19.0-GA.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.8.1.jar:/Users/ryanmccormack/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.7.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.6.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/bundles/jackson-datatype-jdk8-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/bundles/jackson-datatype-jsr310-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.12.jar:/Users/ryanmccormack/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.12.jar:/Users/ryanmccormack/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.12.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/Users/ryanmccormack/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.3.jar:/Users/ryanmccormack/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.3.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.11.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.11.jar:/Users/ryanmccormack/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.10.jar:/Users/ryanmccormack/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/ryanmccormack/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/ryanmccormack/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/ryanmccormack/.ivy2/cache/com.google.inject/guice/jars/guice-4.0.jar:/Users/ryanmccormack/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar:/Users/ryanmccormack/.ivy2/cache/aopalliance/aopalliance/jars/aopalliance-1.0.jar:/Users/ryanmccormack/.ivy2/cache/com.google.inject.extensions/guice-assistedinject/jars/guice-assistedinject-4.0.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/io.netty/netty/bundles/netty-3.10.3.Final.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.4.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/net.sf.ehcache/ehcache-core/jars/ehcache-core-2.6.11.jar:/Users/ryanmccormack/.ivy2/cache/com.mohiva/play-silhouette_2.11/jars/play-silhouette_2.11-3.0.0-RC2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.4.1.jar:/Users/ryanmccormack/.ivy2/cache/com.google.guava/guava/bundles/guava-18.0.jar:/Users/ryanmccormack/.ivy2/cache/com.ning/async-http-client/jars/async-http-client-1.9.21.jar:/Users/ryanmccormack/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/ryanmccormack/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/ryanmccormack/.ivy2/cache/org.apache.httpcomponents/httpcore/jars/httpcore-4.0.1.jar:/Users/ryanmccormack/.ivy2/cache/org.apache.httpcomponents/httpclient/jars/httpclient-4.0.1.jar:/Users/ryanmccormack/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/ryanmccormack/.ivy2/cache/org.mindrot/jbcrypt/jars/jbcrypt-0.3m.jar:/Users/ryanmccormack/.ivy2/cache/com.atlassian.jwt/jwt-core/jars/jwt-core-1.2.4.jar:/Users/ryanmccormack/.ivy2/cache/com.nimbusds/nimbus-jose-jwt/jars/nimbus-jose-jwt-2.16.jar:/Users/ryanmccormack/.ivy2/cache/net.jcip/jcip-annotations/jars/jcip-annotations-1.0.jar:/Users/ryanmccormack/.ivy2/cache/net.minidev/json-smart/jars/json-smart-1.1.1.jar:/Users/ryanmccormack/.ivy2/cache/javax.mail/mail/jars/mail-1.4.7.jar:/Users/ryanmccormack/.ivy2/cache/javax.activation/activation/jars/activation-1.1.jar:/Users/ryanmccormack/.ivy2/cache/org.bouncycastle/bcprov-jdk15on/jars/bcprov-jdk15on-1.51.jar:/Users/ryanmccormack/.ivy2/cache/com.atlassian.jwt/jwt-api/jars/jwt-api-1.2.4.jar:/Users/ryanmccormack/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.1.jar:/Users/ryanmccormack/.ivy2/cache/com.kyleu/jdub-async_2.11/jars/jdub-async_2.11-1.0.jar:/Users/ryanmccormack/.ivy2/cache/com.github.mauricio/postgresql-async_2.11/jars/postgresql-async_2.11-0.2.16.jar:/Users/ryanmccormack/.ivy2/cache/com.github.mauricio/db-async-common_2.11/jars/db-async-common_2.11-0.2.16.jar:/Users/ryanmccormack/.ivy2/cache/io.netty/netty-all/jars/netty-all-4.0.25.Final.jar:/Users/ryanmccormack/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.3.5.jar:/Users/ryanmccormack/.ivy2/cache/org.webjars/jquery/jars/jquery-1.11.1.jar
-Scala compilation took 3.842710781 s
-Invalidating /Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateSubmissionsTable.scala...
-Invalidating (transitively) by inheritance from /Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateSubmissionsTable.scala...
-Initial set of included nodes: Set(/Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateSubmissionsTable.scala)
-Invalidated by transitive inheritance dependency: Set(/Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateSubmissionsTable.scala)
-The /Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateSubmissionsTable.scala source file has the following regular definitions changed:
-	notify, sql, wait, $asInstanceOf, productArity, equals, asInstanceOf, synchronized, $isInstanceOf, canEqual, productPrefix, notifyAll, readResolve, isInstanceOf, ==, clone, values, toString, !=, getClass, ne, CreateContestsTable, eq, productIterator, ##, finalize, productElement, hashCode.
-All member reference dependencies will be considered within this context.
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-Invalidated due to generated class file collision: Set(/Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateContestsTable.scala, /Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateSubmissionsTable.scala)
-All newly invalidated sources after taking into account (previously) recompiled sources:Set(/Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateContestsTable.scala)
-Read from stdout: Compiling 2 Scala sources to /Users/ryanmccormack/play-silhouette-postgres-async-seed/target/scala-2.11/classes...
-Compiling 2 Scala sources to /Users/ryanmccormack/play-silhouette-postgres-async-seed/target/scala-2.11/classes...
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Running cached compiler 6e8ea444, interfacing (CompilerInterface) with Scala compiler version 2.11.7
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/classes:/Users/ryanmccormack/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
-	-classpath
-	/Users/ryanmccormack/play-silhouette-postgres-async-seed/target/scala-2.11/classes:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.1.1.jar:/Users/ryanmccormack/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.4.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.19.0-GA.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.8.1.jar:/Users/ryanmccormack/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.7.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.6.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/bundles/jackson-datatype-jdk8-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/bundles/jackson-datatype-jsr310-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.12.jar:/Users/ryanmccormack/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.12.jar:/Users/ryanmccormack/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.12.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/Users/ryanmccormack/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.3.jar:/Users/ryanmccormack/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.3.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.11.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.11.jar:/Users/ryanmccormack/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.10.jar:/Users/ryanmccormack/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/ryanmccormack/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/ryanmccormack/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/ryanmccormack/.ivy2/cache/com.google.inject/guice/jars/guice-4.0.jar:/Users/ryanmccormack/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar:/Users/ryanmccormack/.ivy2/cache/aopalliance/aopalliance/jars/aopalliance-1.0.jar:/Users/ryanmccormack/.ivy2/cache/com.google.inject.extensions/guice-assistedinject/jars/guice-assistedinject-4.0.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/io.netty/netty/bundles/netty-3.10.3.Final.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.4.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/net.sf.ehcache/ehcache-core/jars/ehcache-core-2.6.11.jar:/Users/ryanmccormack/.ivy2/cache/com.mohiva/play-silhouette_2.11/jars/play-silhouette_2.11-3.0.0-RC2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.4.1.jar:/Users/ryanmccormack/.ivy2/cache/com.google.guava/guava/bundles/guava-18.0.jar:/Users/ryanmccormack/.ivy2/cache/com.ning/async-http-client/jars/async-http-client-1.9.21.jar:/Users/ryanmccormack/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/ryanmccormack/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/ryanmccormack/.ivy2/cache/org.apache.httpcomponents/httpcore/jars/httpcore-4.0.1.jar:/Users/ryanmccormack/.ivy2/cache/org.apache.httpcomponents/httpclient/jars/httpclient-4.0.1.jar:/Users/ryanmccormack/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/ryanmccormack/.ivy2/cache/org.mindrot/jbcrypt/jars/jbcrypt-0.3m.jar:/Users/ryanmccormack/.ivy2/cache/com.atlassian.jwt/jwt-core/jars/jwt-core-1.2.4.jar:/Users/ryanmccormack/.ivy2/cache/com.nimbusds/nimbus-jose-jwt/jars/nimbus-jose-jwt-2.16.jar:/Users/ryanmccormack/.ivy2/cache/net.jcip/jcip-annotations/jars/jcip-annotations-1.0.jar:/Users/ryanmccormack/.ivy2/cache/net.minidev/json-smart/jars/json-smart-1.1.1.jar:/Users/ryanmccormack/.ivy2/cache/javax.mail/mail/jars/mail-1.4.7.jar:/Users/ryanmccormack/.ivy2/cache/javax.activation/activation/jars/activation-1.1.jar:/Users/ryanmccormack/.ivy2/cache/org.bouncycastle/bcprov-jdk15on/jars/bcprov-jdk15on-1.51.jar:/Users/ryanmccormack/.ivy2/cache/com.atlassian.jwt/jwt-api/jars/jwt-api-1.2.4.jar:/Users/ryanmccormack/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.1.jar:/Users/ryanmccormack/.ivy2/cache/com.kyleu/jdub-async_2.11/jars/jdub-async_2.11-1.0.jar:/Users/ryanmccormack/.ivy2/cache/com.github.mauricio/postgresql-async_2.11/jars/postgresql-async_2.11-0.2.16.jar:/Users/ryanmccormack/.ivy2/cache/com.github.mauricio/db-async-common_2.11/jars/db-async-common_2.11-0.2.16.jar:/Users/ryanmccormack/.ivy2/cache/io.netty/netty-all/jars/netty-all-4.0.25.Final.jar:/Users/ryanmccormack/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.3.5.jar:/Users/ryanmccormack/.ivy2/cache/org.webjars/jquery/jars/jquery-1.11.1.jar
-Read from stdout: /Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateSubmissionsTable.scala:6: CreateContestsTable is already defined as case class CreateContestsTable
-/Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateSubmissionsTable.scala:6: CreateContestsTable is already defined as case class CreateContestsTable
-Read from stdout: case object CreateContestsTable extends Statement {
-case object CreateContestsTable extends Statement {
-Read from stdout: ^
-            ^
-Read from stdout: one error found
-one error found
-Compilation failed (CompilerInterface)
-Read from stdout: (compile:compileIncremental) Compilation failed
-(compile:compileIncremental) Compilation failed
-Total time: 6 s, completed 11-Jan-2017 1:54:36 PM
-> server-post-command-error-handler
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@5402b723, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(/Users/ryanmccormack/play-silhouette-postgres-async-seed/app/services/database/Schema.scala, /Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateSubmissionsTable.scala)
-Removed products: Set(/Users/ryanmccormack/play-silhouette-postgres-async-seed/target/scala-2.11/classes/models/queries/ddl/CreateContestsTable$.class, /Users/ryanmccormack/play-silhouette-postgres-async-seed/target/scala-2.11/classes/models/queries/ddl/CreateContestsTable.class)
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/ryanmccormack/play-silhouette-postgres-async-seed/app/services/database/Schema.scala, /Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateSubmissionsTable.scala)
-
-Sources indirectly invalidated by:
-	product: Set(/Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateContestsTable.scala)
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateContestsTable.scala, /Users/ryanmccormack/play-silhouette-postgres-async-seed/app/services/database/Schema.scala, /Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateSubmissionsTable.scala)
-
-Read from stdout: Compiling 3 Scala sources to /Users/ryanmccormack/play-silhouette-postgres-async-seed/target/scala-2.11/classes...
-Compiling 3 Scala sources to /Users/ryanmccormack/play-silhouette-postgres-async-seed/target/scala-2.11/classes...
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Running cached compiler 34f52d5e, interfacing (CompilerInterface) with Scala compiler version 2.11.7
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/classes:/Users/ryanmccormack/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
-	-classpath
-	/Users/ryanmccormack/play-silhouette-postgres-async-seed/target/scala-2.11/classes:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.1.1.jar:/Users/ryanmccormack/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.4.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.19.0-GA.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.8.1.jar:/Users/ryanmccormack/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.7.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.6.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/bundles/jackson-datatype-jdk8-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/bundles/jackson-datatype-jsr310-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.12.jar:/Users/ryanmccormack/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.12.jar:/Users/ryanmccormack/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.12.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/Users/ryanmccormack/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.3.jar:/Users/ryanmccormack/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.3.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.11.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.11.jar:/Users/ryanmccormack/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.10.jar:/Users/ryanmccormack/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/ryanmccormack/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/ryanmccormack/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/ryanmccormack/.ivy2/cache/com.google.inject/guice/jars/guice-4.0.jar:/Users/ryanmccormack/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar:/Users/ryanmccormack/.ivy2/cache/aopalliance/aopalliance/jars/aopalliance-1.0.jar:/Users/ryanmccormack/.ivy2/cache/com.google.inject.extensions/guice-assistedinject/jars/guice-assistedinject-4.0.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/io.netty/netty/bundles/netty-3.10.3.Final.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.4.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/net.sf.ehcache/ehcache-core/jars/ehcache-core-2.6.11.jar:/Users/ryanmccormack/.ivy2/cache/com.mohiva/play-silhouette_2.11/jars/play-silhouette_2.11-3.0.0-RC2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.4.1.jar:/Users/ryanmccormack/.ivy2/cache/com.google.guava/guava/bundles/guava-18.0.jar:/Users/ryanmccormack/.ivy2/cache/com.ning/async-http-client/jars/async-http-client-1.9.21.jar:/Users/ryanmccormack/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/ryanmccormack/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/ryanmccormack/.ivy2/cache/org.apache.httpcomponents/httpcore/jars/httpcore-4.0.1.jar:/Users/ryanmccormack/.ivy2/cache/org.apache.httpcomponents/httpclient/jars/httpclient-4.0.1.jar:/Users/ryanmccormack/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/ryanmccormack/.ivy2/cache/org.mindrot/jbcrypt/jars/jbcrypt-0.3m.jar:/Users/ryanmccormack/.ivy2/cache/com.atlassian.jwt/jwt-core/jars/jwt-core-1.2.4.jar:/Users/ryanmccormack/.ivy2/cache/com.nimbusds/nimbus-jose-jwt/jars/nimbus-jose-jwt-2.16.jar:/Users/ryanmccormack/.ivy2/cache/net.jcip/jcip-annotations/jars/jcip-annotations-1.0.jar:/Users/ryanmccormack/.ivy2/cache/net.minidev/json-smart/jars/json-smart-1.1.1.jar:/Users/ryanmccormack/.ivy2/cache/javax.mail/mail/jars/mail-1.4.7.jar:/Users/ryanmccormack/.ivy2/cache/javax.activation/activation/jars/activation-1.1.jar:/Users/ryanmccormack/.ivy2/cache/org.bouncycastle/bcprov-jdk15on/jars/bcprov-jdk15on-1.51.jar:/Users/ryanmccormack/.ivy2/cache/com.atlassian.jwt/jwt-api/jars/jwt-api-1.2.4.jar:/Users/ryanmccormack/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.1.jar:/Users/ryanmccormack/.ivy2/cache/com.kyleu/jdub-async_2.11/jars/jdub-async_2.11-1.0.jar:/Users/ryanmccormack/.ivy2/cache/com.github.mauricio/postgresql-async_2.11/jars/postgresql-async_2.11-0.2.16.jar:/Users/ryanmccormack/.ivy2/cache/com.github.mauricio/db-async-common_2.11/jars/db-async-common_2.11-0.2.16.jar:/Users/ryanmccormack/.ivy2/cache/io.netty/netty-all/jars/netty-all-4.0.25.Final.jar:/Users/ryanmccormack/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.3.5.jar:/Users/ryanmccormack/.ivy2/cache/org.webjars/jquery/jars/jquery-1.11.1.jar
-Read from stdout: /Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateSubmissionsTable.scala:6: CreateContestsTable is already defined as case class CreateContestsTable
-/Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateSubmissionsTable.scala:6: CreateContestsTable is already defined as case class CreateContestsTable
-Read from stdout: case object CreateContestsTable extends Statement {
-case object CreateContestsTable extends Statement {
-Read from stdout: ^
-            ^
-Read from stdout: one error found
-one error found
-Compilation failed (CompilerInterface)
-Read from stdout: (compile:compileIncremental) Compilation failed
-(compile:compileIncremental) Compilation failed
-Total time: 2 s, completed 11-Jan-2017 1:54:45 PM
-> server-post-command-error-handler
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@146d0116, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(/Users/ryanmccormack/play-silhouette-postgres-async-seed/app/services/database/Schema.scala, /Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateSubmissionsTable.scala)
-Removed products: Set(/Users/ryanmccormack/play-silhouette-postgres-async-seed/target/scala-2.11/classes/models/queries/ddl/CreateContestsTable$.class, /Users/ryanmccormack/play-silhouette-postgres-async-seed/target/scala-2.11/classes/models/queries/ddl/CreateContestsTable.class)
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/ryanmccormack/play-silhouette-postgres-async-seed/app/services/database/Schema.scala, /Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateSubmissionsTable.scala)
-
-Sources indirectly invalidated by:
-	product: Set(/Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateContestsTable.scala)
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateContestsTable.scala, /Users/ryanmccormack/play-silhouette-postgres-async-seed/app/services/database/Schema.scala, /Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateSubmissionsTable.scala)
-
-Read from stdout: Compiling 3 Scala sources to /Users/ryanmccormack/play-silhouette-postgres-async-seed/target/scala-2.11/classes...
-Compiling 3 Scala sources to /Users/ryanmccormack/play-silhouette-postgres-async-seed/target/scala-2.11/classes...
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Running cached compiler 1cabf0ee, interfacing (CompilerInterface) with Scala compiler version 2.11.7
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/classes:/Users/ryanmccormack/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
-	-classpath
-	/Users/ryanmccormack/play-silhouette-postgres-async-seed/target/scala-2.11/classes:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.1.1.jar:/Users/ryanmccormack/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.4.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.19.0-GA.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.8.1.jar:/Users/ryanmccormack/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.7.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.6.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/bundles/jackson-datatype-jdk8-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/bundles/jackson-datatype-jsr310-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.12.jar:/Users/ryanmccormack/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.12.jar:/Users/ryanmccormack/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.12.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/Users/ryanmccormack/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.3.jar:/Users/ryanmccormack/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.3.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.11.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.11.jar:/Users/ryanmccormack/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.10.jar:/Users/ryanmccormack/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/ryanmccormack/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/ryanmccormack/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/ryanmccormack/.ivy2/cache/com.google.inject/guice/jars/guice-4.0.jar:/Users/ryanmccormack/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar:/Users/ryanmccormack/.ivy2/cache/aopalliance/aopalliance/jars/aopalliance-1.0.jar:/Users/ryanmccormack/.ivy2/cache/com.google.inject.extensions/guice-assistedinject/jars/guice-assistedinject-4.0.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/io.netty/netty/bundles/netty-3.10.3.Final.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.4.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/net.sf.ehcache/ehcache-core/jars/ehcache-core-2.6.11.jar:/Users/ryanmccormack/.ivy2/cache/com.mohiva/play-silhouette_2.11/jars/play-silhouette_2.11-3.0.0-RC2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.4.1.jar:/Users/ryanmccormack/.ivy2/cache/com.google.guava/guava/bundles/guava-18.0.jar:/Users/ryanmccormack/.ivy2/cache/com.ning/async-http-client/jars/async-http-client-1.9.21.jar:/Users/ryanmccormack/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/ryanmccormack/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/ryanmccormack/.ivy2/cache/org.apache.httpcomponents/httpcore/jars/httpcore-4.0.1.jar:/Users/ryanmccormack/.ivy2/cache/org.apache.httpcomponents/httpclient/jars/httpclient-4.0.1.jar:/Users/ryanmccormack/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/ryanmccormack/.ivy2/cache/org.mindrot/jbcrypt/jars/jbcrypt-0.3m.jar:/Users/ryanmccormack/.ivy2/cache/com.atlassian.jwt/jwt-core/jars/jwt-core-1.2.4.jar:/Users/ryanmccormack/.ivy2/cache/com.nimbusds/nimbus-jose-jwt/jars/nimbus-jose-jwt-2.16.jar:/Users/ryanmccormack/.ivy2/cache/net.jcip/jcip-annotations/jars/jcip-annotations-1.0.jar:/Users/ryanmccormack/.ivy2/cache/net.minidev/json-smart/jars/json-smart-1.1.1.jar:/Users/ryanmccormack/.ivy2/cache/javax.mail/mail/jars/mail-1.4.7.jar:/Users/ryanmccormack/.ivy2/cache/javax.activation/activation/jars/activation-1.1.jar:/Users/ryanmccormack/.ivy2/cache/org.bouncycastle/bcprov-jdk15on/jars/bcprov-jdk15on-1.51.jar:/Users/ryanmccormack/.ivy2/cache/com.atlassian.jwt/jwt-api/jars/jwt-api-1.2.4.jar:/Users/ryanmccormack/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.1.jar:/Users/ryanmccormack/.ivy2/cache/com.kyleu/jdub-async_2.11/jars/jdub-async_2.11-1.0.jar:/Users/ryanmccormack/.ivy2/cache/com.github.mauricio/postgresql-async_2.11/jars/postgresql-async_2.11-0.2.16.jar:/Users/ryanmccormack/.ivy2/cache/com.github.mauricio/db-async-common_2.11/jars/db-async-common_2.11-0.2.16.jar:/Users/ryanmccormack/.ivy2/cache/io.netty/netty-all/jars/netty-all-4.0.25.Final.jar:/Users/ryanmccormack/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.3.5.jar:/Users/ryanmccormack/.ivy2/cache/org.webjars/jquery/jars/jquery-1.11.1.jar
-Scala compilation took 4.018896976 s
-Invalidating /Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateSubmissionsTable.scala...
-Invalidating (transitively) by inheritance from /Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateSubmissionsTable.scala...
-Initial set of included nodes: Set(/Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateSubmissionsTable.scala)
-Invalidated by transitive inheritance dependency: Set(/Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateSubmissionsTable.scala)
-The /Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateSubmissionsTable.scala source file has the following regular definitions changed:
-	CreateSubmissionsTable, notify, sql, wait, $asInstanceOf, productArity, equals, asInstanceOf, synchronized, $isInstanceOf, canEqual, productPrefix, notifyAll, readResolve, isInstanceOf, ==, clone, values, toString, !=, getClass, ne, eq, productIterator, ##, finalize, productElement, hashCode.
-All member reference dependencies will be considered within this context.
-The following modified names cause invalidation of /Users/ryanmccormack/play-silhouette-postgres-async-seed/app/services/database/Schema.scala: Set(CreateSubmissionsTable, sql)
-New invalidations:
-	Set(/Users/ryanmccormack/play-silhouette-postgres-async-seed/app/services/database/Schema.scala)
-Initial set of included nodes: Set(/Users/ryanmccormack/play-silhouette-postgres-async-seed/app/services/database/Schema.scala)
-Including /Users/ryanmccormack/play-silhouette-postgres-async-seed/app/utils/PlayGlobalSettings.scala by /Users/ryanmccormack/play-silhouette-postgres-async-seed/app/services/database/Schema.scala
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 6 s, completed 11-Jan-2017 1:54:57 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> jobStop 2
-Evaluating tasks: *:jobStop
-Running task... Cancel: sbt.server.ServerTaskCancellation@7e2e9f67, check cycles: false
-Total time: 0 s, completed 11-Jan-2017 1:54:58 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> backgroundRun
-Evaluating tasks: compile:backgroundRun
-Running task... Cancel: sbt.server.ServerTaskCancellation@288d22ce, check cycles: false
-Total time: 0 s, completed 11-Jan-2017 1:54:58 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/Users/ryanmccormack/play-silhouette-postgres-async-seed/}root/*:playForkConfig
-Evaluating tasks: *:playForkConfig
-Running task... Cancel: sbt.server.ServerTaskCancellation@543a39e7, check cycles: false
-Total time: 1 s, completed 11-Jan-2017 1:55:05 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> root/playForkNotifyStart http://localhost:9000
-Evaluating tasks: *:playForkNotifyStart
-Running task... Cancel: sbt.server.ServerTaskCancellation@75cb37e7, check cycles: false
-Total time: 0 s, completed 11-Jan-2017 1:55:07 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@6cc01691, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(/Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateSubmissionsTable.scala)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateSubmissionsTable.scala)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateSubmissionsTable.scala)
-
-Read from stdout: Compiling 1 Scala source to /Users/ryanmccormack/play-silhouette-postgres-async-seed/target/scala-2.11/classes...
-Compiling 1 Scala source to /Users/ryanmccormack/play-silhouette-postgres-async-seed/target/scala-2.11/classes...
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Running cached compiler 1f572a22, interfacing (CompilerInterface) with Scala compiler version 2.11.7
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/classes:/Users/ryanmccormack/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
-	-classpath
-	/Users/ryanmccormack/play-silhouette-postgres-async-seed/target/scala-2.11/classes:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.1.1.jar:/Users/ryanmccormack/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.4.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.19.0-GA.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.8.1.jar:/Users/ryanmccormack/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.7.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.6.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/bundles/jackson-datatype-jdk8-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/bundles/jackson-datatype-jsr310-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.12.jar:/Users/ryanmccormack/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.12.jar:/Users/ryanmccormack/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.12.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/Users/ryanmccormack/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.3.jar:/Users/ryanmccormack/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.3.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.11.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.11.jar:/Users/ryanmccormack/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.10.jar:/Users/ryanmccormack/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/ryanmccormack/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/ryanmccormack/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/ryanmccormack/.ivy2/cache/com.google.inject/guice/jars/guice-4.0.jar:/Users/ryanmccormack/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar:/Users/ryanmccormack/.ivy2/cache/aopalliance/aopalliance/jars/aopalliance-1.0.jar:/Users/ryanmccormack/.ivy2/cache/com.google.inject.extensions/guice-assistedinject/jars/guice-assistedinject-4.0.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/io.netty/netty/bundles/netty-3.10.3.Final.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.4.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/net.sf.ehcache/ehcache-core/jars/ehcache-core-2.6.11.jar:/Users/ryanmccormack/.ivy2/cache/com.mohiva/play-silhouette_2.11/jars/play-silhouette_2.11-3.0.0-RC2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.4.1.jar:/Users/ryanmccormack/.ivy2/cache/com.google.guava/guava/bundles/guava-18.0.jar:/Users/ryanmccormack/.ivy2/cache/com.ning/async-http-client/jars/async-http-client-1.9.21.jar:/Users/ryanmccormack/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/ryanmccormack/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/ryanmccormack/.ivy2/cache/org.apache.httpcomponents/httpcore/jars/httpcore-4.0.1.jar:/Users/ryanmccormack/.ivy2/cache/org.apache.httpcomponents/httpclient/jars/httpclient-4.0.1.jar:/Users/ryanmccormack/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/ryanmccormack/.ivy2/cache/org.mindrot/jbcrypt/jars/jbcrypt-0.3m.jar:/Users/ryanmccormack/.ivy2/cache/com.atlassian.jwt/jwt-core/jars/jwt-core-1.2.4.jar:/Users/ryanmccormack/.ivy2/cache/com.nimbusds/nimbus-jose-jwt/jars/nimbus-jose-jwt-2.16.jar:/Users/ryanmccormack/.ivy2/cache/net.jcip/jcip-annotations/jars/jcip-annotations-1.0.jar:/Users/ryanmccormack/.ivy2/cache/net.minidev/json-smart/jars/json-smart-1.1.1.jar:/Users/ryanmccormack/.ivy2/cache/javax.mail/mail/jars/mail-1.4.7.jar:/Users/ryanmccormack/.ivy2/cache/javax.activation/activation/jars/activation-1.1.jar:/Users/ryanmccormack/.ivy2/cache/org.bouncycastle/bcprov-jdk15on/jars/bcprov-jdk15on-1.51.jar:/Users/ryanmccormack/.ivy2/cache/com.atlassian.jwt/jwt-api/jars/jwt-api-1.2.4.jar:/Users/ryanmccormack/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.1.jar:/Users/ryanmccormack/.ivy2/cache/com.kyleu/jdub-async_2.11/jars/jdub-async_2.11-1.0.jar:/Users/ryanmccormack/.ivy2/cache/com.github.mauricio/postgresql-async_2.11/jars/postgresql-async_2.11-0.2.16.jar:/Users/ryanmccormack/.ivy2/cache/com.github.mauricio/db-async-common_2.11/jars/db-async-common_2.11-0.2.16.jar:/Users/ryanmccormack/.ivy2/cache/io.netty/netty-all/jars/netty-all-4.0.25.Final.jar:/Users/ryanmccormack/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.3.5.jar:/Users/ryanmccormack/.ivy2/cache/org.webjars/jquery/jars/jquery-1.11.1.jar
-Scala compilation took 1.548178796 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 3 s, completed 11-Jan-2017 1:55:57 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> jobStop 3
-Evaluating tasks: *:jobStop
-Running task... Cancel: sbt.server.ServerTaskCancellation@636e8cb8, check cycles: false
-Total time: 0 s, completed 11-Jan-2017 1:55:57 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> backgroundRun
-Evaluating tasks: compile:backgroundRun
-Running task... Cancel: sbt.server.ServerTaskCancellation@4bb5ec72, check cycles: false
-Total time: 1 s, completed 11-Jan-2017 1:55:58 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/Users/ryanmccormack/play-silhouette-postgres-async-seed/}root/*:playForkConfig
-Evaluating tasks: *:playForkConfig
-Running task... Cancel: sbt.server.ServerTaskCancellation@7d401cbb, check cycles: false
-Total time: 1 s, completed 11-Jan-2017 1:56:02 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> root/playForkNotifyStart http://localhost:9000
-Evaluating tasks: *:playForkNotifyStart
-Running task... Cancel: sbt.server.ServerTaskCancellation@3c444428, check cycles: false
-Total time: 0 s, completed 11-Jan-2017 1:56:04 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@3fe132e9, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set(/Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateEvaluationsTable.scala)
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateEvaluationsTable.scala)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateEvaluationsTable.scala)
-
-Read from stdout: Compiling 1 Scala source to /Users/ryanmccormack/play-silhouette-postgres-async-seed/target/scala-2.11/classes...
-Compiling 1 Scala source to /Users/ryanmccormack/play-silhouette-postgres-async-seed/target/scala-2.11/classes...
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Running cached compiler 7fb80a8e, interfacing (CompilerInterface) with Scala compiler version 2.11.7
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/classes:/Users/ryanmccormack/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
-	-classpath
-	/Users/ryanmccormack/play-silhouette-postgres-async-seed/target/scala-2.11/classes:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.1.1.jar:/Users/ryanmccormack/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.4.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.19.0-GA.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.8.1.jar:/Users/ryanmccormack/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.7.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.6.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/bundles/jackson-datatype-jdk8-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/bundles/jackson-datatype-jsr310-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.12.jar:/Users/ryanmccormack/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.12.jar:/Users/ryanmccormack/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.12.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/Users/ryanmccormack/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.3.jar:/Users/ryanmccormack/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.3.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.11.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.11.jar:/Users/ryanmccormack/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.10.jar:/Users/ryanmccormack/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/ryanmccormack/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/ryanmccormack/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/ryanmccormack/.ivy2/cache/com.google.inject/guice/jars/guice-4.0.jar:/Users/ryanmccormack/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar:/Users/ryanmccormack/.ivy2/cache/aopalliance/aopalliance/jars/aopalliance-1.0.jar:/Users/ryanmccormack/.ivy2/cache/com.google.inject.extensions/guice-assistedinject/jars/guice-assistedinject-4.0.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/io.netty/netty/bundles/netty-3.10.3.Final.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.4.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/net.sf.ehcache/ehcache-core/jars/ehcache-core-2.6.11.jar:/Users/ryanmccormack/.ivy2/cache/com.mohiva/play-silhouette_2.11/jars/play-silhouette_2.11-3.0.0-RC2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.4.1.jar:/Users/ryanmccormack/.ivy2/cache/com.google.guava/guava/bundles/guava-18.0.jar:/Users/ryanmccormack/.ivy2/cache/com.ning/async-http-client/jars/async-http-client-1.9.21.jar:/Users/ryanmccormack/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/ryanmccormack/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/ryanmccormack/.ivy2/cache/org.apache.httpcomponents/httpcore/jars/httpcore-4.0.1.jar:/Users/ryanmccormack/.ivy2/cache/org.apache.httpcomponents/httpclient/jars/httpclient-4.0.1.jar:/Users/ryanmccormack/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/ryanmccormack/.ivy2/cache/org.mindrot/jbcrypt/jars/jbcrypt-0.3m.jar:/Users/ryanmccormack/.ivy2/cache/com.atlassian.jwt/jwt-core/jars/jwt-core-1.2.4.jar:/Users/ryanmccormack/.ivy2/cache/com.nimbusds/nimbus-jose-jwt/jars/nimbus-jose-jwt-2.16.jar:/Users/ryanmccormack/.ivy2/cache/net.jcip/jcip-annotations/jars/jcip-annotations-1.0.jar:/Users/ryanmccormack/.ivy2/cache/net.minidev/json-smart/jars/json-smart-1.1.1.jar:/Users/ryanmccormack/.ivy2/cache/javax.mail/mail/jars/mail-1.4.7.jar:/Users/ryanmccormack/.ivy2/cache/javax.activation/activation/jars/activation-1.1.jar:/Users/ryanmccormack/.ivy2/cache/org.bouncycastle/bcprov-jdk15on/jars/bcprov-jdk15on-1.51.jar:/Users/ryanmccormack/.ivy2/cache/com.atlassian.jwt/jwt-api/jars/jwt-api-1.2.4.jar:/Users/ryanmccormack/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.1.jar:/Users/ryanmccormack/.ivy2/cache/com.kyleu/jdub-async_2.11/jars/jdub-async_2.11-1.0.jar:/Users/ryanmccormack/.ivy2/cache/com.github.mauricio/postgresql-async_2.11/jars/postgresql-async_2.11-0.2.16.jar:/Users/ryanmccormack/.ivy2/cache/com.github.mauricio/db-async-common_2.11/jars/db-async-common_2.11-0.2.16.jar:/Users/ryanmccormack/.ivy2/cache/io.netty/netty-all/jars/netty-all-4.0.25.Final.jar:/Users/ryanmccormack/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.3.5.jar:/Users/ryanmccormack/.ivy2/cache/org.webjars/jquery/jars/jquery-1.11.1.jar
-Scala compilation took 0.843034283 s
-Invalidating /Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateEvaluationsTable.scala...
-Invalidating (transitively) by inheritance from /Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateEvaluationsTable.scala...
-Initial set of included nodes: Set(/Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateEvaluationsTable.scala)
-Invalidated by transitive inheritance dependency: Set(/Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateEvaluationsTable.scala)
-The /Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateEvaluationsTable.scala source file has the following regular definitions changed:
-	.
-All member reference dependencies will be considered within this context.
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 2 s, completed 11-Jan-2017 1:57:53 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> jobStop 4
-Evaluating tasks: *:jobStop
-Running task... Cancel: sbt.server.ServerTaskCancellation@57e282a1, check cycles: false
-Total time: 0 s, completed 11-Jan-2017 1:57:53 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> backgroundRun
-Evaluating tasks: compile:backgroundRun
-Running task... Cancel: sbt.server.ServerTaskCancellation@edb08ef, check cycles: false
-Total time: 0 s, completed 11-Jan-2017 1:57:54 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/Users/ryanmccormack/play-silhouette-postgres-async-seed/}root/*:playForkConfig
-Evaluating tasks: *:playForkConfig
-Running task... Cancel: sbt.server.ServerTaskCancellation@69d3d68e, check cycles: false
-Total time: 1 s, completed 11-Jan-2017 1:57:59 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> root/playForkNotifyStart http://localhost:9000
-Evaluating tasks: *:playForkNotifyStart
-Running task... Cancel: sbt.server.ServerTaskCancellation@37ecb8ab, check cycles: false
-Total time: 0 s, completed 11-Jan-2017 1:58:01 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@57ad11b3, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(/Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateEvaluationsTable.scala)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateEvaluationsTable.scala)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateEvaluationsTable.scala)
-
-Read from stdout: Compiling 1 Scala source to /Users/ryanmccormack/play-silhouette-postgres-async-seed/target/scala-2.11/classes...
-Compiling 1 Scala source to /Users/ryanmccormack/play-silhouette-postgres-async-seed/target/scala-2.11/classes...
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Running cached compiler 6462017a, interfacing (CompilerInterface) with Scala compiler version 2.11.7
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/classes:/Users/ryanmccormack/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
-	-classpath
-	/Users/ryanmccormack/play-silhouette-postgres-async-seed/target/scala-2.11/classes:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.1.1.jar:/Users/ryanmccormack/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.4.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.19.0-GA.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.8.1.jar:/Users/ryanmccormack/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.7.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.6.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/bundles/jackson-datatype-jdk8-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/bundles/jackson-datatype-jsr310-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.12.jar:/Users/ryanmccormack/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.12.jar:/Users/ryanmccormack/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.12.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/Users/ryanmccormack/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.3.jar:/Users/ryanmccormack/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.3.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.11.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.11.jar:/Users/ryanmccormack/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.10.jar:/Users/ryanmccormack/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/ryanmccormack/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/ryanmccormack/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/ryanmccormack/.ivy2/cache/com.google.inject/guice/jars/guice-4.0.jar:/Users/ryanmccormack/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar:/Users/ryanmccormack/.ivy2/cache/aopalliance/aopalliance/jars/aopalliance-1.0.jar:/Users/ryanmccormack/.ivy2/cache/com.google.inject.extensions/guice-assistedinject/jars/guice-assistedinject-4.0.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/io.netty/netty/bundles/netty-3.10.3.Final.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.4.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/net.sf.ehcache/ehcache-core/jars/ehcache-core-2.6.11.jar:/Users/ryanmccormack/.ivy2/cache/com.mohiva/play-silhouette_2.11/jars/play-silhouette_2.11-3.0.0-RC2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.4.1.jar:/Users/ryanmccormack/.ivy2/cache/com.google.guava/guava/bundles/guava-18.0.jar:/Users/ryanmccormack/.ivy2/cache/com.ning/async-http-client/jars/async-http-client-1.9.21.jar:/Users/ryanmccormack/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/ryanmccormack/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/ryanmccormack/.ivy2/cache/org.apache.httpcomponents/httpcore/jars/httpcore-4.0.1.jar:/Users/ryanmccormack/.ivy2/cache/org.apache.httpcomponents/httpclient/jars/httpclient-4.0.1.jar:/Users/ryanmccormack/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/ryanmccormack/.ivy2/cache/org.mindrot/jbcrypt/jars/jbcrypt-0.3m.jar:/Users/ryanmccormack/.ivy2/cache/com.atlassian.jwt/jwt-core/jars/jwt-core-1.2.4.jar:/Users/ryanmccormack/.ivy2/cache/com.nimbusds/nimbus-jose-jwt/jars/nimbus-jose-jwt-2.16.jar:/Users/ryanmccormack/.ivy2/cache/net.jcip/jcip-annotations/jars/jcip-annotations-1.0.jar:/Users/ryanmccormack/.ivy2/cache/net.minidev/json-smart/jars/json-smart-1.1.1.jar:/Users/ryanmccormack/.ivy2/cache/javax.mail/mail/jars/mail-1.4.7.jar:/Users/ryanmccormack/.ivy2/cache/javax.activation/activation/jars/activation-1.1.jar:/Users/ryanmccormack/.ivy2/cache/org.bouncycastle/bcprov-jdk15on/jars/bcprov-jdk15on-1.51.jar:/Users/ryanmccormack/.ivy2/cache/com.atlassian.jwt/jwt-api/jars/jwt-api-1.2.4.jar:/Users/ryanmccormack/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.1.jar:/Users/ryanmccormack/.ivy2/cache/com.kyleu/jdub-async_2.11/jars/jdub-async_2.11-1.0.jar:/Users/ryanmccormack/.ivy2/cache/com.github.mauricio/postgresql-async_2.11/jars/postgresql-async_2.11-0.2.16.jar:/Users/ryanmccormack/.ivy2/cache/com.github.mauricio/db-async-common_2.11/jars/db-async-common_2.11-0.2.16.jar:/Users/ryanmccormack/.ivy2/cache/io.netty/netty-all/jars/netty-all-4.0.25.Final.jar:/Users/ryanmccormack/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.3.5.jar:/Users/ryanmccormack/.ivy2/cache/org.webjars/jquery/jars/jquery-1.11.1.jar
-Scala compilation took 2.675870233 s
-Invalidating /Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateEvaluationsTable.scala...
-Invalidating (transitively) by inheritance from /Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateEvaluationsTable.scala...
-Initial set of included nodes: Set(/Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateEvaluationsTable.scala)
-Invalidated by transitive inheritance dependency: Set(/Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateEvaluationsTable.scala)
-The /Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateEvaluationsTable.scala source file has the following regular definitions changed:
-	CreateSubmissionsTable, notify, sql, wait, $asInstanceOf, productArity, equals, asInstanceOf, synchronized, $isInstanceOf, canEqual, productPrefix, notifyAll, readResolve, isInstanceOf, ==, clone, values, toString, !=, getClass, ne, eq, productIterator, ##, finalize, productElement, hashCode.
-All member reference dependencies will be considered within this context.
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-Invalidated due to generated class file collision: Set(/Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateSubmissionsTable.scala, /Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateEvaluationsTable.scala)
-All newly invalidated sources after taking into account (previously) recompiled sources:Set(/Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateSubmissionsTable.scala)
-Read from stdout: Compiling 2 Scala sources to /Users/ryanmccormack/play-silhouette-postgres-async-seed/target/scala-2.11/classes...
-Compiling 2 Scala sources to /Users/ryanmccormack/play-silhouette-postgres-async-seed/target/scala-2.11/classes...
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Running cached compiler 7e6e3384, interfacing (CompilerInterface) with Scala compiler version 2.11.7
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/classes:/Users/ryanmccormack/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
-	-classpath
-	/Users/ryanmccormack/play-silhouette-postgres-async-seed/target/scala-2.11/classes:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.1.1.jar:/Users/ryanmccormack/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.4.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.19.0-GA.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.8.1.jar:/Users/ryanmccormack/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.7.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.6.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/bundles/jackson-datatype-jdk8-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/bundles/jackson-datatype-jsr310-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.12.jar:/Users/ryanmccormack/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.12.jar:/Users/ryanmccormack/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.12.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/Users/ryanmccormack/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.3.jar:/Users/ryanmccormack/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.3.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.11.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.11.jar:/Users/ryanmccormack/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.10.jar:/Users/ryanmccormack/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/ryanmccormack/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/ryanmccormack/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/ryanmccormack/.ivy2/cache/com.google.inject/guice/jars/guice-4.0.jar:/Users/ryanmccormack/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar:/Users/ryanmccormack/.ivy2/cache/aopalliance/aopalliance/jars/aopalliance-1.0.jar:/Users/ryanmccormack/.ivy2/cache/com.google.inject.extensions/guice-assistedinject/jars/guice-assistedinject-4.0.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/io.netty/netty/bundles/netty-3.10.3.Final.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.4.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/net.sf.ehcache/ehcache-core/jars/ehcache-core-2.6.11.jar:/Users/ryanmccormack/.ivy2/cache/com.mohiva/play-silhouette_2.11/jars/play-silhouette_2.11-3.0.0-RC2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.4.1.jar:/Users/ryanmccormack/.ivy2/cache/com.google.guava/guava/bundles/guava-18.0.jar:/Users/ryanmccormack/.ivy2/cache/com.ning/async-http-client/jars/async-http-client-1.9.21.jar:/Users/ryanmccormack/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/ryanmccormack/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/ryanmccormack/.ivy2/cache/org.apache.httpcomponents/httpcore/jars/httpcore-4.0.1.jar:/Users/ryanmccormack/.ivy2/cache/org.apache.httpcomponents/httpclient/jars/httpclient-4.0.1.jar:/Users/ryanmccormack/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/ryanmccormack/.ivy2/cache/org.mindrot/jbcrypt/jars/jbcrypt-0.3m.jar:/Users/ryanmccormack/.ivy2/cache/com.atlassian.jwt/jwt-core/jars/jwt-core-1.2.4.jar:/Users/ryanmccormack/.ivy2/cache/com.nimbusds/nimbus-jose-jwt/jars/nimbus-jose-jwt-2.16.jar:/Users/ryanmccormack/.ivy2/cache/net.jcip/jcip-annotations/jars/jcip-annotations-1.0.jar:/Users/ryanmccormack/.ivy2/cache/net.minidev/json-smart/jars/json-smart-1.1.1.jar:/Users/ryanmccormack/.ivy2/cache/javax.mail/mail/jars/mail-1.4.7.jar:/Users/ryanmccormack/.ivy2/cache/javax.activation/activation/jars/activation-1.1.jar:/Users/ryanmccormack/.ivy2/cache/org.bouncycastle/bcprov-jdk15on/jars/bcprov-jdk15on-1.51.jar:/Users/ryanmccormack/.ivy2/cache/com.atlassian.jwt/jwt-api/jars/jwt-api-1.2.4.jar:/Users/ryanmccormack/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.1.jar:/Users/ryanmccormack/.ivy2/cache/com.kyleu/jdub-async_2.11/jars/jdub-async_2.11-1.0.jar:/Users/ryanmccormack/.ivy2/cache/com.github.mauricio/postgresql-async_2.11/jars/postgresql-async_2.11-0.2.16.jar:/Users/ryanmccormack/.ivy2/cache/com.github.mauricio/db-async-common_2.11/jars/db-async-common_2.11-0.2.16.jar:/Users/ryanmccormack/.ivy2/cache/io.netty/netty-all/jars/netty-all-4.0.25.Final.jar:/Users/ryanmccormack/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.3.5.jar:/Users/ryanmccormack/.ivy2/cache/org.webjars/jquery/jars/jquery-1.11.1.jar
-Read from stdout: /Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateSubmissionsTable.scala:6: CreateSubmissionsTable is already defined as case class CreateSubmissionsTable
-/Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateSubmissionsTable.scala:6: CreateSubmissionsTable is already defined as case class CreateSubmissionsTable
-Read from stdout: case object CreateSubmissionsTable extends Statement {
-case object CreateSubmissionsTable extends Statement {
-Read from stdout: ^
-            ^
-Read from stdout: one error found
-one error found
-Compilation failed (CompilerInterface)
-Read from stdout: (compile:compileIncremental) Compilation failed
-(compile:compileIncremental) Compilation failed
-Total time: 5 s, completed 11-Jan-2017 1:58:33 PM
-> server-post-command-error-handler
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@6edfa0f7, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(/Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateEvaluationsTable.scala, /Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateSubmissionsTable.scala)
-Removed products: Set(/Users/ryanmccormack/play-silhouette-postgres-async-seed/target/scala-2.11/classes/models/queries/ddl/CreateSubmissionsTable$.class, /Users/ryanmccormack/play-silhouette-postgres-async-seed/target/scala-2.11/classes/models/queries/ddl/CreateSubmissionsTable.class)
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateEvaluationsTable.scala, /Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateSubmissionsTable.scala)
-
-Sources indirectly invalidated by:
-	product: Set(/Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateSubmissionsTable.scala)
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateEvaluationsTable.scala, /Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateSubmissionsTable.scala)
-
-Read from stdout: Compiling 2 Scala sources to /Users/ryanmccormack/play-silhouette-postgres-async-seed/target/scala-2.11/classes...
-Compiling 2 Scala sources to /Users/ryanmccormack/play-silhouette-postgres-async-seed/target/scala-2.11/classes...
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Running cached compiler 6d9c9f49, interfacing (CompilerInterface) with Scala compiler version 2.11.7
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/classes:/Users/ryanmccormack/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
-	-classpath
-	/Users/ryanmccormack/play-silhouette-postgres-async-seed/target/scala-2.11/classes:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.1.1.jar:/Users/ryanmccormack/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.4.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.19.0-GA.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.8.1.jar:/Users/ryanmccormack/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.7.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.6.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/bundles/jackson-datatype-jdk8-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/bundles/jackson-datatype-jsr310-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.12.jar:/Users/ryanmccormack/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.12.jar:/Users/ryanmccormack/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.12.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/Users/ryanmccormack/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.3.jar:/Users/ryanmccormack/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.3.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.11.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.11.jar:/Users/ryanmccormack/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.10.jar:/Users/ryanmccormack/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/ryanmccormack/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/ryanmccormack/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/ryanmccormack/.ivy2/cache/com.google.inject/guice/jars/guice-4.0.jar:/Users/ryanmccormack/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar:/Users/ryanmccormack/.ivy2/cache/aopalliance/aopalliance/jars/aopalliance-1.0.jar:/Users/ryanmccormack/.ivy2/cache/com.google.inject.extensions/guice-assistedinject/jars/guice-assistedinject-4.0.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/io.netty/netty/bundles/netty-3.10.3.Final.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.4.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/net.sf.ehcache/ehcache-core/jars/ehcache-core-2.6.11.jar:/Users/ryanmccormack/.ivy2/cache/com.mohiva/play-silhouette_2.11/jars/play-silhouette_2.11-3.0.0-RC2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.4.1.jar:/Users/ryanmccormack/.ivy2/cache/com.google.guava/guava/bundles/guava-18.0.jar:/Users/ryanmccormack/.ivy2/cache/com.ning/async-http-client/jars/async-http-client-1.9.21.jar:/Users/ryanmccormack/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/ryanmccormack/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/ryanmccormack/.ivy2/cache/org.apache.httpcomponents/httpcore/jars/httpcore-4.0.1.jar:/Users/ryanmccormack/.ivy2/cache/org.apache.httpcomponents/httpclient/jars/httpclient-4.0.1.jar:/Users/ryanmccormack/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/ryanmccormack/.ivy2/cache/org.mindrot/jbcrypt/jars/jbcrypt-0.3m.jar:/Users/ryanmccormack/.ivy2/cache/com.atlassian.jwt/jwt-core/jars/jwt-core-1.2.4.jar:/Users/ryanmccormack/.ivy2/cache/com.nimbusds/nimbus-jose-jwt/jars/nimbus-jose-jwt-2.16.jar:/Users/ryanmccormack/.ivy2/cache/net.jcip/jcip-annotations/jars/jcip-annotations-1.0.jar:/Users/ryanmccormack/.ivy2/cache/net.minidev/json-smart/jars/json-smart-1.1.1.jar:/Users/ryanmccormack/.ivy2/cache/javax.mail/mail/jars/mail-1.4.7.jar:/Users/ryanmccormack/.ivy2/cache/javax.activation/activation/jars/activation-1.1.jar:/Users/ryanmccormack/.ivy2/cache/org.bouncycastle/bcprov-jdk15on/jars/bcprov-jdk15on-1.51.jar:/Users/ryanmccormack/.ivy2/cache/com.atlassian.jwt/jwt-api/jars/jwt-api-1.2.4.jar:/Users/ryanmccormack/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.1.jar:/Users/ryanmccormack/.ivy2/cache/com.kyleu/jdub-async_2.11/jars/jdub-async_2.11-1.0.jar:/Users/ryanmccormack/.ivy2/cache/com.github.mauricio/postgresql-async_2.11/jars/postgresql-async_2.11-0.2.16.jar:/Users/ryanmccormack/.ivy2/cache/com.github.mauricio/db-async-common_2.11/jars/db-async-common_2.11-0.2.16.jar:/Users/ryanmccormack/.ivy2/cache/io.netty/netty-all/jars/netty-all-4.0.25.Final.jar:/Users/ryanmccormack/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.3.5.jar:/Users/ryanmccormack/.ivy2/cache/org.webjars/jquery/jars/jquery-1.11.1.jar
-Read from stdout: /Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateSubmissionsTable.scala:6: CreateSubmissionsTable is already defined as case class CreateSubmissionsTable
-/Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateSubmissionsTable.scala:6: CreateSubmissionsTable is already defined as case class CreateSubmissionsTable
-Read from stdout: case object CreateSubmissionsTable extends Statement {
-case object CreateSubmissionsTable extends Statement {
-Read from stdout: ^
-            ^
-Read from stdout: one error found
-one error found
-Compilation failed (CompilerInterface)
-Read from stdout: (compile:compileIncremental) Compilation failed
-(compile:compileIncremental) Compilation failed
-Total time: 2 s, completed 11-Jan-2017 1:58:37 PM
-> server-post-command-error-handler
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@11470d22, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(/Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateEvaluationsTable.scala, /Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateSubmissionsTable.scala)
-Removed products: Set(/Users/ryanmccormack/play-silhouette-postgres-async-seed/target/scala-2.11/classes/models/queries/ddl/CreateSubmissionsTable$.class, /Users/ryanmccormack/play-silhouette-postgres-async-seed/target/scala-2.11/classes/models/queries/ddl/CreateSubmissionsTable.class)
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateEvaluationsTable.scala, /Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateSubmissionsTable.scala)
-
-Sources indirectly invalidated by:
-	product: Set(/Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateSubmissionsTable.scala)
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateEvaluationsTable.scala, /Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateSubmissionsTable.scala)
-
-Read from stdout: Compiling 2 Scala sources to /Users/ryanmccormack/play-silhouette-postgres-async-seed/target/scala-2.11/classes...
-Compiling 2 Scala sources to /Users/ryanmccormack/play-silhouette-postgres-async-seed/target/scala-2.11/classes...
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Running cached compiler 7886a599, interfacing (CompilerInterface) with Scala compiler version 2.11.7
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/classes:/Users/ryanmccormack/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
-	-classpath
-	/Users/ryanmccormack/play-silhouette-postgres-async-seed/target/scala-2.11/classes:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.1.1.jar:/Users/ryanmccormack/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.4.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.19.0-GA.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.8.1.jar:/Users/ryanmccormack/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.7.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.6.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/bundles/jackson-datatype-jdk8-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/bundles/jackson-datatype-jsr310-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.12.jar:/Users/ryanmccormack/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.12.jar:/Users/ryanmccormack/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.12.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/Users/ryanmccormack/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.3.jar:/Users/ryanmccormack/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.3.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.11.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.11.jar:/Users/ryanmccormack/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.10.jar:/Users/ryanmccormack/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/ryanmccormack/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/ryanmccormack/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/ryanmccormack/.ivy2/cache/com.google.inject/guice/jars/guice-4.0.jar:/Users/ryanmccormack/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar:/Users/ryanmccormack/.ivy2/cache/aopalliance/aopalliance/jars/aopalliance-1.0.jar:/Users/ryanmccormack/.ivy2/cache/com.google.inject.extensions/guice-assistedinject/jars/guice-assistedinject-4.0.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/io.netty/netty/bundles/netty-3.10.3.Final.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.4.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/net.sf.ehcache/ehcache-core/jars/ehcache-core-2.6.11.jar:/Users/ryanmccormack/.ivy2/cache/com.mohiva/play-silhouette_2.11/jars/play-silhouette_2.11-3.0.0-RC2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.4.1.jar:/Users/ryanmccormack/.ivy2/cache/com.google.guava/guava/bundles/guava-18.0.jar:/Users/ryanmccormack/.ivy2/cache/com.ning/async-http-client/jars/async-http-client-1.9.21.jar:/Users/ryanmccormack/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/ryanmccormack/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/ryanmccormack/.ivy2/cache/org.apache.httpcomponents/httpcore/jars/httpcore-4.0.1.jar:/Users/ryanmccormack/.ivy2/cache/org.apache.httpcomponents/httpclient/jars/httpclient-4.0.1.jar:/Users/ryanmccormack/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/ryanmccormack/.ivy2/cache/org.mindrot/jbcrypt/jars/jbcrypt-0.3m.jar:/Users/ryanmccormack/.ivy2/cache/com.atlassian.jwt/jwt-core/jars/jwt-core-1.2.4.jar:/Users/ryanmccormack/.ivy2/cache/com.nimbusds/nimbus-jose-jwt/jars/nimbus-jose-jwt-2.16.jar:/Users/ryanmccormack/.ivy2/cache/net.jcip/jcip-annotations/jars/jcip-annotations-1.0.jar:/Users/ryanmccormack/.ivy2/cache/net.minidev/json-smart/jars/json-smart-1.1.1.jar:/Users/ryanmccormack/.ivy2/cache/javax.mail/mail/jars/mail-1.4.7.jar:/Users/ryanmccormack/.ivy2/cache/javax.activation/activation/jars/activation-1.1.jar:/Users/ryanmccormack/.ivy2/cache/org.bouncycastle/bcprov-jdk15on/jars/bcprov-jdk15on-1.51.jar:/Users/ryanmccormack/.ivy2/cache/com.atlassian.jwt/jwt-api/jars/jwt-api-1.2.4.jar:/Users/ryanmccormack/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.1.jar:/Users/ryanmccormack/.ivy2/cache/com.kyleu/jdub-async_2.11/jars/jdub-async_2.11-1.0.jar:/Users/ryanmccormack/.ivy2/cache/com.github.mauricio/postgresql-async_2.11/jars/postgresql-async_2.11-0.2.16.jar:/Users/ryanmccormack/.ivy2/cache/com.github.mauricio/db-async-common_2.11/jars/db-async-common_2.11-0.2.16.jar:/Users/ryanmccormack/.ivy2/cache/io.netty/netty-all/jars/netty-all-4.0.25.Final.jar:/Users/ryanmccormack/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.3.5.jar:/Users/ryanmccormack/.ivy2/cache/org.webjars/jquery/jars/jquery-1.11.1.jar
-Scala compilation took 1.17544208 s
-Invalidating /Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateEvaluationsTable.scala...
-Invalidating (transitively) by inheritance from /Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateEvaluationsTable.scala...
-Initial set of included nodes: Set(/Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateEvaluationsTable.scala)
-Invalidated by transitive inheritance dependency: Set(/Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateEvaluationsTable.scala)
-The /Users/ryanmccormack/play-silhouette-postgres-async-seed/app/models/queries/ddl/CreateEvaluationsTable.scala source file has the following regular definitions changed:
-	notify, sql, wait, $asInstanceOf, CreateEvaluationsTable, productArity, equals, asInstanceOf, synchronized, $isInstanceOf, canEqual, productPrefix, notifyAll, readResolve, isInstanceOf, ==, clone, values, toString, !=, getClass, ne, eq, productIterator, ##, finalize, productElement, hashCode.
-All member reference dependencies will be considered within this context.
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 2 s, completed 11-Jan-2017 1:59:13 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> jobStop 5
-Evaluating tasks: *:jobStop
-Running task... Cancel: sbt.server.ServerTaskCancellation@50ab457, check cycles: false
-Total time: 0 s, completed 11-Jan-2017 1:59:13 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> backgroundRun
-Evaluating tasks: compile:backgroundRun
-Running task... Cancel: sbt.server.ServerTaskCancellation@205ea28a, check cycles: false
-Total time: 0 s, completed 11-Jan-2017 1:59:13 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/Users/ryanmccormack/play-silhouette-postgres-async-seed/}root/*:playForkConfig
-Evaluating tasks: *:playForkConfig
-Running task... Cancel: sbt.server.ServerTaskCancellation@1c92016a, check cycles: false
-Total time: 1 s, completed 11-Jan-2017 1:59:18 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> root/playForkNotifyStart http://localhost:9000
-Evaluating tasks: *:playForkNotifyStart
-Running task... Cancel: sbt.server.ServerTaskCancellation@23bd33eb, check cycles: false
-Total time: 0 s, completed 11-Jan-2017 1:59:21 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@5ffb673a, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(/Users/ryanmccormack/play-silhouette-postgres-async-seed/app/services/database/Schema.scala)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/ryanmccormack/play-silhouette-postgres-async-seed/app/services/database/Schema.scala)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/Users/ryanmccormack/play-silhouette-postgres-async-seed/app/services/database/Schema.scala)
-
-Read from stdout: Compiling 1 Scala source to /Users/ryanmccormack/play-silhouette-postgres-async-seed/target/scala-2.11/classes...
-Compiling 1 Scala source to /Users/ryanmccormack/play-silhouette-postgres-async-seed/target/scala-2.11/classes...
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.7
-Other repositories:
-Default repositories:
-Running cached compiler 1556e288, interfacing (CompilerInterface) with Scala compiler version 2.11.7
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home/jre/classes:/Users/ryanmccormack/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
-	-classpath
-	/Users/ryanmccormack/play-silhouette-postgres-async-seed/target/scala-2.11/classes:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.1.1.jar:/Users/ryanmccormack/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.4.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.19.0-GA.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.8.1.jar:/Users/ryanmccormack/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.7.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.6.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/bundles/jackson-datatype-jdk8-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/bundles/jackson-datatype-jsr310-2.5.4.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.12.jar:/Users/ryanmccormack/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.12.jar:/Users/ryanmccormack/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.12.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/Users/ryanmccormack/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.3.jar:/Users/ryanmccormack/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.3.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.11.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.11.jar:/Users/ryanmccormack/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.10.jar:/Users/ryanmccormack/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/ryanmccormack/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/ryanmccormack/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/ryanmccormack/.ivy2/cache/com.google.inject/guice/jars/guice-4.0.jar:/Users/ryanmccormack/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar:/Users/ryanmccormack/.ivy2/cache/aopalliance/aopalliance/jars/aopalliance-1.0.jar:/Users/ryanmccormack/.ivy2/cache/com.google.inject.extensions/guice-assistedinject/jars/guice-assistedinject-4.0.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/io.netty/netty/bundles/netty-3.10.3.Final.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.4.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/net.sf.ehcache/ehcache-core/jars/ehcache-core-2.6.11.jar:/Users/ryanmccormack/.ivy2/cache/com.mohiva/play-silhouette_2.11/jars/play-silhouette_2.11-3.0.0-RC2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.4.1.jar:/Users/ryanmccormack/.ivy2/cache/com.google.guava/guava/bundles/guava-18.0.jar:/Users/ryanmccormack/.ivy2/cache/com.ning/async-http-client/jars/async-http-client-1.9.21.jar:/Users/ryanmccormack/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/ryanmccormack/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/ryanmccormack/.ivy2/cache/org.apache.httpcomponents/httpcore/jars/httpcore-4.0.1.jar:/Users/ryanmccormack/.ivy2/cache/org.apache.httpcomponents/httpclient/jars/httpclient-4.0.1.jar:/Users/ryanmccormack/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/ryanmccormack/.ivy2/cache/org.mindrot/jbcrypt/jars/jbcrypt-0.3m.jar:/Users/ryanmccormack/.ivy2/cache/com.atlassian.jwt/jwt-core/jars/jwt-core-1.2.4.jar:/Users/ryanmccormack/.ivy2/cache/com.nimbusds/nimbus-jose-jwt/jars/nimbus-jose-jwt-2.16.jar:/Users/ryanmccormack/.ivy2/cache/net.jcip/jcip-annotations/jars/jcip-annotations-1.0.jar:/Users/ryanmccormack/.ivy2/cache/net.minidev/json-smart/jars/json-smart-1.1.1.jar:/Users/ryanmccormack/.ivy2/cache/javax.mail/mail/jars/mail-1.4.7.jar:/Users/ryanmccormack/.ivy2/cache/javax.activation/activation/jars/activation-1.1.jar:/Users/ryanmccormack/.ivy2/cache/org.bouncycastle/bcprov-jdk15on/jars/bcprov-jdk15on-1.51.jar:/Users/ryanmccormack/.ivy2/cache/com.atlassian.jwt/jwt-api/jars/jwt-api-1.2.4.jar:/Users/ryanmccormack/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.1.jar:/Users/ryanmccormack/.ivy2/cache/com.kyleu/jdub-async_2.11/jars/jdub-async_2.11-1.0.jar:/Users/ryanmccormack/.ivy2/cache/com.github.mauricio/postgresql-async_2.11/jars/postgresql-async_2.11-0.2.16.jar:/Users/ryanmccormack/.ivy2/cache/com.github.mauricio/db-async-common_2.11/jars/db-async-common_2.11-0.2.16.jar:/Users/ryanmccormack/.ivy2/cache/io.netty/netty-all/jars/netty-all-4.0.25.Final.jar:/Users/ryanmccormack/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.3.5.jar:/Users/ryanmccormack/.ivy2/cache/org.webjars/jquery/jars/jquery-1.11.1.jar
-Scala compilation took 2.127981045 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 3 s, completed 11-Jan-2017 1:59:32 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> jobStop 6
-Evaluating tasks: *:jobStop
-Running task... Cancel: sbt.server.ServerTaskCancellation@5730c918, check cycles: false
-Total time: 0 s, completed 11-Jan-2017 1:59:32 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> backgroundRun
-Evaluating tasks: compile:backgroundRun
-Running task... Cancel: sbt.server.ServerTaskCancellation@2904aa20, check cycles: false
-Total time: 0 s, completed 11-Jan-2017 1:59:32 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/Users/ryanmccormack/play-silhouette-postgres-async-seed/}root/*:playForkConfig
-Evaluating tasks: *:playForkConfig
-Running task... Cancel: sbt.server.ServerTaskCancellation@30161061, check cycles: false
-Total time: 1 s, completed 11-Jan-2017 1:59:36 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> root/playForkNotifyStart http://localhost:9000
-Evaluating tasks: *:playForkNotifyStart
-Running task... Cancel: sbt.server.ServerTaskCancellation@353966e8, check cycles: false
-Total time: 0 s, completed 11-Jan-2017 1:59:38 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/Users/ryanmccormack/play-silhouette-postgres-async-seed/}root/compile:discoveredMainClasses
-Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@32b9710c, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Total time: 1 s, completed 11-Jan-2017 2:00:13 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/Users/ryanmccormack/play-silhouette-postgres-async-seed/}root/compile:mainClass
+> {file:/Users/ryanmccormack/Documents/thunderdome/thunderdome-play/}root/compile:mainClass
 Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@546bcfc4, check cycles: false
-Total time: 0 s, completed 11-Jan-2017 2:00:13 PM
+Running task... Cancel: sbt.server.ServerTaskCancellation@14a014e3, check cycles: false
+Total time: 0 s, completed 11-Jan-2017 7:57:54 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 Done executing sbt server engine, result Right(Exit(0))
@@ -947,4 +129,4 @@ Waiting for socket thread
 Waiting for request processor thread
 Waiting for command engine result
 Returning control to sbt launcher with result Exit(0)
-Closing the 62531@ges-113.local logs at Wed Jan 11 14:00:13 EST 2017, goodbye.
+Closing the 18192@Ryans-MBP logs at Wed Jan 11 20:19:34 EST 2017, goodbye.
