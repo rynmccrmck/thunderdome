@@ -1708,3 +1708,62 @@ Sending msg to client activator-35fdeaf1-d602-47e8-a486-67e5d30540f2: ExecutionS
 Sending msg to client activator-35fdeaf1-d602-47e8-a486-67e5d30540f2: DetachedLogEvent(LogMessage(debug,> server-handle-next-server-request))
 Sending msg to client activator-35fdeaf1-d602-47e8-a486-67e5d30540f2: BackgroundJobLogEvent(1,LogMessage(info,- play.api.libs.concurrent.ActorSystemProvider - Starting application default Akka system: silhouette))
 Sending msg to client activator-35fdeaf1-d602-47e8-a486-67e5d30540f2: BackgroundJobLogEvent(1,LogMessage(info,- play.api.Play - Application started (Dev)))
+Got request: ExecutionRequest(jobStop 1)
+Reading next message from client.
+Sending msg to client activator-35fdeaf1-d602-47e8-a486-67e5d30540f2: (24,ExecutionRequestReceived(9))
+Sending msg to client activator-35fdeaf1-d602-47e8-a486-67e5d30540f2: ExecutionWaiting(9,jobStop 1,ClientInfo(35fdeaf1-d602-47e8-a486-67e5d30540f2,activator,Activator,3,Vector()))
+Sending msg to client activator-35fdeaf1-d602-47e8-a486-67e5d30540f2: ExecutionStarting(9)
+Sending msg to client activator-35fdeaf1-d602-47e8-a486-67e5d30540f2: DetachedLogEvent(LogMessage(debug,> jobStop 1))
+Sending msg to client activator-35fdeaf1-d602-47e8-a486-67e5d30540f2: DetachedLogEvent(LogMessage(debug,Evaluating tasks: *:jobStop))
+Sending msg to client activator-35fdeaf1-d602-47e8-a486-67e5d30540f2: DetachedLogEvent(LogMessage(debug,Running task... Cancel: sbt.server.ServerTaskCancellation@1b870e8c, check cycles: false))
+Sending msg to client activator-35fdeaf1-d602-47e8-a486-67e5d30540f2: DetachedLogEvent(LogMessage(debug,cancel strategy start enabled=true lastCommand=Some(LastCommand(CommandExecutionWork(ExecutionId(9),jobStop 1,Set(LiveClient(activator 35fdeaf1-d602-47e8-a486-67e5d30540f2)),sbt.server.WorkCancellationStatus$$anon$1@2ddd9b13)))))
+Sending msg to client activator-35fdeaf1-d602-47e8-a486-67e5d30540f2: TaskStarted(9,707,Some(AttributeKey[void]("jobStop") in Scope(Global)))
+Sending msg to client activator-35fdeaf1-d602-47e8-a486-67e5d30540f2: TaskFinished(9,707,Some(AttributeKey[void]("jobStop") in Scope(Global)),true,None)
+Sending msg to client activator-35fdeaf1-d602-47e8-a486-67e5d30540f2: TaskStarted(9,706,None)
+Sending msg to client activator-35fdeaf1-d602-47e8-a486-67e5d30540f2: TaskFinished(9,706,None,true,None)
+Sending msg to client activator-35fdeaf1-d602-47e8-a486-67e5d30540f2: TaskStarted(9,705,None)
+Sending msg to client activator-35fdeaf1-d602-47e8-a486-67e5d30540f2: TaskFinished(9,705,None,true,None)
+Sending msg to client activator-35fdeaf1-d602-47e8-a486-67e5d30540f2: DetachedLogEvent(LogMessage(debug,cancel strategy finish enabled=false lastCommand=Some(LastCommand(CommandExecutionWork(ExecutionId(9),jobStop 1,Set(LiveClient(activator 35fdeaf1-d602-47e8-a486-67e5d30540f2)),sbt.server.WorkCancellationStatus$$anon$1@2ddd9b13)))))
+Sending msg to client activator-35fdeaf1-d602-47e8-a486-67e5d30540f2: DetachedLogEvent(LogSuccess(Total time: 0 s, completed 12-Jan-2017 5:25:21 PM))
+Sending msg to client activator-35fdeaf1-d602-47e8-a486-67e5d30540f2: DetachedLogEvent(LogMessage(debug,> server-post-command-cleanup))
+Sending msg to client activator-35fdeaf1-d602-47e8-a486-67e5d30540f2: BackgroundJobLogEvent(1,LogMessage(info,Stopping Play fork run ...))
+Sending msg to client activator-35fdeaf1-d602-47e8-a486-67e5d30540f2: ExecutionSuccess(9)
+Sending msg to client activator-35fdeaf1-d602-47e8-a486-67e5d30540f2: BackgroundJobLogEvent(1,LogMessage(info,- play.api.libs.concurrent.ActorSystemProvider - Shutdown application default Akka system: silhouette))
+Sending msg to client activator-35fdeaf1-d602-47e8-a486-67e5d30540f2: DetachedLogEvent(LogMessage(debug,> server-handle-next-server-request))
+Sending msg to client activator-35fdeaf1-d602-47e8-a486-67e5d30540f2: BackgroundJobLogEvent(1,LogMessage(info,JVM exiting, shutting down Play fork run ...))
+Sending msg to client activator-35fdeaf1-d602-47e8-a486-67e5d30540f2: BackgroundJobLogEvent(1,LogMessage(info,Play fork run already stopped ...))
+Sending msg to client activator-35fdeaf1-d602-47e8-a486-67e5d30540f2: BackgroundJobLogEvent(1,LogMessage(info,Forked Play process exited with status: 0))
+Sending msg to client activator-35fdeaf1-d602-47e8-a486-67e5d30540f2: BackgroundJobFinished(5,1)
+Got request: UnlistenToEvents()
+Reading next message from client.
+Sending msg to client activator-35fdeaf1-d602-47e8-a486-67e5d30540f2: (25,ReceivedResponse())
+Got request: UnlistenToValue(AttributeKey[scala.collection.Seq[java.lang.String]]("discoveredMainClasses") in Scope(Build: file:/Users/ryanmccormack/Documents/thunderdome/, , Project: ProjectReference(file:/Users/ryanmccormack/Documents/thunderdome/,root), Config: compile))
+Reading next message from client.
+Got request: UnlistenToValue(AttributeKey[scala.Option[java.lang.String]]("mainClass") in Scope(Build: file:/Users/ryanmccormack/Documents/thunderdome/, , Project: ProjectReference(file:/Users/ryanmccormack/Documents/thunderdome/,root), Config: compile))
+Reading next message from client.
+Got request: UnlistenToBuildChange()
+Reading next message from client.
+Sending msg to client activator-35fdeaf1-d602-47e8-a486-67e5d30540f2: (26,ReceivedResponse())
+Client activator-35fdeaf1-d602-47e8-a486-67e5d30540f2 closed, java.net.SocketException: Connection reset, shutting down
+Stopping client.
+Client activator-35fdeaf1-d602-47e8-a486-67e5d30540f2 thread exiting.
+Dropping message (26,ReceivedResponse()) because client activator-35fdeaf1-d602-47e8-a486-67e5d30540f2 of an exception serializing and sending: java.net.SocketException: Socket closed
+stack trace sending message was 
+java.net.SocketException: Socket closed
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:116)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:153)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+	at java.io.DataOutputStream.flush(DataOutputStream.java:123)
+	at sbt.impl.ipc.Peer.send(IPC.scala:79)
+	at sbt.impl.ipc.Peer.reply(IPC.scala:88)
+	at sbt.impl.ipc.Peer.replyString(IPC.scala:111)
+	at sbt.impl.ipc.Peer.replyJson(IPC.scala:124)
+	at sbt.server.SbtClientHandler$$anonfun$reply$1.apply$mcV$sp(SbtClientHandler.scala:132)
+	at sbt.server.SbtClientHandler.wrappedSend(SbtClientHandler.scala:113)
+	at sbt.server.SbtClientHandler.reply(SbtClientHandler.scala:132)
+	at sbt.server.RequestProcessor.sbt$server$RequestProcessor$$handleRequestsWithBuildState(RequestProcessor.scala:443)
+	at sbt.server.RequestProcessor.run(RequestProcessor.scala:324)
+Dropping message (27,ReceivedResponse()) to dead client activator-35fdeaf1-d602-47e8-a486-67e5d30540f2
+Dropping message (28,ReceivedResponse()) to dead client activator-35fdeaf1-d602-47e8-a486-67e5d30540f2
+Dropping message (0,ReceivedResponse()) to dead client activator-35fdeaf1-d602-47e8-a486-67e5d30540f2

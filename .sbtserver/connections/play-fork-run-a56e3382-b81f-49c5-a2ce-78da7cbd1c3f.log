@@ -664,3 +664,35 @@ Sending msg to client play-fork-run-a56e3382-b81f-49c5-a2ce-78da7cbd1c3f: Execut
 Sending msg to client play-fork-run-a56e3382-b81f-49c5-a2ce-78da7cbd1c3f: DetachedLogEvent(LogMessage(debug,> server-handle-next-server-request))
 Sending msg to client play-fork-run-a56e3382-b81f-49c5-a2ce-78da7cbd1c3f: BackgroundJobLogEvent(1,LogMessage(info,- play.api.libs.concurrent.ActorSystemProvider - Starting application default Akka system: silhouette))
 Sending msg to client play-fork-run-a56e3382-b81f-49c5-a2ce-78da7cbd1c3f: BackgroundJobLogEvent(1,LogMessage(info,- play.api.Play - Application started (Dev)))
+Sending msg to client play-fork-run-a56e3382-b81f-49c5-a2ce-78da7cbd1c3f: ExecutionWaiting(9,jobStop 1,ClientInfo(35fdeaf1-d602-47e8-a486-67e5d30540f2,activator,Activator,3,Vector()))
+Sending msg to client play-fork-run-a56e3382-b81f-49c5-a2ce-78da7cbd1c3f: ExecutionStarting(9)
+Sending msg to client play-fork-run-a56e3382-b81f-49c5-a2ce-78da7cbd1c3f: DetachedLogEvent(LogMessage(debug,> jobStop 1))
+Sending msg to client play-fork-run-a56e3382-b81f-49c5-a2ce-78da7cbd1c3f: DetachedLogEvent(LogMessage(debug,Evaluating tasks: *:jobStop))
+Sending msg to client play-fork-run-a56e3382-b81f-49c5-a2ce-78da7cbd1c3f: DetachedLogEvent(LogMessage(debug,Running task... Cancel: sbt.server.ServerTaskCancellation@1b870e8c, check cycles: false))
+Sending msg to client play-fork-run-a56e3382-b81f-49c5-a2ce-78da7cbd1c3f: DetachedLogEvent(LogMessage(debug,cancel strategy start enabled=true lastCommand=Some(LastCommand(CommandExecutionWork(ExecutionId(9),jobStop 1,Set(LiveClient(activator 35fdeaf1-d602-47e8-a486-67e5d30540f2)),sbt.server.WorkCancellationStatus$$anon$1@2ddd9b13)))))
+Sending msg to client play-fork-run-a56e3382-b81f-49c5-a2ce-78da7cbd1c3f: TaskStarted(9,707,Some(AttributeKey[void]("jobStop") in Scope(Global)))
+Sending msg to client play-fork-run-a56e3382-b81f-49c5-a2ce-78da7cbd1c3f: TaskFinished(9,707,Some(AttributeKey[void]("jobStop") in Scope(Global)),true,None)
+Sending msg to client play-fork-run-a56e3382-b81f-49c5-a2ce-78da7cbd1c3f: TaskStarted(9,706,None)
+Sending msg to client play-fork-run-a56e3382-b81f-49c5-a2ce-78da7cbd1c3f: TaskFinished(9,706,None,true,None)
+Sending msg to client play-fork-run-a56e3382-b81f-49c5-a2ce-78da7cbd1c3f: TaskStarted(9,705,None)
+Sending msg to client play-fork-run-a56e3382-b81f-49c5-a2ce-78da7cbd1c3f: TaskFinished(9,705,None,true,None)
+Sending msg to client play-fork-run-a56e3382-b81f-49c5-a2ce-78da7cbd1c3f: DetachedLogEvent(LogMessage(debug,cancel strategy finish enabled=false lastCommand=Some(LastCommand(CommandExecutionWork(ExecutionId(9),jobStop 1,Set(LiveClient(activator 35fdeaf1-d602-47e8-a486-67e5d30540f2)),sbt.server.WorkCancellationStatus$$anon$1@2ddd9b13)))))
+Sending msg to client play-fork-run-a56e3382-b81f-49c5-a2ce-78da7cbd1c3f: DetachedLogEvent(LogSuccess(Total time: 0 s, completed 12-Jan-2017 5:25:21 PM))
+Sending msg to client play-fork-run-a56e3382-b81f-49c5-a2ce-78da7cbd1c3f: DetachedLogEvent(LogMessage(debug,> server-post-command-cleanup))
+Sending msg to client play-fork-run-a56e3382-b81f-49c5-a2ce-78da7cbd1c3f: BackgroundJobLogEvent(1,LogMessage(info,Stopping Play fork run ...))
+Sending msg to client play-fork-run-a56e3382-b81f-49c5-a2ce-78da7cbd1c3f: ExecutionSuccess(9)
+Sending msg to client play-fork-run-a56e3382-b81f-49c5-a2ce-78da7cbd1c3f: BackgroundJobLogEvent(1,LogMessage(info,- play.api.libs.concurrent.ActorSystemProvider - Shutdown application default Akka system: silhouette))
+Sending msg to client play-fork-run-a56e3382-b81f-49c5-a2ce-78da7cbd1c3f: DetachedLogEvent(LogMessage(debug,> server-handle-next-server-request))
+Got request: UnlistenToEvents()
+Reading next message from client.
+Sending msg to client play-fork-run-a56e3382-b81f-49c5-a2ce-78da7cbd1c3f: (12,ReceivedResponse())
+Got request: UnlistenToValue(AttributeKey[play.forkrun.protocol.ForkConfig]("playForkConfig") in Scope(Build: file:/Users/ryanmccormack/Documents/thunderdome/, , Project: ProjectReference(file:/Users/ryanmccormack/Documents/thunderdome/,root)))
+Reading next message from client.
+Got request: UnlistenToValue(AttributeKey[play.runsupport.Reloader$CompileResult]("playForkReload") in Scope(Build: file:/Users/ryanmccormack/Documents/thunderdome/, , Project: ProjectReference(file:/Users/ryanmccormack/Documents/thunderdome/,root)))
+Reading next message from client.
+Client play-fork-run-a56e3382-b81f-49c5-a2ce-78da7cbd1c3f closed, java.net.SocketException: Connection reset, shutting down
+Stopping client.
+Dropping message (13,ReceivedResponse()) to dead client play-fork-run-a56e3382-b81f-49c5-a2ce-78da7cbd1c3f
+Dropping message (14,ReceivedResponse()) to dead client play-fork-run-a56e3382-b81f-49c5-a2ce-78da7cbd1c3f
+Dropping message (0,ReceivedResponse()) to dead client play-fork-run-a56e3382-b81f-49c5-a2ce-78da7cbd1c3f
+Client play-fork-run-a56e3382-b81f-49c5-a2ce-78da7cbd1c3f thread exiting.
