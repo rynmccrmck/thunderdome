@@ -1,0 +1,4 @@
+[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(/Users/ryanmccormack/Documents/thunderdome/thunderdome-play/conf/application.conf,/Users/ryanmccormack/Documents/thunderdome/thunderdome-play/target/scala-2.11/classes/application.conf)[0m
+[0m[[0mdebug[0m] [0m	(/Users/ryanmccormack/Documents/thunderdome/thunderdome-play/conf/logback.xml,/Users/ryanmccormack/Documents/thunderdome/thunderdome-play/target/scala-2.11/classes/logback.xml)[0m
+[0m[[0mdebug[0m] [0m	(/Users/ryanmccormack/Documents/thunderdome/thunderdome-play/conf/routes,/Users/ryanmccormack/Documents/thunderdome/thunderdome-play/target/scala-2.11/classes/routes)[0m
