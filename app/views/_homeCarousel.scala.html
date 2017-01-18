@@ -1,0 +1,50 @@
+       <style>.item img {
+          width: auto;
+          height: 475px;
+          max-height: 475px;
+          min-height: 475px;
+        }
+        
+            /* Carousel base class */
+  
+    .carousel-control {
+      font-size: 120px;
+    }
+
+        </style>
+<div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="/assets/images/battle.png" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Many models enter, one model leaves</h1>
+              <p class="lead">Create contests for friends/colleagues/potential employees.</p>
+              <a class="btn btn-large btn-primary" href="@routes.RegistrationController.register()">Sign up today</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="/assets/images/ml-preproc.png" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Production</h1>
+              <p class="lead">Enforce Champion-Challenger in Production.</p>
+              <a class="btn btn-large btn-primary" href="#">Learn more</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="/assets/images/thunderdome-sketch.png" alt="" align="middle">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Completely Open</h1>
+              <p class="lead">Keep your data, create new evaluations and contest types.</p>
+              <a class="btn btn-large btn-primary" href="#">Browse gallery</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+    </div>

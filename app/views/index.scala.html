@@ -1,58 +1,12 @@
 @(user: models.user.User)@layout.bootstrap("Play Silhouette Postgres Async Seed") {
 
  @(_navBar(user,"home"))
-  <div class="container">
-  
-    <div class="row">
-      <div class="col-md-12">
+
       
         @if(user.profiles.isEmpty) {
-        <style>.item img {
-          width: auto;
-          height: 475px;
-          max-height: 475px;
-          min-height: 475px;
-        }
-        .carousel-inner > .item > img {
-        margin: 0 auto;
-        }
-        </style>
-<div id="myCarousel" class="carousel slide">
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="/assets/images/battle.png" alt="">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Example headline.</h1>
-              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <a class="btn btn-large btn-primary" href="#">Sign up today</a>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="/assets/images/ml-preproc.png" alt="">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <a class="btn btn-large btn-primary" href="#">Learn more</a>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="/assets/images/thunderdome-sketch.png" alt="" align="middle">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <a class="btn btn-large btn-primary" href="#">Browse gallery</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
-    </div>
+        
+            @(_homeCarousel())
+        
         } else {
 
         <h2>Welcome back @user.username!</h2>
@@ -67,6 +21,12 @@
           </li>
           <li><a href="@routes.ProfileController.profile">View Profile</a></li>
         }
+        
+          <div class="container">
+  
+    <div class="row">
+      <div class="col-md-12">
+        
         </ul>
       </div>
     </div>
