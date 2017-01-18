@@ -30,7 +30,7 @@ class SubmissionController @javax.inject.Inject() (
     
   def uploadFile(request: Request[MultipartFormData[TemporaryFile]]): String = {
     Logger.error("Called uploadFile function" + request)
-    request.body.file("file").map { picture =>
+    request.body.file("submission").map { picture =>
       import java.io.File
       val filename = picture.filename
       val contentType = picture.contentType
