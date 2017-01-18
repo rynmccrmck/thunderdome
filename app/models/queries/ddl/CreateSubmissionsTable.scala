@@ -11,7 +11,7 @@ case object CreateSubmissionsTable extends Statement {
        contest_id int not null,
        user_id uuid not null,
        submission_date timestamp not null,
-       submissions_notes character varying(500),
+       submission_notes character varying(500),
        score float not null
     ) with (oids = false);
   """
