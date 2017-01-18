@@ -5,6 +5,8 @@ import play.api.data._
 import play.api.data.Forms._
 import models.contests._
 import org.joda.time.LocalDateTime
+import java.util.UUID
+
 
 object UserForms {
   val signInForm = Form(
@@ -29,8 +31,18 @@ object UserForms {
       "contest_start" -> jodaLocalDate,
       "contest_end" -> jodaLocalDate,
       "evaluation_id" -> number,
-      "benchmark_value" -> optional(number)
+      "benchmark_value" -> optional(bigDecimal)
     )(ContestData.apply)(ContestData.unapply)
+  ) 
+
+   val submissionForm = Form(
+    mapping(
+      "contest_id" -> number,
+      "user_id" -> uuid,
+      "submission_date" -> jodaLocalDate,
+      "submission_notes" -> nonEmptyText,
+      "score" -> bigDecimal
+    )(SubmissionData.apply)(SubmissionData.unapply)
   ) 
   
 }

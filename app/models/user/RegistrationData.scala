@@ -1,6 +1,8 @@
 package models.user
-import org.joda.time.LocalDate
 
+import org.joda.time.LocalDate
+import java.util.UUID
+import scala.math.BigDecimal
 
 case class RegistrationData(
   username: String,
@@ -14,5 +16,13 @@ case class ContestData(
     contest_start:LocalDate,
     contest_end:LocalDate,
     evaluator_id:Int,
-    benchmark_value:Option[Int]
+    benchmark_value:Option[BigDecimal]
+)
+
+case class SubmissionData(
+    contest_id: Int,
+    user_id:UUID,
+    submission_date:LocalDate,
+    submission_notes:String,
+    score:BigDecimal
 )
