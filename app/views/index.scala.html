@@ -5,15 +5,49 @@
   
     <div class="row">
       <div class="col-md-12">
-        <img style="float:right" src="/assets/images/ml-preproc.png" height = 480/>
-        
+      
         @if(user.profiles.isEmpty) {
-        <h2>Welcome to ML Thunderdome!</h2>
-        <h4>Many models enter, One model leaves.</h4>
-        <ul>
-          <li>You are not currently logged, sign in or register!</li>
-          <li><a href="@routes.RegistrationController.registrationForm">Register</a></li>
-          <li><a href="@routes.AuthenticationController.signInForm">Sign In</a></li>
+        <style>.item img {
+          width: auto;
+          height: 325px;
+          max-height: 325px;
+        }</style>
+<div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="/assets/images/battle.png" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Example headline.</h1>
+              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <a class="btn btn-large btn-primary" href="#">Sign up today</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="/assets/images/ml-preproc.png" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Another example headline.</h1>
+              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <a class="btn btn-large btn-primary" href="#">Learn more</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="/assets/images/battle.png" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>One more for good measure.</h1>
+              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <a class="btn btn-large btn-primary" href="#">Browse gallery</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+    </div>
         } else {
 
         <h2>Welcome back @user.username!</h2>
