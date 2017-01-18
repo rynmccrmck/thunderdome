@@ -9,9 +9,14 @@
         @if(user.profiles.isEmpty) {
         <style>.item img {
           width: auto;
-          height: 325px;
-          max-height: 325px;
-        }</style>
+          height: 475px;
+          max-height: 475px;
+          min-height: 475px;
+        }
+        .carousel-inner > .item > img {
+        margin: 0 auto;
+        }
+        </style>
 <div id="myCarousel" class="carousel slide">
       <div class="carousel-inner">
         <div class="item active">
@@ -35,7 +40,7 @@
           </div>
         </div>
         <div class="item">
-          <img src="/assets/images/battle.png" alt="">
+          <img src="/assets/images/thunderdome-sketch.png" alt="" align="middle">
           <div class="container">
             <div class="carousel-caption">
               <h1>One more for good measure.</h1>
