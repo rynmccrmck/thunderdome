@@ -1,11 +1,11 @@
-@(user: models.user.User)@layout.bootstrap("Play Silhouette Postgres Async Seed") {
+@(user: models.user.User, contest_id:String)@layout.bootstrap("Play Silhouette Postgres Async Seed") {
 
  @(_navBar(user,"home"))
 
     <div class="container">
     <div class="row">
       <div class="col-md-12">
-       
+       <p>Contest @contest_id</p>
         @if(user.profiles.isEmpty) {
           <ul>
           <li>You are not currently logged, sign in or register!</li>

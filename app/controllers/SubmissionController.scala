@@ -19,12 +19,13 @@ class SubmissionController @javax.inject.Inject() (
     override val env: AuthenticationEnvironment
 ) extends BaseController {
     
-  def submission = withSession { s =>
-    Future.successful(Ok(views.html.submission(s.identity)))
+  def submission(contest_id:String) = withSession { s =>
+    Future.successful(Ok(views.html.submission(s.identity,contest_id)))
   }    
     
   def upload = Action(parse.multipartFormData) { implicit request =>
     val result = uploadFile(request)
+    //evaluate!
     Redirect(routes.HomeController.index).flashing("message" -> result)
   }
     

@@ -3781,3 +3781,513 @@ Copy resource mappings:
 Total time: 1 s, completed 17-Jan-2017 10:07:43 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@640e32b8, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/ryanmccormack/Documents/thunderdome/app/controllers/SubmissionController.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/ryanmccormack/Documents/thunderdome/app/controllers/SubmissionController.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/ryanmccormack/Documents/thunderdome/app/controllers/SubmissionController.scala)
+
+Read from stdout: Compiling 1 Scala source to /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/classes...
+Compiling 1 Scala source to /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Running cached compiler 279ec403, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/ryanmccormack/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+	-classpath
+	/Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/classes:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar:/Users/ryanmccormack/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.4.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.2.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.typesafe.play/build-link/2.4.2/jars/build-link.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.typesafe.play/play-exceptions/2.4.2/jars/play-exceptions.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.javassist/javassist/3.19.0-GA/bundles/javassist.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.4.2.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.scala-stm/scala-stm_2.11/0.7/jars/scala-stm_2.11.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.typesafe/config/1.3.0/bundles/config.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.4.2.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/joda-time/joda-time/2.8.1/jars/joda-time.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.joda/joda-convert/1.7/jars/joda-convert.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.6.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.fasterxml.jackson.core/jackson-core/2.5.4/bundles/jackson-core.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.fasterxml.jackson.core/jackson-annotations/2.5.4/bundles/jackson-annotations.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.fasterxml.jackson.core/jackson-databind/2.5.4/bundles/jackson-databind.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.5.4/bundles/jackson-datatype-jdk8.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.5.4/bundles/jackson-datatype-jsr310.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.4.2.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.slf4j/slf4j-api/1.7.12/jars/slf4j-api.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.slf4j/jul-to-slf4j/1.7.12/jars/jul-to-slf4j.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.slf4j/jcl-over-slf4j/1.7.12/jars/jcl-over-slf4j.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/ch.qos.logback/logback-core/1.1.3/jars/logback-core.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/ch.qos.logback/logback-classic/1.1.3/jars/logback-classic.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.typesafe.akka/akka-actor_2.11/2.3.11/jars/akka-actor_2.11.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.typesafe.akka/akka-slf4j_2.11/2.3.11/jars/akka-slf4j_2.11.jar:/Users/ryanmccormack/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.10.jar:/Users/ryanmccormack/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/ryanmccormack/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/ryanmccormack/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.google.inject/guice/4.0/jars/guice.jar:/Users/ryanmccormack/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar:/Users/ryanmccormack/.ivy2/cache/aopalliance/aopalliance/jars/aopalliance-1.0.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.google.inject.extensions/guice-assistedinject/4.0/jars/guice-assistedinject.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/io.netty/netty/bundles/netty-3.10.3.Final.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.typesafe.netty/netty-http-pipelining/1.1.4/jars/netty-http-pipelining.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.4.2.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/net.sf.ehcache/ehcache-core/2.6.11/jars/ehcache-core.jar:/Users/ryanmccormack/.ivy2/cache/com.mohiva/play-silhouette_2.11/jars/play-silhouette_2.11-3.0.0-RC2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.4.1.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.google.guava/guava/18.0/bundles/guava.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.ning/async-http-client/1.9.21/jars/async-http-client.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/oauth.signpost/signpost-core/1.2.1.2/jars/signpost-core.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/oauth.signpost/signpost-commonshttp4/1.2.1.2/jars/signpost-commonshttp4.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/Users/ryanmccormack/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/ryanmccormack/.ivy2/cache/org.mindrot/jbcrypt/jars/jbcrypt-0.3m.jar:/Users/ryanmccormack/.ivy2/cache/com.atlassian.jwt/jwt-core/jars/jwt-core-1.2.4.jar:/Users/ryanmccormack/.ivy2/cache/com.nimbusds/nimbus-jose-jwt/jars/nimbus-jose-jwt-2.16.jar:/Users/ryanmccormack/.ivy2/cache/net.jcip/jcip-annotations/jars/jcip-annotations-1.0.jar:/Users/ryanmccormack/.ivy2/cache/net.minidev/json-smart/jars/json-smart-1.1.1.jar:/Users/ryanmccormack/.ivy2/cache/javax.mail/mail/jars/mail-1.4.7.jar:/Users/ryanmccormack/.ivy2/cache/javax.activation/activation/jars/activation-1.1.jar:/Users/ryanmccormack/.ivy2/cache/org.bouncycastle/bcprov-jdk15on/jars/bcprov-jdk15on-1.51.jar:/Users/ryanmccormack/.ivy2/cache/com.atlassian.jwt/jwt-api/jars/jwt-api-1.2.4.jar:/Users/ryanmccormack/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.1.jar:/Users/ryanmccormack/.ivy2/cache/com.kyleu/jdub-async_2.11/jars/jdub-async_2.11-1.0.jar:/Users/ryanmccormack/.ivy2/cache/com.github.mauricio/postgresql-async_2.11/jars/postgresql-async_2.11-0.2.16.jar:/Users/ryanmccormack/.ivy2/cache/com.github.mauricio/db-async-common_2.11/jars/db-async-common_2.11-0.2.16.jar:/Users/ryanmccormack/.ivy2/cache/io.netty/netty-all/jars/netty-all-4.0.25.Final.jar:/Users/ryanmccormack/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.3.5.jar:/Users/ryanmccormack/.ivy2/cache/org.webjars/jquery/jars/jquery-1.11.1.jar
+Scala compilation took 1.231797855 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 2 s, completed 17-Jan-2017 10:09:47 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 7
+Evaluating tasks: *:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@44a67fce, check cycles: false
+Total time: 0 s, completed 17-Jan-2017 10:09:48 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@2fb87c9, check cycles: false
+Total time: 0 s, completed 17-Jan-2017 10:09:48 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/ryanmccormack/Documents/thunderdome/}root/*:playForkConfig
+Evaluating tasks: *:playForkConfig
+Running task... Cancel: sbt.server.ServerTaskCancellation@404b6054, check cycles: false
+Total time: 0 s, completed 17-Jan-2017 10:09:51 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> root/playForkNotifyStart http://localhost:9000
+Evaluating tasks: *:playForkNotifyStart
+Running task... Cancel: sbt.server.ServerTaskCancellation@6c6702f, check cycles: false
+Total time: 0 s, completed 17-Jan-2017 10:09:53 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/ryanmccormack/Documents/thunderdome/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@4cd24829, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(/Users/ryanmccormack/Documents/thunderdome/conf/application.conf,/Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/classes/application.conf)
+	(/Users/ryanmccormack/Documents/thunderdome/conf/changeme.conf,/Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/classes/changeme.conf)
+	(/Users/ryanmccormack/Documents/thunderdome/conf/logback.xml,/Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/classes/logback.xml)
+	(/Users/ryanmccormack/Documents/thunderdome/conf/routes,/Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/classes/routes)
+Total time: 1 s, completed 17-Jan-2017 10:15:35 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@49c900ac, check cycles: false
+/Users/ryanmccormack/Documents/thunderdome/conf/routes:24: Compilation error[Missing parameter in call definition: contestid]
+GET         /submissions                controllers.ContestController.contestForm
+                        ^
+Read from stdout: (compile:playRoutes) @72m51ok3o: Compilation error in /Users/ryanmccormack/Documents/thunderdome/conf/routes:24
+(compile:playRoutes) @72m51ok3o: Compilation error in /Users/ryanmccormack/Documents/thunderdome/conf/routes:24
+Total time: 1 s, completed 17-Jan-2017 10:18:39 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@18598231, check cycles: false
+/Users/ryanmccormack/Documents/thunderdome/conf/routes:24: Compilation error[Missing parameter in call definition: contestid]
+GET         /submissions                controllers.ContestController.contestForm
+                        ^
+Read from stdout: (compile:playRoutes) @72m524jfo: Compilation error in /Users/ryanmccormack/Documents/thunderdome/conf/routes:24
+(compile:playRoutes) @72m524jfo: Compilation error in /Users/ryanmccormack/Documents/thunderdome/conf/routes:24
+Total time: 1 s, completed 17-Jan-2017 10:20:24 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/ryanmccormack/Documents/thunderdome/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@72a263e3, check cycles: false
+/Users/ryanmccormack/Documents/thunderdome/conf/routes:24: Compilation error[Missing parameter in call definition: contestid]
+GET         /submissions                controllers.ContestController.contestForm
+                        ^
+Total time: 1 s, completed 17-Jan-2017 10:20:30 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/ryanmccormack/Documents/thunderdome/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@48209e9, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/ryanmccormack/Documents/thunderdome/app/controllers/SubmissionController.scala, /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala, /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/routes/main/router/Routes.scala, /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/routes/main/controllers/routes.java, /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/routes/main/router/RoutesPrefix.scala, /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala, /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/submission.template.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/ryanmccormack/Documents/thunderdome/app/controllers/SubmissionController.scala, /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala, /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/routes/main/router/Routes.scala, /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/routes/main/controllers/routes.java, /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/routes/main/router/RoutesPrefix.scala, /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala, /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/submission.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/ryanmccormack/Documents/thunderdome/app/controllers/SubmissionController.scala, /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala, /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/routes/main/router/Routes.scala, /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/routes/main/controllers/routes.java, /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/routes/main/router/RoutesPrefix.scala, /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala, /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/submission.template.scala)
+
+Read from stdout: Compiling 6 Scala sources and 1 Java source to /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/classes...
+Compiling 6 Scala sources and 1 Java source to /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Running cached compiler 472d91a4, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/ryanmccormack/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+	-classpath
+	/Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/classes:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar:/Users/ryanmccormack/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.4.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.2.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.typesafe.play/build-link/2.4.2/jars/build-link.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.typesafe.play/play-exceptions/2.4.2/jars/play-exceptions.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.javassist/javassist/3.19.0-GA/bundles/javassist.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.4.2.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.scala-stm/scala-stm_2.11/0.7/jars/scala-stm_2.11.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.typesafe/config/1.3.0/bundles/config.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.4.2.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/joda-time/joda-time/2.8.1/jars/joda-time.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.joda/joda-convert/1.7/jars/joda-convert.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.6.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.fasterxml.jackson.core/jackson-core/2.5.4/bundles/jackson-core.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.fasterxml.jackson.core/jackson-annotations/2.5.4/bundles/jackson-annotations.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.fasterxml.jackson.core/jackson-databind/2.5.4/bundles/jackson-databind.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.5.4/bundles/jackson-datatype-jdk8.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.5.4/bundles/jackson-datatype-jsr310.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.4.2.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.slf4j/slf4j-api/1.7.12/jars/slf4j-api.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.slf4j/jul-to-slf4j/1.7.12/jars/jul-to-slf4j.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.slf4j/jcl-over-slf4j/1.7.12/jars/jcl-over-slf4j.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/ch.qos.logback/logback-core/1.1.3/jars/logback-core.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/ch.qos.logback/logback-classic/1.1.3/jars/logback-classic.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.typesafe.akka/akka-actor_2.11/2.3.11/jars/akka-actor_2.11.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.typesafe.akka/akka-slf4j_2.11/2.3.11/jars/akka-slf4j_2.11.jar:/Users/ryanmccormack/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.10.jar:/Users/ryanmccormack/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/ryanmccormack/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/ryanmccormack/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.google.inject/guice/4.0/jars/guice.jar:/Users/ryanmccormack/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar:/Users/ryanmccormack/.ivy2/cache/aopalliance/aopalliance/jars/aopalliance-1.0.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.google.inject.extensions/guice-assistedinject/4.0/jars/guice-assistedinject.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/io.netty/netty/bundles/netty-3.10.3.Final.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.typesafe.netty/netty-http-pipelining/1.1.4/jars/netty-http-pipelining.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.4.2.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/net.sf.ehcache/ehcache-core/2.6.11/jars/ehcache-core.jar:/Users/ryanmccormack/.ivy2/cache/com.mohiva/play-silhouette_2.11/jars/play-silhouette_2.11-3.0.0-RC2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.4.1.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.google.guava/guava/18.0/bundles/guava.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.ning/async-http-client/1.9.21/jars/async-http-client.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/oauth.signpost/signpost-core/1.2.1.2/jars/signpost-core.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/oauth.signpost/signpost-commonshttp4/1.2.1.2/jars/signpost-commonshttp4.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/Users/ryanmccormack/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/ryanmccormack/.ivy2/cache/org.mindrot/jbcrypt/jars/jbcrypt-0.3m.jar:/Users/ryanmccormack/.ivy2/cache/com.atlassian.jwt/jwt-core/jars/jwt-core-1.2.4.jar:/Users/ryanmccormack/.ivy2/cache/com.nimbusds/nimbus-jose-jwt/jars/nimbus-jose-jwt-2.16.jar:/Users/ryanmccormack/.ivy2/cache/net.jcip/jcip-annotations/jars/jcip-annotations-1.0.jar:/Users/ryanmccormack/.ivy2/cache/net.minidev/json-smart/jars/json-smart-1.1.1.jar:/Users/ryanmccormack/.ivy2/cache/javax.mail/mail/jars/mail-1.4.7.jar:/Users/ryanmccormack/.ivy2/cache/javax.activation/activation/jars/activation-1.1.jar:/Users/ryanmccormack/.ivy2/cache/org.bouncycastle/bcprov-jdk15on/jars/bcprov-jdk15on-1.51.jar:/Users/ryanmccormack/.ivy2/cache/com.atlassian.jwt/jwt-api/jars/jwt-api-1.2.4.jar:/Users/ryanmccormack/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.1.jar:/Users/ryanmccormack/.ivy2/cache/com.kyleu/jdub-async_2.11/jars/jdub-async_2.11-1.0.jar:/Users/ryanmccormack/.ivy2/cache/com.github.mauricio/postgresql-async_2.11/jars/postgresql-async_2.11-0.2.16.jar:/Users/ryanmccormack/.ivy2/cache/com.github.mauricio/db-async-common_2.11/jars/db-async-common_2.11-0.2.16.jar:/Users/ryanmccormack/.ivy2/cache/io.netty/netty-all/jars/netty-all-4.0.25.Final.jar:/Users/ryanmccormack/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.3.5.jar:/Users/ryanmccormack/.ivy2/cache/org.webjars/jquery/jars/jquery-1.11.1.jar
+Scala compilation took 2.144913243 s
+Attempting to call com.sun.tools.javac.api.JavacTool@317974f4 directly...
+Java compilation took 0.221733251 s
+Java analysis took 0.03830342 s
+Java compile + analysis took 0.27127988 s
+Invalidating /Users/ryanmccormack/Documents/thunderdome/app/controllers/SubmissionController.scala...
+Invalidating (transitively) by inheritance from /Users/ryanmccormack/Documents/thunderdome/app/controllers/SubmissionController.scala...
+Initial set of included nodes: Set(/Users/ryanmccormack/Documents/thunderdome/app/controllers/SubmissionController.scala)
+Invalidated by transitive inheritance dependency: Set(/Users/ryanmccormack/Documents/thunderdome/app/controllers/SubmissionController.scala)
+The /Users/ryanmccormack/Documents/thunderdome/app/controllers/SubmissionController.scala source file has the following regular definitions changed:
+	submission.
+All member reference dependencies will be considered within this context.
+The following modified names cause invalidation of /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/routes/main/router/Routes.scala: Set(submission)
+Invalidating /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala...
+Invalidating (transitively) by inheritance from /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala...
+Initial set of included nodes: Set(/Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala)
+Invalidated by transitive inheritance dependency: Set(/Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala)
+The /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/routes/main/controllers/ReverseRoutes.scala source file has the following regular definitions changed:
+	submission.
+All member reference dependencies will be considered within this context.
+None of the modified names appears in /Users/ryanmccormack/Documents/thunderdome/app/controllers/RegistrationController.scala. This dependency is not being considered for invalidation.
+The following modified names cause invalidation of /Users/ryanmccormack/Documents/thunderdome/app/controllers/SubmissionController.scala: Set(submission)
+None of the modified names appears in /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/index.template.scala. This dependency is not being considered for invalidation.
+None of the modified names appears in /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/contests.template.scala. This dependency is not being considered for invalidation.
+None of the modified names appears in /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/submit.template.scala. This dependency is not being considered for invalidation.
+None of the modified names appears in /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/_navBar.template.scala. This dependency is not being considered for invalidation.
+None of the modified names appears in /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/admin.template.scala. This dependency is not being considered for invalidation.
+None of the modified names appears in /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/register.template.scala. This dependency is not being considered for invalidation.
+None of the modified names appears in /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/contest.template.scala. This dependency is not being considered for invalidation.
+None of the modified names appears in /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/layout/bootstrap.template.scala. This dependency is not being considered for invalidation.
+None of the modified names appears in /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/createContest.template.scala. This dependency is not being considered for invalidation.
+Name hashing optimization doesn't apply to non-Scala dependency: /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/routes/main/controllers/routes.java
+None of the modified names appears in /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/signin.template.scala. This dependency is not being considered for invalidation.
+None of the modified names appears in /Users/ryanmccormack/Documents/thunderdome/app/controllers/AuthenticationController.scala. This dependency is not being considered for invalidation.
+None of the modified names appears in /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/profile.template.scala. This dependency is not being considered for invalidation.
+The following modified names cause invalidation of /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/submission.template.scala: Set(submission)
+None of the modified names appears in /Users/ryanmccormack/Documents/thunderdome/app/controllers/UserController.scala. This dependency is not being considered for invalidation.
+None of the modified names appears in /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/layout/basic.template.scala. This dependency is not being considered for invalidation.
+Invalidating /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/submission.template.scala...
+Invalidating (transitively) by inheritance from /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/submission.template.scala...
+Initial set of included nodes: Set(/Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/submission.template.scala)
+Invalidated by transitive inheritance dependency: Set(/Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/submission.template.scala)
+The /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/submission.template.scala source file has the following regular definitions changed:
+	apply, render, f, submission.
+All member reference dependencies will be considered within this context.
+The following modified names cause invalidation of /Users/ryanmccormack/Documents/thunderdome/app/controllers/SubmissionController.scala: Set(apply, submission)
+New invalidations:
+	Set(/Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/routes/main/router/Routes.scala, /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/routes/main/controllers/routes.java)
+Initial set of included nodes: Set(/Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/routes/main/router/Routes.scala, /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/routes/main/controllers/routes.java)
+Including /Users/ryanmccormack/Documents/thunderdome/app/controllers/RegistrationController.scala by /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/routes/main/controllers/routes.java
+Including /Users/ryanmccormack/Documents/thunderdome/app/controllers/SubmissionController.scala by /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/routes/main/controllers/routes.java
+Including /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/index.template.scala by /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/routes/main/controllers/routes.java
+Including /Users/ryanmccormack/Documents/thunderdome/app/controllers/HomeController.scala by /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/index.template.scala
+Including /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/contests.template.scala by /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/routes/main/controllers/routes.java
+Including /Users/ryanmccormack/Documents/thunderdome/app/controllers/ContestController.scala by /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/contests.template.scala
+Including /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/submit.template.scala by /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/routes/main/controllers/routes.java
+Including /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/_navBar.template.scala by /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/routes/main/controllers/routes.java
+Including /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/admin.template.scala by /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/_navBar.template.scala
+Including /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/register.template.scala by /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/_navBar.template.scala
+Including /Users/ryanmccormack/Documents/thunderdome/app/controllers/UserController.scala by /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/register.template.scala
+Including /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/contest.template.scala by /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/_navBar.template.scala
+Including /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/signin.template.scala by /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/_navBar.template.scala
+Including /Users/ryanmccormack/Documents/thunderdome/app/controllers/AuthenticationController.scala by /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/signin.template.scala
+Including /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/profile.template.scala by /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/_navBar.template.scala
+Including /Users/ryanmccormack/Documents/thunderdome/app/controllers/ProfileController.scala by /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/profile.template.scala
+Including /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/submission.template.scala by /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/_navBar.template.scala
+Including /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/layout/bootstrap.template.scala by /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/routes/main/controllers/routes.java
+Including /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/notFoundPage.template.scala by /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/layout/bootstrap.template.scala
+Including /Users/ryanmccormack/Documents/thunderdome/app/utils/PlayGlobalSettings.scala by /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/notFoundPage.template.scala
+Including /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/createContest.template.scala by /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/layout/bootstrap.template.scala
+Including /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/layout/basic.template.scala by /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/routes/main/controllers/routes.java
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set(/Users/ryanmccormack/Documents/thunderdome/app/controllers/SubmissionController.scala, /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/submission.template.scala)
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Copy resource mappings: 
+	(/Users/ryanmccormack/Documents/thunderdome/conf/application.conf,/Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/classes/application.conf)
+	(/Users/ryanmccormack/Documents/thunderdome/conf/changeme.conf,/Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/classes/changeme.conf)
+	(/Users/ryanmccormack/Documents/thunderdome/conf/logback.xml,/Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/classes/logback.xml)
+	(/Users/ryanmccormack/Documents/thunderdome/conf/routes,/Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/classes/routes)
+Total time: 3 s, completed 17-Jan-2017 10:20:46 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/ryanmccormack/Documents/thunderdome/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@39f5c191, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/contests.template.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/contests.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/contests.template.scala)
+
+Read from stdout: Compiling 1 Scala source to /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/classes...
+Compiling 1 Scala source to /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Running cached compiler 356ec961, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/ryanmccormack/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+	-classpath
+	/Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/classes:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar:/Users/ryanmccormack/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.4.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.2.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.typesafe.play/build-link/2.4.2/jars/build-link.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.typesafe.play/play-exceptions/2.4.2/jars/play-exceptions.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.javassist/javassist/3.19.0-GA/bundles/javassist.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.4.2.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.scala-stm/scala-stm_2.11/0.7/jars/scala-stm_2.11.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.typesafe/config/1.3.0/bundles/config.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.4.2.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/joda-time/joda-time/2.8.1/jars/joda-time.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.joda/joda-convert/1.7/jars/joda-convert.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.6.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.fasterxml.jackson.core/jackson-core/2.5.4/bundles/jackson-core.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.fasterxml.jackson.core/jackson-annotations/2.5.4/bundles/jackson-annotations.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.fasterxml.jackson.core/jackson-databind/2.5.4/bundles/jackson-databind.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.5.4/bundles/jackson-datatype-jdk8.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.5.4/bundles/jackson-datatype-jsr310.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.4.2.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.slf4j/slf4j-api/1.7.12/jars/slf4j-api.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.slf4j/jul-to-slf4j/1.7.12/jars/jul-to-slf4j.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.slf4j/jcl-over-slf4j/1.7.12/jars/jcl-over-slf4j.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/ch.qos.logback/logback-core/1.1.3/jars/logback-core.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/ch.qos.logback/logback-classic/1.1.3/jars/logback-classic.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.typesafe.akka/akka-actor_2.11/2.3.11/jars/akka-actor_2.11.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.typesafe.akka/akka-slf4j_2.11/2.3.11/jars/akka-slf4j_2.11.jar:/Users/ryanmccormack/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.10.jar:/Users/ryanmccormack/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/ryanmccormack/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/ryanmccormack/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.google.inject/guice/4.0/jars/guice.jar:/Users/ryanmccormack/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar:/Users/ryanmccormack/.ivy2/cache/aopalliance/aopalliance/jars/aopalliance-1.0.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.google.inject.extensions/guice-assistedinject/4.0/jars/guice-assistedinject.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/io.netty/netty/bundles/netty-3.10.3.Final.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.typesafe.netty/netty-http-pipelining/1.1.4/jars/netty-http-pipelining.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.4.2.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/net.sf.ehcache/ehcache-core/2.6.11/jars/ehcache-core.jar:/Users/ryanmccormack/.ivy2/cache/com.mohiva/play-silhouette_2.11/jars/play-silhouette_2.11-3.0.0-RC2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.4.1.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.google.guava/guava/18.0/bundles/guava.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.ning/async-http-client/1.9.21/jars/async-http-client.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/oauth.signpost/signpost-core/1.2.1.2/jars/signpost-core.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/oauth.signpost/signpost-commonshttp4/1.2.1.2/jars/signpost-commonshttp4.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/Users/ryanmccormack/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/ryanmccormack/.ivy2/cache/org.mindrot/jbcrypt/jars/jbcrypt-0.3m.jar:/Users/ryanmccormack/.ivy2/cache/com.atlassian.jwt/jwt-core/jars/jwt-core-1.2.4.jar:/Users/ryanmccormack/.ivy2/cache/com.nimbusds/nimbus-jose-jwt/jars/nimbus-jose-jwt-2.16.jar:/Users/ryanmccormack/.ivy2/cache/net.jcip/jcip-annotations/jars/jcip-annotations-1.0.jar:/Users/ryanmccormack/.ivy2/cache/net.minidev/json-smart/jars/json-smart-1.1.1.jar:/Users/ryanmccormack/.ivy2/cache/javax.mail/mail/jars/mail-1.4.7.jar:/Users/ryanmccormack/.ivy2/cache/javax.activation/activation/jars/activation-1.1.jar:/Users/ryanmccormack/.ivy2/cache/org.bouncycastle/bcprov-jdk15on/jars/bcprov-jdk15on-1.51.jar:/Users/ryanmccormack/.ivy2/cache/com.atlassian.jwt/jwt-api/jars/jwt-api-1.2.4.jar:/Users/ryanmccormack/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.1.jar:/Users/ryanmccormack/.ivy2/cache/com.kyleu/jdub-async_2.11/jars/jdub-async_2.11-1.0.jar:/Users/ryanmccormack/.ivy2/cache/com.github.mauricio/postgresql-async_2.11/jars/postgresql-async_2.11-0.2.16.jar:/Users/ryanmccormack/.ivy2/cache/com.github.mauricio/db-async-common_2.11/jars/db-async-common_2.11-0.2.16.jar:/Users/ryanmccormack/.ivy2/cache/io.netty/netty-all/jars/netty-all-4.0.25.Final.jar:/Users/ryanmccormack/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.3.5.jar:/Users/ryanmccormack/.ivy2/cache/org.webjars/jquery/jars/jquery-1.11.1.jar
+Scala compilation took 1.207449866 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Copy resource mappings: 
+	(/Users/ryanmccormack/Documents/thunderdome/conf/application.conf,/Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/classes/application.conf)
+	(/Users/ryanmccormack/Documents/thunderdome/conf/changeme.conf,/Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/classes/changeme.conf)
+	(/Users/ryanmccormack/Documents/thunderdome/conf/logback.xml,/Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/classes/logback.xml)
+	(/Users/ryanmccormack/Documents/thunderdome/conf/routes,/Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/classes/routes)
+Total time: 2 s, completed 17-Jan-2017 10:23:36 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/ryanmccormack/Documents/thunderdome/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@7f37274e, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/contests.template.scala, /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/contest.template.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/contests.template.scala, /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/contest.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/contests.template.scala, /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/contest.template.scala)
+
+Read from stdout: Compiling 2 Scala sources to /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/classes...
+Compiling 2 Scala sources to /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Running cached compiler 1b36ca48, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/ryanmccormack/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+	-classpath
+	/Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/classes:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar:/Users/ryanmccormack/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.4.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.2.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.typesafe.play/build-link/2.4.2/jars/build-link.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.typesafe.play/play-exceptions/2.4.2/jars/play-exceptions.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.javassist/javassist/3.19.0-GA/bundles/javassist.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.4.2.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.scala-stm/scala-stm_2.11/0.7/jars/scala-stm_2.11.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.typesafe/config/1.3.0/bundles/config.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.4.2.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/joda-time/joda-time/2.8.1/jars/joda-time.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.joda/joda-convert/1.7/jars/joda-convert.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.6.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.fasterxml.jackson.core/jackson-core/2.5.4/bundles/jackson-core.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.fasterxml.jackson.core/jackson-annotations/2.5.4/bundles/jackson-annotations.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.fasterxml.jackson.core/jackson-databind/2.5.4/bundles/jackson-databind.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.5.4/bundles/jackson-datatype-jdk8.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.5.4/bundles/jackson-datatype-jsr310.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.4.2.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.slf4j/slf4j-api/1.7.12/jars/slf4j-api.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.slf4j/jul-to-slf4j/1.7.12/jars/jul-to-slf4j.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.slf4j/jcl-over-slf4j/1.7.12/jars/jcl-over-slf4j.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/ch.qos.logback/logback-core/1.1.3/jars/logback-core.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/ch.qos.logback/logback-classic/1.1.3/jars/logback-classic.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.typesafe.akka/akka-actor_2.11/2.3.11/jars/akka-actor_2.11.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.typesafe.akka/akka-slf4j_2.11/2.3.11/jars/akka-slf4j_2.11.jar:/Users/ryanmccormack/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.10.jar:/Users/ryanmccormack/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/ryanmccormack/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/ryanmccormack/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.google.inject/guice/4.0/jars/guice.jar:/Users/ryanmccormack/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar:/Users/ryanmccormack/.ivy2/cache/aopalliance/aopalliance/jars/aopalliance-1.0.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.google.inject.extensions/guice-assistedinject/4.0/jars/guice-assistedinject.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/io.netty/netty/bundles/netty-3.10.3.Final.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.typesafe.netty/netty-http-pipelining/1.1.4/jars/netty-http-pipelining.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.4.2.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/net.sf.ehcache/ehcache-core/2.6.11/jars/ehcache-core.jar:/Users/ryanmccormack/.ivy2/cache/com.mohiva/play-silhouette_2.11/jars/play-silhouette_2.11-3.0.0-RC2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.4.1.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.google.guava/guava/18.0/bundles/guava.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.ning/async-http-client/1.9.21/jars/async-http-client.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/oauth.signpost/signpost-core/1.2.1.2/jars/signpost-core.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/oauth.signpost/signpost-commonshttp4/1.2.1.2/jars/signpost-commonshttp4.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/Users/ryanmccormack/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/ryanmccormack/.ivy2/cache/org.mindrot/jbcrypt/jars/jbcrypt-0.3m.jar:/Users/ryanmccormack/.ivy2/cache/com.atlassian.jwt/jwt-core/jars/jwt-core-1.2.4.jar:/Users/ryanmccormack/.ivy2/cache/com.nimbusds/nimbus-jose-jwt/jars/nimbus-jose-jwt-2.16.jar:/Users/ryanmccormack/.ivy2/cache/net.jcip/jcip-annotations/jars/jcip-annotations-1.0.jar:/Users/ryanmccormack/.ivy2/cache/net.minidev/json-smart/jars/json-smart-1.1.1.jar:/Users/ryanmccormack/.ivy2/cache/javax.mail/mail/jars/mail-1.4.7.jar:/Users/ryanmccormack/.ivy2/cache/javax.activation/activation/jars/activation-1.1.jar:/Users/ryanmccormack/.ivy2/cache/org.bouncycastle/bcprov-jdk15on/jars/bcprov-jdk15on-1.51.jar:/Users/ryanmccormack/.ivy2/cache/com.atlassian.jwt/jwt-api/jars/jwt-api-1.2.4.jar:/Users/ryanmccormack/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.1.jar:/Users/ryanmccormack/.ivy2/cache/com.kyleu/jdub-async_2.11/jars/jdub-async_2.11-1.0.jar:/Users/ryanmccormack/.ivy2/cache/com.github.mauricio/postgresql-async_2.11/jars/postgresql-async_2.11-0.2.16.jar:/Users/ryanmccormack/.ivy2/cache/com.github.mauricio/db-async-common_2.11/jars/db-async-common_2.11-0.2.16.jar:/Users/ryanmccormack/.ivy2/cache/io.netty/netty-all/jars/netty-all-4.0.25.Final.jar:/Users/ryanmccormack/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.3.5.jar:/Users/ryanmccormack/.ivy2/cache/org.webjars/jquery/jars/jquery-1.11.1.jar
+Read from stdout: /Users/ryanmccormack/Documents/thunderdome/app/views/contest.scala.html:24: illegal start of simple expression
+/Users/ryanmccormack/Documents/thunderdome/app/views/contest.scala.html:24: illegal start of simple expression
+Read from stdout: <li><a href="@routes.SubimssionController.submission(@contest.contest_id.toString)">Make a submission</a></li>
+                    <li><a href="@routes.SubimssionController.submission(@contest.contest_id.toString)">Make a submission</a></li>
+Read from stdout: ^
+                                                                         ^
+Read from stdout: /Users/ryanmccormack/Documents/thunderdome/app/views/contest.scala.html:27: ')' expected but '}' found.
+/Users/ryanmccormack/Documents/thunderdome/app/views/contest.scala.html:27: ')' expected but '}' found.
+Read from stdout: 
+        
+Read from stdout: ^
+        ^
+Read from stdout: two errors found
+two errors found
+Compilation failed (CompilerInterface)
+Total time: 1 s, completed 17-Jan-2017 10:25:04 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/ryanmccormack/Documents/thunderdome/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@4d2c1fea, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/contests.template.scala, /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/contest.template.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/contests.template.scala, /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/contest.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/contests.template.scala, /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/contest.template.scala)
+
+Read from stdout: Compiling 2 Scala sources to /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/classes...
+Compiling 2 Scala sources to /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Running cached compiler 366a9bf4, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/ryanmccormack/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+	-classpath
+	/Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/classes:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar:/Users/ryanmccormack/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.4.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.2.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.typesafe.play/build-link/2.4.2/jars/build-link.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.typesafe.play/play-exceptions/2.4.2/jars/play-exceptions.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.javassist/javassist/3.19.0-GA/bundles/javassist.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.4.2.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.scala-stm/scala-stm_2.11/0.7/jars/scala-stm_2.11.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.typesafe/config/1.3.0/bundles/config.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.4.2.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/joda-time/joda-time/2.8.1/jars/joda-time.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.joda/joda-convert/1.7/jars/joda-convert.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.6.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.fasterxml.jackson.core/jackson-core/2.5.4/bundles/jackson-core.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.fasterxml.jackson.core/jackson-annotations/2.5.4/bundles/jackson-annotations.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.fasterxml.jackson.core/jackson-databind/2.5.4/bundles/jackson-databind.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.5.4/bundles/jackson-datatype-jdk8.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.5.4/bundles/jackson-datatype-jsr310.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.4.2.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.slf4j/slf4j-api/1.7.12/jars/slf4j-api.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.slf4j/jul-to-slf4j/1.7.12/jars/jul-to-slf4j.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.slf4j/jcl-over-slf4j/1.7.12/jars/jcl-over-slf4j.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/ch.qos.logback/logback-core/1.1.3/jars/logback-core.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/ch.qos.logback/logback-classic/1.1.3/jars/logback-classic.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.typesafe.akka/akka-actor_2.11/2.3.11/jars/akka-actor_2.11.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.typesafe.akka/akka-slf4j_2.11/2.3.11/jars/akka-slf4j_2.11.jar:/Users/ryanmccormack/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.10.jar:/Users/ryanmccormack/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/ryanmccormack/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/ryanmccormack/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.google.inject/guice/4.0/jars/guice.jar:/Users/ryanmccormack/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar:/Users/ryanmccormack/.ivy2/cache/aopalliance/aopalliance/jars/aopalliance-1.0.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.google.inject.extensions/guice-assistedinject/4.0/jars/guice-assistedinject.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/io.netty/netty/bundles/netty-3.10.3.Final.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.typesafe.netty/netty-http-pipelining/1.1.4/jars/netty-http-pipelining.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.4.2.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/net.sf.ehcache/ehcache-core/2.6.11/jars/ehcache-core.jar:/Users/ryanmccormack/.ivy2/cache/com.mohiva/play-silhouette_2.11/jars/play-silhouette_2.11-3.0.0-RC2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.4.1.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.google.guava/guava/18.0/bundles/guava.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.ning/async-http-client/1.9.21/jars/async-http-client.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/oauth.signpost/signpost-core/1.2.1.2/jars/signpost-core.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/oauth.signpost/signpost-commonshttp4/1.2.1.2/jars/signpost-commonshttp4.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/Users/ryanmccormack/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/ryanmccormack/.ivy2/cache/org.mindrot/jbcrypt/jars/jbcrypt-0.3m.jar:/Users/ryanmccormack/.ivy2/cache/com.atlassian.jwt/jwt-core/jars/jwt-core-1.2.4.jar:/Users/ryanmccormack/.ivy2/cache/com.nimbusds/nimbus-jose-jwt/jars/nimbus-jose-jwt-2.16.jar:/Users/ryanmccormack/.ivy2/cache/net.jcip/jcip-annotations/jars/jcip-annotations-1.0.jar:/Users/ryanmccormack/.ivy2/cache/net.minidev/json-smart/jars/json-smart-1.1.1.jar:/Users/ryanmccormack/.ivy2/cache/javax.mail/mail/jars/mail-1.4.7.jar:/Users/ryanmccormack/.ivy2/cache/javax.activation/activation/jars/activation-1.1.jar:/Users/ryanmccormack/.ivy2/cache/org.bouncycastle/bcprov-jdk15on/jars/bcprov-jdk15on-1.51.jar:/Users/ryanmccormack/.ivy2/cache/com.atlassian.jwt/jwt-api/jars/jwt-api-1.2.4.jar:/Users/ryanmccormack/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.1.jar:/Users/ryanmccormack/.ivy2/cache/com.kyleu/jdub-async_2.11/jars/jdub-async_2.11-1.0.jar:/Users/ryanmccormack/.ivy2/cache/com.github.mauricio/postgresql-async_2.11/jars/postgresql-async_2.11-0.2.16.jar:/Users/ryanmccormack/.ivy2/cache/com.github.mauricio/db-async-common_2.11/jars/db-async-common_2.11-0.2.16.jar:/Users/ryanmccormack/.ivy2/cache/io.netty/netty-all/jars/netty-all-4.0.25.Final.jar:/Users/ryanmccormack/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.3.5.jar:/Users/ryanmccormack/.ivy2/cache/org.webjars/jquery/jars/jquery-1.11.1.jar
+Read from stdout: /Users/ryanmccormack/Documents/thunderdome/app/views/contest.scala.html:24: value SubimssionController is not a member of object controllers.routes
+/Users/ryanmccormack/Documents/thunderdome/app/views/contest.scala.html:24: value SubimssionController is not a member of object controllers.routes
+Read from stdout: <li><a href="@routes.SubimssionController.submission(contest.contest_id.toString)">Make a submission</a></li>
+                    <li><a href="@routes.SubimssionController.submission(contest.contest_id.toString)">Make a submission</a></li>
+Read from stdout: ^
+                                         ^
+Read from stdout: one error found
+one error found
+Compilation failed (CompilerInterface)
+Total time: 1 s, completed 17-Jan-2017 10:25:21 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/ryanmccormack/Documents/thunderdome/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@332e8986, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/contests.template.scala, /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/contest.template.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/contests.template.scala, /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/contest.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/contests.template.scala, /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/contest.template.scala)
+
+Read from stdout: Compiling 2 Scala sources to /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/classes...
+Compiling 2 Scala sources to /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Running cached compiler 7d6935b8, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/ryanmccormack/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+	-classpath
+	/Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/classes:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar:/Users/ryanmccormack/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.4.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.2.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.typesafe.play/build-link/2.4.2/jars/build-link.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.typesafe.play/play-exceptions/2.4.2/jars/play-exceptions.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.javassist/javassist/3.19.0-GA/bundles/javassist.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.4.2.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.scala-stm/scala-stm_2.11/0.7/jars/scala-stm_2.11.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.typesafe/config/1.3.0/bundles/config.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.4.2.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/joda-time/joda-time/2.8.1/jars/joda-time.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.joda/joda-convert/1.7/jars/joda-convert.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.6.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.fasterxml.jackson.core/jackson-core/2.5.4/bundles/jackson-core.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.fasterxml.jackson.core/jackson-annotations/2.5.4/bundles/jackson-annotations.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.fasterxml.jackson.core/jackson-databind/2.5.4/bundles/jackson-databind.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.5.4/bundles/jackson-datatype-jdk8.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.5.4/bundles/jackson-datatype-jsr310.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.4.2.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.slf4j/slf4j-api/1.7.12/jars/slf4j-api.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.slf4j/jul-to-slf4j/1.7.12/jars/jul-to-slf4j.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.slf4j/jcl-over-slf4j/1.7.12/jars/jcl-over-slf4j.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/ch.qos.logback/logback-core/1.1.3/jars/logback-core.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/ch.qos.logback/logback-classic/1.1.3/jars/logback-classic.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.typesafe.akka/akka-actor_2.11/2.3.11/jars/akka-actor_2.11.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.typesafe.akka/akka-slf4j_2.11/2.3.11/jars/akka-slf4j_2.11.jar:/Users/ryanmccormack/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.10.jar:/Users/ryanmccormack/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/ryanmccormack/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/ryanmccormack/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.google.inject/guice/4.0/jars/guice.jar:/Users/ryanmccormack/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar:/Users/ryanmccormack/.ivy2/cache/aopalliance/aopalliance/jars/aopalliance-1.0.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.google.inject.extensions/guice-assistedinject/4.0/jars/guice-assistedinject.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/io.netty/netty/bundles/netty-3.10.3.Final.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.typesafe.netty/netty-http-pipelining/1.1.4/jars/netty-http-pipelining.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.4.2.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/net.sf.ehcache/ehcache-core/2.6.11/jars/ehcache-core.jar:/Users/ryanmccormack/.ivy2/cache/com.mohiva/play-silhouette_2.11/jars/play-silhouette_2.11-3.0.0-RC2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.4.1.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.google.guava/guava/18.0/bundles/guava.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.ning/async-http-client/1.9.21/jars/async-http-client.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/oauth.signpost/signpost-core/1.2.1.2/jars/signpost-core.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/oauth.signpost/signpost-commonshttp4/1.2.1.2/jars/signpost-commonshttp4.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/Users/ryanmccormack/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/ryanmccormack/.ivy2/cache/org.mindrot/jbcrypt/jars/jbcrypt-0.3m.jar:/Users/ryanmccormack/.ivy2/cache/com.atlassian.jwt/jwt-core/jars/jwt-core-1.2.4.jar:/Users/ryanmccormack/.ivy2/cache/com.nimbusds/nimbus-jose-jwt/jars/nimbus-jose-jwt-2.16.jar:/Users/ryanmccormack/.ivy2/cache/net.jcip/jcip-annotations/jars/jcip-annotations-1.0.jar:/Users/ryanmccormack/.ivy2/cache/net.minidev/json-smart/jars/json-smart-1.1.1.jar:/Users/ryanmccormack/.ivy2/cache/javax.mail/mail/jars/mail-1.4.7.jar:/Users/ryanmccormack/.ivy2/cache/javax.activation/activation/jars/activation-1.1.jar:/Users/ryanmccormack/.ivy2/cache/org.bouncycastle/bcprov-jdk15on/jars/bcprov-jdk15on-1.51.jar:/Users/ryanmccormack/.ivy2/cache/com.atlassian.jwt/jwt-api/jars/jwt-api-1.2.4.jar:/Users/ryanmccormack/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.1.jar:/Users/ryanmccormack/.ivy2/cache/com.kyleu/jdub-async_2.11/jars/jdub-async_2.11-1.0.jar:/Users/ryanmccormack/.ivy2/cache/com.github.mauricio/postgresql-async_2.11/jars/postgresql-async_2.11-0.2.16.jar:/Users/ryanmccormack/.ivy2/cache/com.github.mauricio/db-async-common_2.11/jars/db-async-common_2.11-0.2.16.jar:/Users/ryanmccormack/.ivy2/cache/io.netty/netty-all/jars/netty-all-4.0.25.Final.jar:/Users/ryanmccormack/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.3.5.jar:/Users/ryanmccormack/.ivy2/cache/org.webjars/jquery/jars/jquery-1.11.1.jar
+Scala compilation took 1.023527474 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Copy resource mappings: 
+	(/Users/ryanmccormack/Documents/thunderdome/conf/application.conf,/Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/classes/application.conf)
+	(/Users/ryanmccormack/Documents/thunderdome/conf/changeme.conf,/Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/classes/changeme.conf)
+	(/Users/ryanmccormack/Documents/thunderdome/conf/logback.xml,/Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/classes/logback.xml)
+	(/Users/ryanmccormack/Documents/thunderdome/conf/routes,/Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/classes/routes)
+Total time: 1 s, completed 17-Jan-2017 10:25:37 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/ryanmccormack/Documents/thunderdome/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@240bc06e, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/contest.template.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/contest.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/twirl/main/views/html/contest.template.scala)
+
+Read from stdout: Compiling 1 Scala source to /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/classes...
+Compiling 1 Scala source to /Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Running cached compiler 24ec7602, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes:/Users/ryanmccormack/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+	-classpath
+	/Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/classes:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.typesafe.play/twirl-api_2.11/1.1.1/jars/twirl-api_2.11.jar:/Users/ryanmccormack/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.4.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.2.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.typesafe.play/build-link/2.4.2/jars/build-link.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.typesafe.play/play-exceptions/2.4.2/jars/play-exceptions.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.javassist/javassist/3.19.0-GA/bundles/javassist.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.4.2.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.scala-stm/scala-stm_2.11/0.7/jars/scala-stm_2.11.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.typesafe/config/1.3.0/bundles/config.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.4.2.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/joda-time/joda-time/2.8.1/jars/joda-time.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.joda/joda-convert/1.7/jars/joda-convert.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.6.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.fasterxml.jackson.core/jackson-core/2.5.4/bundles/jackson-core.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.fasterxml.jackson.core/jackson-annotations/2.5.4/bundles/jackson-annotations.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.fasterxml.jackson.core/jackson-databind/2.5.4/bundles/jackson-databind.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.5.4/bundles/jackson-datatype-jdk8.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.5.4/bundles/jackson-datatype-jsr310.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.4.2.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.slf4j/slf4j-api/1.7.12/jars/slf4j-api.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.slf4j/jul-to-slf4j/1.7.12/jars/jul-to-slf4j.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.slf4j/jcl-over-slf4j/1.7.12/jars/jcl-over-slf4j.jar:/Users/ryanmccormack/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/ch.qos.logback/logback-core/1.1.3/jars/logback-core.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/ch.qos.logback/logback-classic/1.1.3/jars/logback-classic.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.typesafe.akka/akka-actor_2.11/2.3.11/jars/akka-actor_2.11.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.typesafe.akka/akka-slf4j_2.11/2.3.11/jars/akka-slf4j_2.11.jar:/Users/ryanmccormack/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.10.jar:/Users/ryanmccormack/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/ryanmccormack/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/ryanmccormack/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.google.inject/guice/4.0/jars/guice.jar:/Users/ryanmccormack/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar:/Users/ryanmccormack/.ivy2/cache/aopalliance/aopalliance/jars/aopalliance-1.0.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.google.inject.extensions/guice-assistedinject/4.0/jars/guice-assistedinject.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.4.2.jar:/Users/ryanmccormack/.ivy2/cache/io.netty/netty/bundles/netty-3.10.3.Final.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.typesafe.netty/netty-http-pipelining/1.1.4/jars/netty-http-pipelining.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.4.2.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/net.sf.ehcache/ehcache-core/2.6.11/jars/ehcache-core.jar:/Users/ryanmccormack/.ivy2/cache/com.mohiva/play-silhouette_2.11/jars/play-silhouette_2.11-3.0.0-RC2.jar:/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.4.1.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.google.guava/guava/18.0/bundles/guava.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.ning/async-http-client/1.9.21/jars/async-http-client.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/oauth.signpost/signpost-core/1.2.1.2/jars/signpost-core.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/oauth.signpost/signpost-commonshttp4/1.2.1.2/jars/signpost-commonshttp4.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.apache.httpcomponents/httpcore/4.0.1/jars/httpcore.jar:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.apache.httpcomponents/httpclient/4.0.1/jars/httpclient.jar:/Users/ryanmccormack/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/ryanmccormack/.ivy2/cache/org.mindrot/jbcrypt/jars/jbcrypt-0.3m.jar:/Users/ryanmccormack/.ivy2/cache/com.atlassian.jwt/jwt-core/jars/jwt-core-1.2.4.jar:/Users/ryanmccormack/.ivy2/cache/com.nimbusds/nimbus-jose-jwt/jars/nimbus-jose-jwt-2.16.jar:/Users/ryanmccormack/.ivy2/cache/net.jcip/jcip-annotations/jars/jcip-annotations-1.0.jar:/Users/ryanmccormack/.ivy2/cache/net.minidev/json-smart/jars/json-smart-1.1.1.jar:/Users/ryanmccormack/.ivy2/cache/javax.mail/mail/jars/mail-1.4.7.jar:/Users/ryanmccormack/.ivy2/cache/javax.activation/activation/jars/activation-1.1.jar:/Users/ryanmccormack/.ivy2/cache/org.bouncycastle/bcprov-jdk15on/jars/bcprov-jdk15on-1.51.jar:/Users/ryanmccormack/.ivy2/cache/com.atlassian.jwt/jwt-api/jars/jwt-api-1.2.4.jar:/Users/ryanmccormack/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.1.jar:/Users/ryanmccormack/.ivy2/cache/com.kyleu/jdub-async_2.11/jars/jdub-async_2.11-1.0.jar:/Users/ryanmccormack/.ivy2/cache/com.github.mauricio/postgresql-async_2.11/jars/postgresql-async_2.11-0.2.16.jar:/Users/ryanmccormack/.ivy2/cache/com.github.mauricio/db-async-common_2.11/jars/db-async-common_2.11-0.2.16.jar:/Users/ryanmccormack/.ivy2/cache/io.netty/netty-all/jars/netty-all-4.0.25.Final.jar:/Users/ryanmccormack/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.3.5.jar:/Users/ryanmccormack/.ivy2/cache/org.webjars/jquery/jars/jquery-1.11.1.jar
+Scala compilation took 1.23925298 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Copy resource mappings: 
+	(/Users/ryanmccormack/Documents/thunderdome/conf/application.conf,/Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/classes/application.conf)
+	(/Users/ryanmccormack/Documents/thunderdome/conf/changeme.conf,/Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/classes/changeme.conf)
+	(/Users/ryanmccormack/Documents/thunderdome/conf/logback.xml,/Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/classes/logback.xml)
+	(/Users/ryanmccormack/Documents/thunderdome/conf/routes,/Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/classes/routes)
+Total time: 2 s, completed 17-Jan-2017 10:25:56 PM
+> server-post-command-cleanup
+> server-handle-next-server-request

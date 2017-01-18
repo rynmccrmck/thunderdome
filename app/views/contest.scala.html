@@ -21,7 +21,7 @@ contest: models.contests.Contest)@layout.bootstrap("Play Silhouette Postgres Asy
                     <li><a href="">View the leaderboard</a></li>
                     <li><a href="">Read the description</a></li>
                     <li><a href="">Get the data</a></li>
-                    <li><a href="">Make a submission</a></li>
+                    <li><a href="@routes.SubmissionController.submission(contest.contest_id.toString)">Make a submission</a></li>
                     
         }
         

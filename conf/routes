@@ -21,7 +21,7 @@ GET         /admin/edit-users       controllers.UserController.editUsers
 # User
 GET         /contests  controllers.ContestController.contests
 GET         /contest/:contest_id        controllers.ContestController.contest(contest_id)
-GET         /submission                 controllers.SubmissionController.submission
+GET         /submission/:contest_id      controllers.SubmissionController.submission(contest_id)
 GET         /submissions                controllers.ContestController.contestForm
 
 #upload
