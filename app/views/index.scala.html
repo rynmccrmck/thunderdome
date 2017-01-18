@@ -8,27 +8,23 @@
             @(_homeCarousel())
         
         } else {
-
-        <h2>Welcome back @user.username!</h2>
-        <h4>You have 0 contests ongoing.</h4>
-        <ul>
-          <li>You're signed in as user @user.username.map { un =>: @{un} }</li>
-          <li>
-            Profiles:
-            @user.profiles.map { p =>
-              <div>@p.providerID: @p.providerKey</div>
-            }
-          </li>
-          <li><a href="@routes.ProfileController.profile">View Profile</a></li>
+        <div class="container">
+         <div class="row">
+          <div class="col-md-12">
+            <h2>Welcome back @user.username!</h2>
+            <h4>You have 0 contests ongoing.</h4>
+            <ul>
+              <li>You're signed in as user @user.username.map { un =>: @{un} }</li>
+              <li>
+                Profiles:
+                @user.profiles.map { p =>
+                  <div>@p.providerID: @p.providerKey</div>
+                }
+              </li>
+              <li><a href="@routes.ProfileController.profile">View Profile</a></li>
+            </ul>
+            </div>
+          </div>
+        </div>
         }
-        
-          <div class="container">
-  
-    <div class="row">
-      <div class="col-md-12">
-        
-        </ul>
-      </div>
-    </div>
-  </div>
 }

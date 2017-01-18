@@ -1,2 +1,0 @@
-2017-01-17 22:42:44,399 [INFO] from play.api.libs.concurrent.ActorSystemProvider in play-fork-run-akka.actor.default-dispatcher-6 - Starting application default Akka system: application
-2017-01-17 22:42:44,510 [INFO] from play.core.server.NettyServer in play-fork-run-akka.actor.default-dispatcher-6 - Listening for HTTP on /0:0:0:0:0:0:0:0:9000

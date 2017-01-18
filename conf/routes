@@ -1,5 +1,5 @@
-GET         /                        controllers.HomeController.index
-GET         /admin              controllers.HomeController.admin
+GET         /                       controllers.HomeController.index
+GET         /admin                  controllers.HomeController.admin
 
 # Authentication
 GET         /signup                  controllers.RegistrationController.registrationForm
@@ -14,15 +14,25 @@ GET         /profile                 controllers.ProfileController.profile
 
 # Admin
 GET         /admin/create-contest   controllers.ContestController.contestForm
+POST        /admin/contest          controllers.ContestController.create
 GET         /admin/edit-contest     controllers.ContestController.contestForm
 GET         /admin/invite-users     controllers.UserController.userInviteForm
 GET         /admin/edit-users       controllers.UserController.editUsers
 
-# User
-GET         /contests  controllers.ContestController.contests
+# contests
+GET         /contests                   controllers.ContestController.contests
+
+# contest
 GET         /contest/:contest_id        controllers.ContestController.contest(contest_id)
+
+
+# submission
 GET         /submission/:contest_id      controllers.SubmissionController.submission(contest_id)
+
+# submissions
 GET         /submissions                controllers.ContestController.contestForm
+
+
 
 #upload
 POST        /upload                     controllers.SubmissionController.upload
