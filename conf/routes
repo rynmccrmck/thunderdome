@@ -21,9 +21,11 @@ GET         /admin/edit-users       controllers.UserController.editUsers
 # User
 GET         /contests  controllers.ContestController.contests
 GET         /contest/:contest_id        controllers.ContestController.contest(contest_id)
+GET         /submission                 controllers.SubmissionController.submission
 GET         /submissions                controllers.ContestController.contestForm
-GET         /submission                 controllers.ContestController.contestForm
 
+#upload
+POST        /upload                     controllers.SubmissionController.upload
 
 GET         /assets/*file            controllers.Assets.versioned(path="/public", file: Asset)
 GET         /favicon.ico   controllers.Assets.at(path="/public", file="favicon.ico")

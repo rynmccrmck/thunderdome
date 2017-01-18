@@ -1,0 +1,8 @@
+New log file opened at Tue Jan 17 21:56:52 EST 2017 by 56269@Ryans-MBP
+Sending msg to client activator-eae0a623-aabd-40dc-ac55-72ff493ddf8e: DetachedLogEvent(LogSuccess(Total time: 1 s, completed 17-Jan-2017 9:56:52 PM))
+Sending msg to client activator-eae0a623-aabd-40dc-ac55-72ff493ddf8e: DetachedLogEvent(LogMessage(debug,> server-post-command-cleanup))
+Sending msg to client activator-eae0a623-aabd-40dc-ac55-72ff493ddf8e: ExecutionSuccess(74)
+Sending msg to client activator-eae0a623-aabd-40dc-ac55-72ff493ddf8e: DetachedLogEvent(LogMessage(debug,> server-handle-next-server-request))
+Sending msg to client activator-eae0a623-aabd-40dc-ac55-72ff493ddf8e: BackgroundJobLogEvent(4,LogMessage(info,- play.api.libs.concurrent.ActorSystemProvider - Starting application default Akka system: silhouette))
+Sending msg to client activator-eae0a623-aabd-40dc-ac55-72ff493ddf8e: BackgroundJobLogEvent(4,LogMessage(info,- play.api.Play - Application started (Dev)))
+Sending msg to client activator-eae0a623-aabd-40dc-ac55-72ff493ddf8e: BackgroundJobLogEvent(4,LogMessage(error,- application - Called uploadFile functionPOST /upload))
