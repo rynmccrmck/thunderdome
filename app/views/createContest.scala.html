@@ -5,6 +5,7 @@
 
  @(_navBar(user,"home"))
 
+<div class="container">
     <h1>Customer Form</h1>
     @form(action=controllers.routes.ContestController.create()) {
         @inputText(contestForm("contest_name"))
@@ -15,5 +16,6 @@
         @inputText(contestForm("benchmark_value"))
         <input type="submit" value="Submit">
     }
+</div>
 }
 

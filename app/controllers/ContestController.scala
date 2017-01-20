@@ -13,6 +13,7 @@ import models.queries.ContestQueries
 
 import models.queries.ProfileQueries
 import scala.concurrent.Future
+import services.admin._
 
 @javax.inject.Singleton
 class ContestController @javax.inject.Inject() (
@@ -43,9 +44,9 @@ class ContestController @javax.inject.Inject() (
     println(test)
     test.fold(
       formWithErrors =>  Future.successful(BadRequest(views.html.index(request.identity))),
-      contest =>  {UserForms.contestForm.fill(contest); Future.successful(Ok(s"Customer ${contest.contest_name} created successfully"))}
+      contest =>  {ContestCreateService.save(contest); Future.successful(Ok(s"Customer ${contest.contest_name} created successfully"))}
     )
   }
-  
+
 
 } 
