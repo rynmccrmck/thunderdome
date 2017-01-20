@@ -3925,3 +3925,24 @@ New client attempting to connect on port: 54642-54480
 This client on port 54642 has uuid b27796af-2939-4022-9d7d-56ce12c22a8f configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
 Connected Clients: activator-eae0a623-aabd-40dc-ac55-72ff493ddf8e, play-fork-run-3c71b224-8bb9-4abf-ab01-db6e697b120b, play-fork-run-b27796af-2939-4022-9d7d-56ce12c22a8f
 Taking next connection to: 54480
+Checking to see if clients are empty...
+We have 2 non-daemon clients, continuing serving connections.
+Taking next connection to: 54480
+Checking to see if clients are empty...
+We have 2 non-daemon clients, continuing serving connections.
+Taking next connection to: 54480
+Checking to see if clients are empty...
+We have 2 non-daemon clients, continuing serving connections.
+Taking next connection to: 54480
+Checking to see if clients are empty...
+We have 2 non-daemon clients, continuing serving connections.
+Taking next connection to: 54480
+Checking to see if clients are empty...
+We have 2 non-daemon clients, continuing serving connections.
+Taking next connection to: 54480
+Checking to see if clients are empty...
+We have 2 non-daemon clients, continuing serving connections.
+Taking next connection to: 54480
+Checking to see if clients are empty...
+We have 2 non-daemon clients, continuing serving connections.
+Taking next connection to: 54480
