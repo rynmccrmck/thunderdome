@@ -2,9 +2,7 @@
   implicit request: Request[AnyContent], session: Session, flash: Flash, messages: Messages
 )@layout.bootstrap("Register") {
 
-
  @(_navBar(user,"home"))
-
 
   <div class="sign-up">
     @flash.get("error").map { e =>

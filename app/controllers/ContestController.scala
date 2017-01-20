@@ -41,40 +41,15 @@ class ContestController @javax.inject.Inject() (
   def create = withSession { implicit request =>
     UserForms.contestForm.bindFromRequest.fold(
       form => Future.successful(BadRequest(views.html.createContest(request.identity, form))),
-      data => { Future.successful {Ok("test")}
-        //env.identityService.retrieve(LoginInfo(CredentialsProvider.ID, data.email)).flatMap {
-    //      case Some(user) => Future.successful {
-   //         Ok(views.html.register(request.identity, UserForms.registrationForm.fill(data))).flashing("error" -> "That email address is already taken.")
- //         }
-  //        case None => env.identityService.retrieve(data.username) flatMap {
-//            case Some(user) => Future.successful {
-  //            Ok(views.html.register(request.identity, UserForms.registrationForm.fill(data))).flashing("error" -> "That username is already taken.")
-    //        }
-      //      case None => saveProfile(data)
-          //}
-       // }
-      }
-    )
-  }
-  /*
-  def createContest = withSession { implicit request =>
-    UserForms.contestForm.bindFromRequest.fold(
-      form => Future.successful(BadRequest(views.html.createContest(request.identity, form))),
       data => {
-        env.identityService.retrieve(LoginInfo(CredentialsProvider.ID, data.email)).flatMap {
+        env.identityService.retrieve(LoginInfo(CredentialsProvider.ID, data.contest_name)).flatMap {
           case Some(user) => Future.successful {
-            Ok(views.html.register(request.identity, UserForms.registrationForm.fill(data))).flashing("error" -> "That email address is already taken.")
-          }
-          case None => env.identityService.retrieve(data.username) flatMap {
-            case Some(user) => Future.successful {
-              Ok(views.html.register(request.identity, UserForms.registrationForm.fill(data))).flashing("error" -> "That username is already taken.")
-            }
-            case None => saveProfile(data)
+            Ok(views.html.createContest(request.identity, UserForms.contestForm.fill(data))).flashing("error" -> "That email address is already taken.")
           }
         }
       }
     )
   }
   
-  */
+
 } 
