@@ -43,7 +43,7 @@ class ContestController @javax.inject.Inject() (
     println(test)
     test.fold(
       formWithErrors =>  Future.successful(BadRequest(views.html.index(request.identity))),
-      contest =>  Future.successful(Ok(s"Customer ${contest.contest_name} created successfully"))
+      contest =>  {UserForms.contestForm.fill(contest); Future.successful(Ok(s"Customer ${contest.contest_name} created successfully"))}
     )
   }
   
