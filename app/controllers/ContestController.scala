@@ -39,15 +39,11 @@ class ContestController @javax.inject.Inject() (
   }
   
   def create = withSession { implicit request =>
-    UserForms.contestForm.bindFromRequest.fold(
-      form => Future.successful(BadRequest(views.html.createContest(request.identity, form))),
-      data => {
-        env.identityService.retrieve(LoginInfo(CredentialsProvider.ID, data.contest_name)).flatMap {
-          case Some(user) => Future.successful {
-            Ok(views.html.createContest(request.identity, UserForms.contestForm.fill(data))).flashing("error" -> "That email address is already taken.")
-          }
-        }
-      }
+    val test = UserForms.contestForm.bindFromRequest()
+    println(test)
+    test.fold(
+      formWithErrors =>  Future.successful(BadRequest(views.html.index(request.identity))),
+      contest =>  Future.successful(Ok(s"Customer ${contest.contest_name} created successfully"))
     )
   }
   

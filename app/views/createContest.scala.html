@@ -1,43 +1,19 @@
-@(user: models.user.User, form: Form[models.user.ContestData])
+@(user: models.user.User, contestForm: Form[models.user.ContestData])(implicit messages: Messages)
+@import helper._ 
+
 @layout.bootstrap("Contest Creation") {
 
  @(_navBar(user,"home"))
 
-
-  <div class="container">
-  <div class="form-group">
-  <form method="post" action="@controllers.routes.ContestController.create()">
-    <label for="exampleInputEmail1">Contest Name</label>
-    <input value="@form("contest_name").value" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Broker Bay - 2016 House Price Prediction">
-  </div>
-  <div class="form-group">
-    <label for="exampleSelect1">Problem Type</label>
-    <select class="form-control" id="exampleSelect1">
-      <option >Classification</option>
-      <option>Recommendation</option>
-      <option>Regression</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <label for="exampleSelect2">Evaluation Metric</label>
-    <select class="form-control" id="exampleSelect2">
-      <option val>Root Mean Squared Error</option>
-      <option>Mean Absolute Error</option>
-      <option>Mean Consequential Error</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <label for="exampleTextarea">Contest Description</label>
-    <textarea value="@form("contest_description").value" class="form-control" id="exampleTextarea" rows="3"></textarea>
-  </div>
-  <div class="form-group">
-    <label for="exampleInputFile">Test Set File</label>
-    <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
-    <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
-  </div>
-
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
-</div>
-</div>
+    <h1>Customer Form</h1>
+    @form(action=controllers.routes.ContestController.create()) {
+        @inputText(contestForm("contest_name"))
+        @inputText(contestForm("contest_description"))
+        @inputText(contestForm("contest_start"))
+        @inputText(contestForm("contest_end"))
+        @inputText(contestForm("evaluator_id"))
+        @inputText(contestForm("benchmark_value"))
+        <input type="submit" value="Submit">
+    }
 }
+

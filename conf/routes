@@ -25,7 +25,6 @@ GET         /contests                   controllers.ContestController.contests
 # contest
 GET         /contest/:contest_id        controllers.ContestController.contest(contest_id)
 
-
 # submission
 GET         /submission/:contest_id      controllers.SubmissionController.submission(contest_id)
 
