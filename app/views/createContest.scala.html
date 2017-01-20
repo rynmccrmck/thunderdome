@@ -6,7 +6,7 @@
  @(_navBar(user,"home"))
 
 <div class="container">
-    <h1>Customer Form</h1>
+    <h1>Contest Creation</h1>
     @form(action=controllers.routes.ContestController.create()) {
         @inputText(contestForm("contest_name"))
         @inputText(contestForm("contest_description"))
