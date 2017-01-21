@@ -7,7 +7,7 @@
 
 <div class="container">
     <h1>Contest Creation</h1>
-    @form(action=controllers.routes.ContestController.create()) {
+    @form(action=controllers.routes.ContestController.create(), 'enctype -> "multipart/form-data") {
         @inputText(contestForm("contest_name"))
         @inputText(contestForm("contest_description"))
         @inputDate(contestForm("contest_start"))
@@ -16,6 +16,7 @@
            helper.options("1"->"RMSE","2"->"Logistic Loss"),
         '_label -> "Evaluator", '_default -> "-- Select Evaluation --")
         @inputText(contestForm("benchmark_value"))
+        @inputFile(contestForm("testset"))
         <input type="submit" value="Submit">
     }
 </div>
