@@ -10,7 +10,7 @@ import play.api.mvc.AnyContent
 import services.user.AuthenticationEnvironment
 import jdub.async.Database
 import models.queries.ContestQueries
-
+import models.user._
 import models.queries.ProfileQueries
 import scala.concurrent.Future
 import services.admin._
@@ -44,7 +44,7 @@ class ContestController @javax.inject.Inject() (
     println(test)
     test.fold(
       formWithErrors =>  Future.successful(BadRequest(views.html.index(request.identity))),
-      contest =>  {ContestCreateService.save(contest); Future.successful(Ok(s"Contest ${contest.contest_name} created successfully"))}
+      contest =>  {ContestCreateService.save(request.identity,contest); Future.successful(Ok(s"Contest ${contest.contest_name} created successfully"))}
     )
   }
 

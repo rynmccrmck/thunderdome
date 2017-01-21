@@ -8,6 +8,7 @@ case object CreateContestsTable extends Statement {
     create table contests
     (
        contest_id serial primary key, 
+       user_id uuid not null,
        contest_name character varying(200) not null,
        contest_description text not null,
        contest_created date not null default CURRENT_DATE,

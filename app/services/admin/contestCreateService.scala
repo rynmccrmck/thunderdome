@@ -16,14 +16,13 @@ import scala.concurrent.Future
 
 object ContestCreateService {
 
-  def save(cd:ContestData): Future[Any] = {
+  def save(currentUser: User,cd:ContestData): Future[Any] = {
       cd match { 
-          case ContestData(a,b,c,d,e,f) => {
-              val date = new LocalDate();
-              val con:Contest = Contest(6,a,b,date,c,d,e,f.asInstanceOf[Option[Double]])
-              println(new LocalDate())
+          case ContestData(name,desc,start,end,evalid,bench) => {
+              val createdDate = new LocalDate();
+              val con:Contest = Contest(0,name,currentUser.id,desc,createdDate,start,end,evalid,bench.asInstanceOf[Option[Double]])
               println(s"Updating user [$con].")
-              val statement = ContestQueries.insert(Contest(6,a,b,date,c,d,e,f.asInstanceOf[Option[Double]]))
+              val statement = ContestQueries.insert(con)
             Database.execute(statement).map { i =>
               Contest
             }
