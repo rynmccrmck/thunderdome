@@ -1,5 +1,5 @@
 @(user: models.user.User, 
-contests: Seq[models.contests.Contest])@layout.bootstrap("Contests") {
+contests: Seq[models.contests.ContestDisplay])@layout.bootstrap("Contests") {
 
  @(_navBar(user,"home"))
 
@@ -22,6 +22,7 @@ contests: Seq[models.contests.Contest])@layout.bootstrap("Contests") {
                     <tr>
                     <th>Name</th>
                     <th>Description</th> 
+                    <th>Owner</th>
                     <th>Created</th>
                     <th>Evaluation</th>
                     <th>Link</th>
@@ -32,8 +33,9 @@ contests: Seq[models.contests.Contest])@layout.bootstrap("Contests") {
                       <tr>
                         <td>@contest.contest_name</td>
                         <td>@contest.contest_description</td> 
+                        <td>@contest.user_name</td> 
                         <td>@contest.contest_created</td>
-                        <td>"RMSE"</td>
+                        <td>@contest.evaluator_name</td>
                         <td><a href=@routes.ContestController.contest(contest.contest_id.toString)>Click</a></td>
                       </tr>
                     }

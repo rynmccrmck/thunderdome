@@ -1,6 +1,6 @@
 @(user: models.user.User, contestForm: Form[models.user.ContestData])(implicit messages: Messages)
 @import helper._ 
-
+ 
 @layout.bootstrap("Contest Creation") {
 
  @(_navBar(user,"home"))
@@ -12,7 +12,9 @@
         @inputText(contestForm("contest_description"))
         @inputDate(contestForm("contest_start"))
         @inputDate(contestForm("contest_end"))
-        @inputText(contestForm("evaluation_id"))
+        @select(contestForm("evaluation_id"),
+           helper.options("1"->"RMSE","2"->"Logistic Loss"),
+        '_label -> "Evaluator", '_default -> "-- Select Evaluation --")
         @inputText(contestForm("benchmark_value"))
         <input type="submit" value="Submit">
     }
