@@ -71,7 +71,7 @@ case class SetContestStart(contest_id: Int, contest_start: LocalDate) extends St
   
   override protected def fromRow(row: Row) = {
     val contest_id = row.as[Int]("contest_id")
-    val user_id =  row.as[UUID]("user_id")
+    val user_id =  row.as[String]("user_id")
     val contest_name = row.as[String]("contest_name")
     val contest_description = row.as[String]("contest_description")
     val contest_created = row.as[LocalDate]("contest_created")
@@ -79,7 +79,7 @@ case class SetContestStart(contest_id: Int, contest_start: LocalDate) extends St
     val contest_end = row.as[LocalDate]("contest_end")
     val evaluator_id = row.as[Int]("evaluator_id")
     val benchmark_value = row.asOpt[Double]("benchmark_value")
-    Contest(contest_id,contest_name,user_id,contest_description,contest_created,
+    Contest(contest_id,contest_name,java.util.UUID.fromString(user_id),contest_description,contest_created,
         contest_start,contest_end,evaluator_id,benchmark_value)
   }
   
@@ -92,19 +92,19 @@ case class SetContestStart(contest_id: Int, contest_start: LocalDate) extends St
   (${columns.mkString(", ")}) values (${columns.map(x => "?").mkString(", ")})"""
   
   case object GetContests extends Query[Seq[Contest]] {
-  override val sql = "SELECT* FROM contests"
+  override val sql = "SELECT * FROM contests"
   override val values = Nil
   override def reduce(rows: Iterator[Row]) = rows.map { row =>
     val contest_id = row.as[Int]("contest_id")
-    val user_id =  row.as[UUID]("user_id")
     val contest_name = row.as[String]("contest_name")
+    val user_id = row.as[String]("user_id")
     val contest_description = row.as[String]("contest_description")
     val contest_created = row.as[LocalDate]("contest_created")
     val contest_start = row.as[LocalDate]("contest_start")
     val contest_end = row.as[LocalDate]("contest_end")
     val evaluator_id = row.as[Int]("evaluator_id")
     val benchmark_value = row.asOpt[Double]("benchmark_value")
-    Contest(contest_id,contest_name,user_id,contest_description,contest_created,
+    Contest(contest_id,contest_name,java.util.UUID.fromString(user_id),contest_description,contest_created,
         contest_start,contest_end,evaluator_id,benchmark_value)
   }.toSeq
 }
