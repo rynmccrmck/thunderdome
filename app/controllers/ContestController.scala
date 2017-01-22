@@ -10,9 +10,8 @@ import play.api.libs.concurrent.Execution.Implicits.defaultContext
 import play.api.mvc.AnyContent
 import services.user.AuthenticationEnvironment
 import jdub.async.Database
-import models.queries.ContestQueries
+import models.queries._
 import models.user._
-import models.queries.ProfileQueries
 import scala.concurrent.Future
 import services.admin._
 import play.api._
@@ -28,9 +27,10 @@ class ContestController @javax.inject.Inject() (
   
   //create contest form        
   def contestForm = withSession { implicit request =>
-    Future.successful(Ok(views.html.createContest(request.identity, UserForms.contestForm) ))
+    Database.query(EvaluatorQueries.getEvaluators).map { evaluators =>
+    Ok(views.html.createContest(request.identity, UserForms.contestForm,evaluators) )
     //, UserForms.registrationForm
-  }
+  }}
   
   //view contests TODO look at filter for applicable contests?
   def contests = withSession { s =>
@@ -51,7 +51,7 @@ class ContestController @javax.inject.Inject() (
     request.identity match {
           case Some(u) => val contestSubmission = UserForms.contestForm.bindFromRequest()
                         contestSubmission.fold(
-                              formWithErrors =>  Future.successful(BadRequest("ARG")),
+                              formWithErrors =>  Future.successful(BadRequest("Form Error")),
                               contest =>  {
                                  ContestCreateService.save(u,contest);
                                  uploadTestSet(request,contest.contest_name)
@@ -69,6 +69,7 @@ class ContestController @javax.inject.Inject() (
       val filename = picture.filename
       val contentType = picture.contentType
       Logger.error(s"File name : $filename, content type : $contentType")
+      //* VALIDATION + SUMMARY (number of lines,, etc)
       picture.ref.moveTo(new File(s"/tmp/${contest_id}_testset"))
       "File uploaded"
     }.getOrElse {

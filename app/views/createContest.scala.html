@@ -1,19 +1,26 @@
-@(user: models.user.User, contestForm: Form[models.user.ContestData])(implicit messages: Messages)
+@(user: models.user.User, 
+contestForm: Form[models.user.ContestData],
+evaluators:Seq[models.contests.Evaluator])(implicit messages: Messages)
 @import helper._ 
- 
+
+
 @layout.bootstrap("Contest Creation") {
 
  @(_navBar(user,"home"))
 
 <div class="container">
     <h1>Contest Creation</h1>
-    @form(action=controllers.routes.ContestController.create(), 'enctype -> "multipart/form-data") {
+    
+    
+    @form(action=controllers.routes.ContestController.create(), 
+          'enctype -> "multipart/form-data") {
         @inputText(contestForm("contest_name"))
         @inputText(contestForm("contest_description"))
         @inputDate(contestForm("contest_start"))
         @inputDate(contestForm("contest_end"))
         @select(contestForm("evaluation_id"),
-           helper.options("1"->"RMSE","2"->"Logistic Loss"),
+           helper.options(evaluators.map(x => 
+                    (x.evaluator_id.toString, x.evaluator_name)).toMap),
         '_label -> "Evaluator", '_default -> "-- Select Evaluation --")
         @inputText(contestForm("benchmark_value"))
         @inputFile(contestForm("testset"))
