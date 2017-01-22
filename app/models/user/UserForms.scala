@@ -38,10 +38,7 @@ object UserForms {
    val submissionForm = Form(
     mapping(
       "contest_id" -> number,
-      "user_id" -> uuid,
-      "submission_date" -> jodaLocalDate,
-      "submission_notes" -> nonEmptyText,
-      "score" -> bigDecimal
+      "submission_notes" -> nonEmptyText
     )(SubmissionData.apply)(SubmissionData.unapply)
   ) 
   

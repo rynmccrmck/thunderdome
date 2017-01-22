@@ -27,6 +27,7 @@ GET         /contest/:contest_id        controllers.ContestController.contest(co
 
 # submission
 GET         /submission/:contest_id      controllers.SubmissionController.submission(contest_id)
+POST        /submission-upload           controllers.SubmissionController.create
 
 # submissions
 GET         /submissions                controllers.ContestController.contestForm

@@ -1,30 +1,25 @@
-@(user: models.user.User, contest_id:String)@layout.bootstrap("Submission") {
+@(user: models.user.User, 
+SubmissionForm: Form[models.user.SubmissionData],
+contest_id:String)(implicit messages: Messages)
+@import helper._
+@import models.user._
+@layout.bootstrap("Submission") {
 
- @(_navBar(user,"home"))
 
-    <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-       <p>Contest @contest_id</p>
-        @if(user.profiles.isEmpty) {
-          <ul>
-          <li>You are not currently logged, sign in or register!</li>
-          <li><a href="@routes.RegistrationController.registrationForm">Register</a></li>
-          <li><a href="@routes.AuthenticationController.signInForm">Sign In</a></li>
-          </ul>
-        } else {
-            @helper.form(action = routes.SubmissionController.upload, 'enctype -> "multipart/form-data") {
+
+@(_navBar(user,"home"))
+
+<div class="container">
+    <h1>Contest Submission @contest_id</h1>
+
     
-                <input type="file" name="submission">
-            
-                <p>
-                    <input type="submit">
-                </p>
-                
-            }
-        }
-        
-      </div>
-    </div>
-  </div>
+    @form(action=controllers.routes.SubmissionController.create(), 
+          'enctype -> "multipart/form-data") {
+        <input type="hidden" name="contest_id" value=@contest_id.toInt>
+        @textarea(SubmissionForm("submission_notes"))
+        @inputFile(SubmissionForm("submission"))
+        <input type="submit" value="Submit">
+         }
+</div>
+
 }

@@ -20,9 +20,6 @@ case class ContestData(
 )
 
 case class SubmissionData(
-    contest_id: Int,
-    user_id:UUID,
-    submission_date:LocalDate,
-    submission_notes:String,
-    score:BigDecimal
+    contest_id:Int,
+    submission_notes:String
 )
