@@ -6,7 +6,7 @@ import jdub.async.Database
 import org.joda.time.DateTimeZone
 import play.api.{ Application, GlobalSettings }
 import services.database.Schema
-
+import services.database.InitData
 import play.api._
 import play.api.mvc._
 import play.api.mvc.Results._
@@ -43,6 +43,7 @@ object PlayGlobalSettings extends GlobalSettings {
     val password = cnf.getString("db.password")
     
     Database.open(username, host, port, password, database)
+    InitData.update()
     Schema.update()
 
     super.onStart(app)

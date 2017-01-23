@@ -4,7 +4,7 @@
 		module="thunderdome-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20170123141108"
+		publication="20170123180818"
 		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>
