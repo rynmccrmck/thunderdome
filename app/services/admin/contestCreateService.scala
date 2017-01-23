@@ -20,12 +20,15 @@ object ContestCreateService {
       cd match { 
           case ContestData(name,desc,start,end,evalid,bench) => {
               val createdDate = new LocalDate();
-              val con:Contest = Contest(0,name,currentUser.id,desc,createdDate,start,end,evalid,bench.asInstanceOf[Option[Double]])
+              val contestFolder = UUID.randomUUID().toString
+              val con:Contest = Contest(0,name,currentUser.id,
+                desc,createdDate,start,end,evalid,
+                bench.asInstanceOf[Option[Double]],
+                contestFolder)
               println(s"Updating user [$con].")
               val statement = ContestQueries.insert(con)
-            Database.execute(statement).map { i =>
-              Contest
-            }
+              val execute = Database.execute(statement)
+              Future(contestFolder)
               }
           case _ => Future("dang")
      

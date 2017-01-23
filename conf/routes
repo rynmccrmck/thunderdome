@@ -32,7 +32,7 @@ POST        /submission-upload           controllers.SubmissionController.create
 # submissions
 GET         /submissions                controllers.ContestController.contestForm
 
-
+GET         /new                        controllers.HomeController.temp
 
 #upload
 POST        /upload                     controllers.SubmissionController.upload

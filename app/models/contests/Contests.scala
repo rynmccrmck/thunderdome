@@ -13,7 +13,8 @@ case class Contest(
     contest_start:LocalDate,
     contest_end:LocalDate,
     evaluator_id:Int,
-    benchmark_value:Option[Double]
+    benchmark_value:Option[Double],
+    contest_folder:String
 ) 
 
 case class ContestDisplay(

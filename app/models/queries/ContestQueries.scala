@@ -10,10 +10,11 @@ import org.joda.time.LocalDate
 import org.joda.time.LocalDateTime
 
 object ContestQueries extends BaseQueries[Contest] {
+    
   override protected val tableName = "contests"
   override protected val columns = Seq("contest_name", "user_id",
     "contest_description","contest_start",
-    "contest_end","evaluator_id","benchmark_value")
+    "contest_end","evaluator_id","benchmark_value","contest_folder")
     
   override protected val searchColumns = Seq("contest_id::text", "contest_name","evaluator_id::text")
 
@@ -26,7 +27,7 @@ object ContestQueries extends BaseQueries[Contest] {
   case class UpdateContest(c: Contest) extends Statement {
     override val sql = updateSql(Seq("contest_name", 
         "contest_description","contest_start","contest_end",
-        "evaluator_id","benchmark_value"))
+        "evaluator_id","benchmark_value","contest_folder"))
 
     override val values = {
       Seq(c.contest_name, c.contest_description, c.contest_start, 
@@ -79,13 +80,14 @@ case class SetContestStart(contest_id: Int, contest_start: LocalDate) extends St
     val contest_end = row.as[LocalDate]("contest_end")
     val evaluator_id = row.as[Int]("evaluator_id")
     val benchmark_value = row.asOpt[Double]("benchmark_value")
+    val contest_folder = row.as[String]("contest_folder")
     Contest(contest_id,contest_name,java.util.UUID.fromString(user_id),contest_description,contest_created,
-        contest_start,contest_end,evaluator_id,benchmark_value)
+        contest_start,contest_end,evaluator_id,benchmark_value,contest_folder)
   }
   
   override protected def toDataSeq(c: Contest) = {
     Seq(c.contest_name, c.user_id, c.contest_description, c.contest_start, 
-        c.contest_end, c.evaluator_id,c.benchmark_value)
+        c.contest_end, c.evaluator_id,c.benchmark_value,c.contest_folder)
   }
   
   override protected lazy val insertSql = s"""insert into $tableName 
@@ -120,22 +122,5 @@ case class GetContest(contest_id: Int) extends Query[Contest] {
     //review this
     override def reduce(rows: Iterator[Row]) = rows.map(fromRow).toList(0)
   }
-
-
-/*
-  case class FindUserByUsername(username: String) extends FlatSingleRowQuery[User] {
-    override val sql = getSql(Some("username = ?"))
-    override val values = Seq(username)
-    override def flatMap(row: Row) = Some(fromRow(row))
-  }
-
-  case class FindUserByProfile(loginInfo: LoginInfo) extends FlatSingleRowQuery[User] {
-    override val sql = getSql(Some("profiles @> ARRAY[?]::text[]"))
-    override val values = Seq(s"${loginInfo.providerID}:${loginInfo.providerKey}")
-    override def flatMap(row: Row) = Some(fromRow(row))
-  }
-
-  
-*/
 
 }

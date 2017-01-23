@@ -15,7 +15,8 @@ case object CreateContestsTable extends Statement {
        contest_start date not null,
        contest_end date not null,
        evaluator_id int not null,
-       benchmark_value float
+       benchmark_value float,
+       contest_folder character varying(40) not null
     ) with (oids = false);
   """
 }

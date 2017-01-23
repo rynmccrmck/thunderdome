@@ -41,10 +41,11 @@ class SubmissionController @javax.inject.Inject() (
                               formWithErrors =>  Future.successful(BadRequest("Form Error")),
                               submission =>  {
                                  uploadFile(request)
+                                 //validate submission
                                  //evaluate predctions and return score
                                  val score = 0.0
                                  SubmissionService.save(u,submission,score)
-                                 Future.successful(Ok(s"submission created successfully"))
+                                 Future.successful(Ok(s"submission created successfully with score: $score"))
                                 }
                             )
           case None => Future.successful(Redirect(controllers.routes.RegistrationController.registrationForm()))    

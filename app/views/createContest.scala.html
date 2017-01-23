@@ -10,8 +10,6 @@ evaluators:Seq[models.contests.Evaluator])(implicit messages: Messages)
 
 <div class="container">
     <h1>Contest Creation</h1>
-    
-    
     @form(action=controllers.routes.ContestController.create(), 
           'enctype -> "multipart/form-data") {
         @inputText(contestForm("contest_name"))

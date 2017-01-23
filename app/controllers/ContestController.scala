@@ -18,6 +18,8 @@ import play.api._
 import play.api.mvc._
 import com.mohiva.play.silhouette.api._
 
+import scala.util.{Success, Failure}
+
 @javax.inject.Singleton
 class ContestController @javax.inject.Inject() (
     override val messagesApi: MessagesApi,
@@ -53,9 +55,14 @@ class ContestController @javax.inject.Inject() (
                         contestSubmission.fold(
                               formWithErrors =>  Future.successful(BadRequest("Form Error")),
                               contest =>  {
-                                 ContestCreateService.save(u,contest);
-                                 uploadTestSet(request,contest.contest_name)
-                                 Future.successful(Ok(s"Contest ${contest.contest_name} created successfully"))
+                                 val insertContest = ContestCreateService.save(u,contest);
+                                 insertContest.onComplete {
+                                    case Success(contestFolder) =>
+                                        println(contestFolder)
+                                        val x = uploadTestSet(request,contestFolder.toString) 
+                                    case Failure(t) => println("FAILED")
+                                 }
+                                 Future.successful(Ok(s"Contest ${contest.contest_name} created successfully"));
                                 }
                             )
           case None => Future.successful(Redirect(controllers.routes.RegistrationController.registrationForm()))    
@@ -66,11 +73,16 @@ class ContestController @javax.inject.Inject() (
     Logger.error("Called uploadFile function" + request)
     request.body.file("testset").map { picture =>
       import java.io.File
+      val contestFolder = new File(s"./data/contests/${contest_id}");
+      val successfulFolder = contestFolder.mkdir();
+      val testSetFolder = new File(s"./data/contests/${contest_id}/testset");
+      val successfulTestFolder = testSetFolder.mkdir();
+   
       val filename = picture.filename
       val contentType = picture.contentType
       Logger.error(s"File name : $filename, content type : $contentType")
       //* VALIDATION + SUMMARY (number of lines,, etc)
-      picture.ref.moveTo(new File(s"/tmp/${contest_id}_testset"))
+      picture.ref.moveTo(new File(s"./data/contests/${contest_id}/testset/testset.csv"))
       "File uploaded"
     }.getOrElse {
       "Missing file"
