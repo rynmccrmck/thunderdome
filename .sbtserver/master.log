@@ -10177,3 +10177,49 @@ Running task... Cancel: sbt.server.ServerTaskCancellation@11abe2c6, check cycles
 Total time: 0 s, completed 22-Jan-2017 10:13:39 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@2491bae7, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 0 s, completed 22-Jan-2017 10:17:39 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 58
+Evaluating tasks: *:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@693b11f1, check cycles: false
+Total time: 0 s, completed 22-Jan-2017 10:17:39 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@13202bf5, check cycles: false
+Total time: 0 s, completed 22-Jan-2017 10:17:39 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/ryanmccormack/Documents/thunderdome/}root/*:playForkConfig
+Evaluating tasks: *:playForkConfig
+Running task... Cancel: sbt.server.ServerTaskCancellation@3f54db, check cycles: false
+Total time: 0 s, completed 22-Jan-2017 10:17:42 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> root/playForkNotifyStart http://localhost:9000
+Evaluating tasks: *:playForkNotifyStart
+Running task... Cancel: sbt.server.ServerTaskCancellation@2ce0c8a1, check cycles: false
+Total time: 0 s, completed 22-Jan-2017 10:17:44 PM
+> server-post-command-cleanup
+> server-handle-next-server-request

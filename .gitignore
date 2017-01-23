@@ -4,4 +4,4 @@ RUNNING.pid
 /logs/
 .cache
 conf/application.conf
-/data/contests/
+/data/contests/*
