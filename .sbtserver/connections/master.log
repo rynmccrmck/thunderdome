@@ -1,13 +1,13 @@
-New log file opened at Mon Jan 23 14:20:54 EST 2017 by 51710@ges-113.local
-Taking next connection to: 61010
-New client attempting to connect on port: 61011-61010
-  Address = /192.168.99.1:61010
-This client on port 61011 has uuid b3f46b0b-5370-40b9-915d-f8491716cbb6 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-b3f46b0b-5370-40b9-915d-f8491716cbb6
-Taking next connection to: 61010
-New client attempting to connect on port: 61012-61010
-  Address = /192.168.99.1:61010
-Handshake exception on socket: 61012
+New log file opened at Mon Jan 23 16:16:50 EST 2017 by 53009@ges-113.local
+Taking next connection to: 49807
+New client attempting to connect on port: 49808-49807
+  Address = /192.168.10.155:49807
+This client on port 49808 has uuid 2f4b27c7-47fe-4694-b7f9-1d2b51af02f1 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-2f4b27c7-47fe-4694-b7f9-1d2b51af02f1
+Taking next connection to: 49807
+New client attempting to connect on port: 49809-49807
+  Address = /192.168.10.155:49807
+Handshake exception on socket: 49809
 sbt.impl.ipc.HandshakeException: Unable to perform handshake
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
 	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
@@ -17,15 +17,15 @@ Caused by: java.io.EOFException
 	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
 	... 2 more
-Taking next connection to: 61010
-New client attempting to connect on port: 61013-61010
-  Address = /192.168.99.1:61010
-This client on port 61013 has uuid ba63f5e8-ff46-41ef-8c31-ed89e7b8dccb configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-b3f46b0b-5370-40b9-915d-f8491716cbb6, activator-ba63f5e8-ff46-41ef-8c31-ed89e7b8dccb
-Taking next connection to: 61010
-New client attempting to connect on port: 61152-61010
-  Address = /192.168.10.155:61010
-Handshake exception on socket: 61152
+Taking next connection to: 49807
+New client attempting to connect on port: 49810-49807
+  Address = /192.168.10.155:49807
+This client on port 49810 has uuid 06e79623-3568-4040-b5e0-d36935b4c4d3 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-2f4b27c7-47fe-4694-b7f9-1d2b51af02f1, activator-06e79623-3568-4040-b5e0-d36935b4c4d3
+Taking next connection to: 49807
+New client attempting to connect on port: 49877-49807
+  Address = /192.168.10.155:49807
+Handshake exception on socket: 49877
 sbt.impl.ipc.HandshakeException: Unable to perform handshake
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
 	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
@@ -35,9 +35,18 @@ Caused by: java.io.EOFException
 	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
 	... 2 more
-Taking next connection to: 61010
-New client attempting to connect on port: 61155-61010
-  Address = /192.168.10.155:61010
-This client on port 61155 has uuid 44497adf-1a26-4a67-bbb4-634a280d5345 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
-Connected Clients: activator-ba63f5e8-ff46-41ef-8c31-ed89e7b8dccb, play-fork-run-44497adf-1a26-4a67-bbb4-634a280d5345
-Taking next connection to: 61010
+Taking next connection to: 49807
+New client attempting to connect on port: 49878-49807
+  Address = /192.168.10.155:49807
+This client on port 49878 has uuid 229ba03a-531b-4fc8-accd-38b96894c34d configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: activator-06e79623-3568-4040-b5e0-d36935b4c4d3, play-fork-run-229ba03a-531b-4fc8-accd-38b96894c34d
+Taking next connection to: 49807
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 49807
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 49807
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 49807

@@ -1,13 +1,13 @@
-New log file opened at Mon Jan 23 14:19:18 EST 2017 by 51637@ges-113.local
-jvm 51637@ges-113.local
+New log file opened at Mon Jan 23 14:20:54 EST 2017 by 51710@ges-113.local
+jvm 51710@ges-113.local
 jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.72-b15
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
 Starting event engine
 Starting sbt command engine
-Waiting for sbt command engine
 Command engine arguments=List()
 Command engine baseDirectory=/Users/ryanmccormack/Documents/thunderdome
+Waiting for sbt command engine
 Command engine initial remaining commands List(--initialize, onFailure load-failed, boot, server-send-ready-for-request, server-handle-next-server-request)
 > --initialize
 > initialize
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in /Users/ryanmccormack/Documents/thunderdome/project, returning: (thunderdome-build)
 Loading project definition from /Users/ryanmccormack/Documents/thunderdome/project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@4bc6cc4e, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@3dc289ad, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -69,7 +69,7 @@ Set current project to thunderdome-play (in build file:/Users/ryanmccormack/Docu
 > server-handle-next-server-request
 > compile
 Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@5c05fd8e, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@5b842af7, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -86,12 +86,12 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 2 s, completed 23-Jan-2017 2:19:30 PM
+Total time: 2 s, completed 23-Jan-2017 2:21:06 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/ryanmccormack/Documents/thunderdome/}root/compile:discoveredMainClasses
 Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@24f2c96e, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@79b9fa9f, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -108,18 +108,18 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 1 s, completed 23-Jan-2017 2:19:32 PM
+Total time: 1 s, completed 23-Jan-2017 2:21:07 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/ryanmccormack/Documents/thunderdome/}root/compile:mainClass
 Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@1b6c5677, check cycles: false
-Total time: 0 s, completed 23-Jan-2017 2:19:32 PM
+Running task... Cancel: sbt.server.ServerTaskCancellation@361a0147, check cycles: false
+Total time: 0 s, completed 23-Jan-2017 2:21:07 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/ryanmccormack/Documents/thunderdome/}root/compile:discoveredMainClasses
 Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@3a8c5674, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@61439c24, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -136,30 +136,30 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 1 s, completed 23-Jan-2017 2:19:33 PM
+Total time: 1 s, completed 23-Jan-2017 2:21:08 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > backgroundRun
 Evaluating tasks: compile:backgroundRun
-Running task... Cancel: sbt.server.ServerTaskCancellation@2b73ed5c, check cycles: false
-Total time: 0 s, completed 23-Jan-2017 2:20:03 PM
+Running task... Cancel: sbt.server.ServerTaskCancellation@790fd7, check cycles: false
+Total time: 0 s, completed 23-Jan-2017 2:23:28 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/ryanmccormack/Documents/thunderdome/}root/*:playForkConfig
 Evaluating tasks: *:playForkConfig
-Running task... Cancel: sbt.server.ServerTaskCancellation@36859955, check cycles: false
-Total time: 1 s, completed 23-Jan-2017 2:20:07 PM
+Running task... Cancel: sbt.server.ServerTaskCancellation@56648b0f, check cycles: false
+Total time: 1 s, completed 23-Jan-2017 2:23:32 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > root/playForkNotifyStart http://localhost:9000
 Evaluating tasks: *:playForkNotifyStart
-Running task... Cancel: sbt.server.ServerTaskCancellation@5dc392b7, check cycles: false
-Total time: 0 s, completed 23-Jan-2017 2:20:09 PM
+Running task... Cancel: sbt.server.ServerTaskCancellation@5868efbb, check cycles: false
+Total time: 0 s, completed 23-Jan-2017 2:23:34 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/ryanmccormack/Documents/thunderdome/}root/*:playForkReload
 Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@45a3efc5, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@4205a513, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -181,6 +181,6 @@ Copy resource mappings:
 	(/Users/ryanmccormack/Documents/thunderdome/conf/changeme.conf,/Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/classes/changeme.conf)
 	(/Users/ryanmccormack/Documents/thunderdome/conf/logback.xml,/Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/classes/logback.xml)
 	(/Users/ryanmccormack/Documents/thunderdome/conf/routes,/Users/ryanmccormack/Documents/thunderdome/target/scala-2.11/classes/routes)
-Total time: 2 s, completed 23-Jan-2017 2:20:13 PM
+Total time: 2 s, completed 23-Jan-2017 2:24:09 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
