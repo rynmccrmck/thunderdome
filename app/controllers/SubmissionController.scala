@@ -20,8 +20,9 @@ import play.api.mvc._
 import jdub.async.Database
 import services.user.AuthenticationEnvironment
 import scala.io.Source
-import scala.concurrent.Future
-//import com.mohiva.play.silhouette.api._
+import scala.concurrent.{Await,Future}
+import scala.concurrent.duration._
+
 
 @javax.inject.Singleton
 class SubmissionController @javax.inject.Inject() (
@@ -53,13 +54,13 @@ class SubmissionController @javax.inject.Inject() (
                             val actuals = actualFile.getLines
                             val validator = Evaluators.loadEvaluation(contestEval)
                             println(validator.name)
-                            val score = validator.score(submissionMap,actuals,0.0) 
+                            val score = validator.score(submissionMap,actuals,0.0,0) 
                             actualFile.close()
                             println(s"score: $score")
                             //validate submission
-                            //evaluate predctions and return score
-                            SubmissionService.save(u,submission,score)}
-                            Future.successful(Ok(s"submission created successfully"))
+                            SubmissionService.save(u,submission,score)
+                            Ok(s"Submission accepted. Score = ${score} ${contestEval}")
+                            }
                         } else{ Future.successful(Ok(s"Something went wrong"))}
                     }
             )

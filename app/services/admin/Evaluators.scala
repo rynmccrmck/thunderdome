@@ -37,7 +37,7 @@ object Evaluators{
         def name():String
         type T <: Any
         def predictionError(a:T,b:T):Double  
-        def score(submission:Map[String,String], actuals:Iterator[String],acc:Double):Double 
+        def score(submission:Map[String,String], actuals:Iterator[String],acc:Double,n:Int):Double 
         def recordJoin(submission:Map[String,String], actuals:Iterator[String]):(Double,Double) = {
             val record = actuals.next.split(", *").lift
             val key = record(0).getOrElse("ERROR")
@@ -58,15 +58,16 @@ object Evaluators{
         }
         
         def score(submission:Map[String,String], 
-            actuals:Iterator[String], acc:Double = 0):Double={
+            actuals:Iterator[String], acc:Double = 0, count:Int = 0):Double={
             val (prediction, actual) = recordJoin(submission,actuals)
             val currError = predictionError(prediction,actual)
              println(s"prediction: ${prediction}, actual: ${actual}, error:${currError}")
             val runningTotal = acc + currError
+            val n = count + 1
             println(s"running total = $runningTotal")
             if(actuals.hasNext){
-                score(submission, actuals, runningTotal)
-            }else{runningTotal}
+                score(submission, actuals, runningTotal, n)
+            }else{runningTotal/n}
         }
     }
     
