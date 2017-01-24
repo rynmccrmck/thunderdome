@@ -25,19 +25,40 @@ object Evaluation{
     actuals
   }
 
-  def recordCreate(submission:Map[String,String], actuals:Iterator[String]):(Double,Double) = {
-    val record = actuals.next.split(", *").lift
-    val key = record(0).getOrElse("ERROR")
-    val value = record(1).getOrElse(0).toString.toDouble
-    val submittedValue = submission.getOrElse(key,0).toString.toDouble
-    (value,submittedValue)    
-  }
 
+    trait validator{
+        def name():String
+        type T <: Any
+        def predictionError(a:T,b:T):Double  
+        def score(submission:Map[String,String], actuals:Iterator[String],acc:Double):Double 
+        def recordJoin(submission:Map[String,String], actuals:Iterator[String]):(Double,Double) = {
+            val record = actuals.next.split(", *").lift
+            val key = record(0).getOrElse("ERROR")
+            val value = record(1).getOrElse(0).toString.toDouble
+            val submittedValue = submission.getOrElse(key,0).toString.toDouble
+            (value,submittedValue)    
+        }    
+    }
     
-    trait validation{
-        def name:String
-        def recordError:Double  
-        def overallScore:Double    
+    class RootMeanSquareError extends validator {
+        
+        override def name = "RMSE"
+        
+        type T = Double
+        
+        def predictionError(prediction:Double,actual:Double) = {
+            math.pow((prediction - actual),2)
+        }
+        
+        def score(submission:Map[String,String], 
+            actuals:Iterator[String], acc:Double = 0):Double={
+            val (prediction, actual) = recordJoin(submission,actuals)
+            val currError = predictionError(prediction,actual)
+            val runningTotal = acc + currError
+            if(actuals.hasNext){
+                score(submission, actuals, runningTotal)
+            }else{acc}
+        }
     }
     
     

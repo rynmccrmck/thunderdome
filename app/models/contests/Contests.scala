@@ -26,5 +26,6 @@ case class ContestDisplay(
     contest_start:LocalDate,
     contest_end:LocalDate,
     evaluator_name:String,
-    benchmark_value:Option[Double]
+    benchmark_value:Option[Double],
+    contest_folder:String
 ) 

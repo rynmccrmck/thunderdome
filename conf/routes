@@ -1,4 +1,5 @@
 GET         /                       controllers.HomeController.index
+GET         /new                        controllers.HomeController.temp
 GET         /admin                  controllers.HomeController.admin
 
 # Authentication
@@ -13,17 +14,18 @@ GET         /signout                 controllers.AuthenticationController.signOu
 GET         /profile                 controllers.ProfileController.profile
 
 # Admin
-GET         /admin/create-contest   controllers.ContestController.contestForm
-POST        /admin/contest          controllers.ContestController.create
-GET         /admin/edit-contest     controllers.ContestController.contestForm
-GET         /admin/invite-users     controllers.UserController.userInviteForm
-GET         /admin/edit-users       controllers.UserController.editUsers
+GET         /admin/create-contest   controllers.AdminController.contestForm
+POST        /admin/contest          controllers.AdminController.create
+GET         /admin/edit-contest     controllers.AdminController.contestForm
+GET         /admin/invite-users     controllers.AdminController.inviteUsers
+GET         /admin/edit-users       controllers.AdminController.editUsers
 
 # contests
 GET         /contests                   controllers.ContestController.contests
 
 # contest
 GET         /contest/:contest_id        controllers.ContestController.contest(contest_id)
+PUT         /contest/                   controllers.AdminController.contestUpdate
 
 #Data
 GET         /contest/data/:contest_id    controllers.ContestController.contestData(contest_id)
@@ -34,12 +36,12 @@ GET         /submission/:contest_id      controllers.SubmissionController.submis
 POST        /submission-upload           controllers.SubmissionController.create
 
 # submissions
-GET         /submissions                controllers.ContestController.contestForm
-
-GET         /new                        controllers.HomeController.temp
-
+GET         /submissions                controllers.SubmissionController.submissions
 #upload
-POST        /upload                     controllers.SubmissionController.upload
+#POST        /upload                     controllers.SubmissionController.upload
+
+#production
+GET /productionmodels                   controllers.ProductionController.productionModels
 
 GET         /assets/*file            controllers.Assets.versioned(path="/public", file: Asset)
 GET         /favicon.ico   controllers.Assets.at(path="/public", file="favicon.ico")

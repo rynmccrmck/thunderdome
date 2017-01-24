@@ -26,14 +26,6 @@ class ContestController @javax.inject.Inject() (
     override val env: AuthenticationEnvironment
 ) extends BaseController {
 
-  
-  //create contest form        
-  def contestForm = withSession { implicit request =>
-    Database.query(EvaluatorQueries.getEvaluators).map { evaluators =>
-    Ok(views.html.createContest(request.identity, UserForms.contestForm,evaluators) )
-    //, UserForms.registrationForm
-  }}
-  
   //view contests TODO look at filter for applicable contests?
   def contests = withSession { s =>
       Database.query(ContestQueries.GetContests).map { contests =>
@@ -61,25 +53,4 @@ class ContestController @javax.inject.Inject() (
         CONTENT_DISPOSITION->"attachment; filename=testset.csv", 
         CONTENT_TYPE->"application/x-download"))
   }
-  
-  //create a contest
-  def create = UserAwareAction.async(parse.multipartFormData)  { implicit request =>
-    request.identity match {
-          case Some(u) => val contestSubmission = UserForms.contestForm.bindFromRequest()
-                contestSubmission.fold(
-                formWithErrors =>  Future.successful(BadRequest("Form Error")),
-                contest =>  {
-                    val insertContest = ContestCreateService.save(u,contest);
-                    insertContest.onComplete {
-                    case Success(contestFolder) =>
-                        val x = ContestCreateService.uploadTestSet(request,contestFolder.toString) 
-                    case Failure(t) => println("FAILED")
-                    }
-                    Future.successful(Ok(s"Contest ${contest.contest_name} created successfully"));
-                })
-          case None => Future.successful(Redirect(controllers.routes.RegistrationController.registrationForm()))    
-    }
-  }
-
-
 } 

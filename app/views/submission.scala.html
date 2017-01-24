@@ -1,21 +1,19 @@
 @(user: models.user.User, 
 SubmissionForm: Form[models.user.SubmissionData],
-contest_id:String)(implicit messages: Messages)
+contest:models.contests.Contest)(implicit messages: Messages)
 @import helper._
 @import models.user._
 @layout.bootstrap("Submission") {
 
-
-
 @(_navBar(user,"home"))
 
 <div class="container">
-    <h1>Contest Submission @contest_id</h1>
+    <h1>@contest.contest_name</h1>
+    <h2>Contest Submission</h2>
 
-    
     @form(action=controllers.routes.SubmissionController.create(), 
           'enctype -> "multipart/form-data") {
-        <input type="hidden" name="contest_id" value=@contest_id.toInt>
+        <input type="hidden" name="contest_id" value=@contest.contest_id>
         @textarea(SubmissionForm("submission_notes"))
         @inputFile(SubmissionForm("submission"))
         <input type="submit" value="Submit">
