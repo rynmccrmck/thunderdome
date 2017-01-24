@@ -20,7 +20,7 @@ contest: models.contests.Contest)@layout.bootstrap("Contest") {
                     <p>Created: @contest.contest_created</p>
                     <li><a href="">View the leaderboard</a></li>
                     <li><a href="">Read the description</a></li>
-                    <li><a href="">Get the data</a></li>
+                    <li><a href="@routes.ContestController.contestData(contest.contest_id.toString)">Get the data</a></li>
                     <li><a href="@routes.SubmissionController.submission(contest.contest_id.toString)">Make a submission</a></li>
                     
         }

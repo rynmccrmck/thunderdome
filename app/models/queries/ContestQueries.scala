@@ -123,4 +123,11 @@ case class GetContest(contest_id: Int) extends Query[Contest] {
     override def reduce(rows: Iterator[Row]) = rows.map(fromRow).toList(0)
   }
 
+case class GetContestData(contest_id: Int) extends Query[Contest] {
+    override val sql = s"select contest_folder from contests where contest_id = ?"
+    override val values =Seq(contest_id)
+    //review this
+    override def reduce(rows: Iterator[Row]) = rows.map(fromRow).toList(0)
+  }
+
 }

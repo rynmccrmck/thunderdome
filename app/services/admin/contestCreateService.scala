@@ -40,7 +40,7 @@ object ContestCreateService {
           case _ => Future("dang")
      
       }}
-    
+  //need refactor    
   def uploadTestSet(request: Request[MultipartFormData[TemporaryFile]],contest_id:String): String = {
     Logger.error("Called uploadFile function" + request)
     request.body.file("testset").map { testset =>
@@ -52,10 +52,10 @@ object ContestCreateService {
       val contentType = testset.contentType
       Logger.error(s"File name : $filename, content type : $contentType")
       //* VALIDATION + SUMMARY (number of lines,, etc)
-      val testAnswer = new File(s"./data/contests/${contest_id}/testset/testset_answers.csv")
+      val testAnswer = new File(testSetFolder + "/testset_answers.csv")
       testset.ref.moveTo(testAnswer)
       val testPublic = Source.fromFile(testAnswer)
-      val testPublicFile = new File(s"./data/contests/${contest_id}/testset/testset_public.csv")
+      val testPublicFile = new File(testSetFolder + "/testset.csv")
       val bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(testPublicFile)))
       val lines = testPublic.getLines
       while(lines.hasNext){

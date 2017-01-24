@@ -25,6 +25,10 @@ GET         /contests                   controllers.ContestController.contests
 # contest
 GET         /contest/:contest_id        controllers.ContestController.contest(contest_id)
 
+#Data
+GET         /contest/data/:contest_id    controllers.ContestController.contestData(contest_id)
+GET         /contest/data/testset/:contest_folder    controllers.ContestController.downloadTestSet(contest_folder)
+
 # submission
 GET         /submission/:contest_id      controllers.SubmissionController.submission(contest_id)
 POST        /submission-upload           controllers.SubmissionController.create

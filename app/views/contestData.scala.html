@@ -1,0 +1,28 @@
+@(user: models.user.User,
+contest: models.contests.Contest)@layout.bootstrap("Contest") {
+
+ @(_navBar(user,"home"))
+
+
+    <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+       
+        @if(user.profiles.isEmpty) {
+          <ul>
+          <li>You are not currently logged, sign in or register!</li>
+          <li><a href="@routes.RegistrationController.registrationForm">Register</a></li>
+          <li><a href="@routes.AuthenticationController.signInForm">Sign In</a></li>
+          </ul>
+        } else {
+                    <h4>Contest Data</h4>
+                    <p>Name: @contest.contest_name</p>
+                    <p>Created: @contest.contest_created</p>
+                    <li><a href="@routes.ContestController.downloadTestSet(contest.contest_folder)">Test set</a></li>
+
+        }
+        
+      </div>
+    </div>
+  </div>
+}
