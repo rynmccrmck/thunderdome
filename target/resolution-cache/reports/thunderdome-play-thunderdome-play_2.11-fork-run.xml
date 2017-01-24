@@ -7,7 +7,7 @@
 		revision="1.0"
 		conf="fork-run"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool, fork-run"
-		date="20170123181830"/>
+		date="20170123192652"/>
 	<dependencies>
 		<module organisation="com.typesafe.play" name="fork-run_2.11">
 			<revision name="2.4.2" status="release" pubdate="20150703013826" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="0">
@@ -70,13 +70,13 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe" name="config">
-			<revision name="1.2.1" status="release" pubdate="20140502105400" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typesafehub/config" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="26">
+			<revision name="1.2.1" status="release" pubdate="20140502105416" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typesafehub/config" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="26">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
-				<metadata-artifact status="no" details="" size="2752" time="0" location="/Users/ryanmccormack/.ivy2/cache/com.typesafe/config/ivy-1.2.1.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/typesafe/config/1.2.1/config-1.2.1.pom"/>
+				<metadata-artifact status="no" details="" size="2752" time="0" location="/Users/ryanmccormack/.ivy2/cache/com.typesafe/config/ivy-1.2.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/config/1.2.1/config-1.2.1.pom"/>
 				<caller organisation="com.typesafe.akka" name="akka-actor_2.11" conf="default, compile, runtime, master" rev="1.2.1" rev-constraint-default="1.2.1" rev-constraint-dynamic="1.2.1" callerrev="2.3.8"/>
 				<artifacts>
 					<artifact name="config" type="bundle" ext="jar" status="no" details="" size="219554" time="0" location="/Users/ryanmccormack/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar">
-						<origin-location is-local="false" location="https://jcenter.bintray.com/com/typesafe/config/1.2.1/config-1.2.1.jar"/>
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/config/1.2.1/config-1.2.1.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
@@ -174,24 +174,24 @@
 		<module organisation="org.spire-math" name="json4s-support_2.11">
 			<revision name="0.6.0" status="release" pubdate="20140923161025" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/non/jawn/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="18">
 				<license name="MIT" url="http://opensource.org/licenses/MIT"/>
-				<metadata-artifact status="no" details="" size="3031" time="0" location="/Users/ryanmccormack/.ivy2/cache/org.spire-math/json4s-support_2.11/ivy-0.6.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/spire-math/json4s-support_2.11/0.6.0/json4s-support_2.11-0.6.0.pom"/>
+				<metadata-artifact status="no" details="" size="3176" time="0" location="/Users/ryanmccormack/.ivy2/cache/org.spire-math/json4s-support_2.11/ivy-0.6.0.xml" searched="false" origin-is-local="false" origin-location="file:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.spire-math/json4s-support_2.11/0.6.0/ivys/ivy.xml"/>
 				<caller organisation="org.scala-sbt" name="serialization_2.11" conf="compile" rev="0.6.0" rev-constraint-default="0.6.0" rev-constraint-dynamic="0.6.0" callerrev="0.1.0"/>
 				<artifacts>
 					<artifact name="json4s-support_2.11" type="jar" ext="jar" status="no" details="" size="7514" time="0" location="/Users/ryanmccormack/.ivy2/cache/org.spire-math/json4s-support_2.11/jars/json4s-support_2.11-0.6.0.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/spire-math/json4s-support_2.11/0.6.0/json4s-support_2.11-0.6.0.jar"/>
+						<origin-location is-local="false" location="file:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.spire-math/json4s-support_2.11/0.6.0/jars/json4s-support_2.11.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.spire-math" name="jawn-parser_2.11">
-			<revision name="0.6.0" status="release" pubdate="20140923160931" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/non/jawn/" downloaded="false" searched="false" default="false" conf="default, master(*), compile, runtime(*), runtime, default(compile), compile(*), master" position="17">
+			<revision name="0.6.0" status="release" pubdate="20140923160931" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/non/jawn/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="17">
 				<license name="MIT" url="http://opensource.org/licenses/MIT"/>
-				<metadata-artifact status="no" details="" size="2740" time="0" location="/Users/ryanmccormack/.ivy2/cache/org.spire-math/jawn-parser_2.11/ivy-0.6.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/spire-math/jawn-parser_2.11/0.6.0/jawn-parser_2.11-0.6.0.pom"/>
+				<metadata-artifact status="no" details="" size="2873" time="0" location="/Users/ryanmccormack/.ivy2/cache/org.spire-math/jawn-parser_2.11/ivy-0.6.0.xml" searched="false" origin-is-local="false" origin-location="file:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.spire-math/jawn-parser_2.11/0.6.0/ivys/ivy.xml"/>
 				<caller organisation="org.scala-sbt" name="serialization_2.11" conf="compile" rev="0.6.0" rev-constraint-default="0.6.0" rev-constraint-dynamic="0.6.0" callerrev="0.1.0"/>
 				<caller organisation="org.spire-math" name="json4s-support_2.11" conf="default, compile, runtime, master" rev="0.6.0" rev-constraint-default="0.6.0" rev-constraint-dynamic="0.6.0" callerrev="0.6.0"/>
 				<artifacts>
 					<artifact name="jawn-parser_2.11" type="jar" ext="jar" status="no" details="" size="77624" time="0" location="/Users/ryanmccormack/.ivy2/cache/org.spire-math/jawn-parser_2.11/jars/jawn-parser_2.11-0.6.0.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/spire-math/jawn-parser_2.11/0.6.0/jawn-parser_2.11-0.6.0.jar"/>
+						<origin-location is-local="false" location="file:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.spire-math/jawn-parser_2.11/0.6.0/jars/jawn-parser_2.11.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
@@ -199,35 +199,35 @@
 		<module organisation="org.json4s" name="json4s-core_2.11">
 			<revision name="3.2.10" status="release" pubdate="20140513132653" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/json4s/json4s" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="14">
 				<license name="ASL" url="http://github.com/json4s/json4s/raw/HEAD/LICENSE"/>
-				<metadata-artifact status="no" details="" size="2938" time="0" location="/Users/ryanmccormack/.ivy2/cache/org.json4s/json4s-core_2.11/ivy-3.2.10.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/json4s/json4s-core_2.11/3.2.10/json4s-core_2.11-3.2.10.pom"/>
+				<metadata-artifact status="no" details="" size="3077" time="0" location="/Users/ryanmccormack/.ivy2/cache/org.json4s/json4s-core_2.11/ivy-3.2.10.xml" searched="false" origin-is-local="false" origin-location="file:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.json4s/json4s-core_2.11/3.2.10/ivys/ivy.xml"/>
 				<caller organisation="org.scala-sbt" name="serialization_2.11" conf="compile" rev="3.2.10" rev-constraint-default="3.2.10" rev-constraint-dynamic="3.2.10" callerrev="0.1.0"/>
 				<artifacts>
 					<artifact name="json4s-core_2.11" type="jar" ext="jar" status="no" details="" size="577461" time="0" location="/Users/ryanmccormack/.ivy2/cache/org.json4s/json4s-core_2.11/jars/json4s-core_2.11-3.2.10.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/json4s/json4s-core_2.11/3.2.10/json4s-core_2.11-3.2.10.jar"/>
+						<origin-location is-local="false" location="file:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.json4s/json4s-core_2.11/3.2.10/jars/json4s-core_2.11.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="com.thoughtworks.paranamer" name="paranamer">
-			<revision name="2.6" status="release" pubdate="20131008235654" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="16">
-				<metadata-artifact status="no" details="" size="4124" time="0" location="/Users/ryanmccormack/.ivy2/cache/com.thoughtworks.paranamer/paranamer/ivy-2.6.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/thoughtworks/paranamer/paranamer/2.6/paranamer-2.6.pom"/>
+			<revision name="2.6" status="release" pubdate="20131008235654" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="16">
+				<metadata-artifact status="no" details="" size="4124" time="0" location="/Users/ryanmccormack/.ivy2/cache/com.thoughtworks.paranamer/paranamer/ivy-2.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.6/paranamer-2.6.pom"/>
 				<caller organisation="org.json4s" name="json4s-core_2.11" conf="default, compile, runtime, master" rev="2.6" rev-constraint-default="2.6" rev-constraint-dynamic="2.6" callerrev="3.2.10"/>
 				<artifacts>
 					<artifact name="paranamer" type="jar" ext="jar" status="no" details="" size="32806" time="0" location="/Users/ryanmccormack/.ivy2/cache/com.thoughtworks.paranamer/paranamer/jars/paranamer-2.6.jar">
-						<origin-location is-local="false" location="https://jcenter.bintray.com/com/thoughtworks/paranamer/paranamer/2.6/paranamer-2.6.jar"/>
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.6/paranamer-2.6.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.json4s" name="json4s-ast_2.11">
-			<revision name="3.2.10" status="release" pubdate="20140513132611" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/json4s/json4s" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="15">
+			<revision name="3.2.10" status="release" pubdate="20140513132611" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/json4s/json4s" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="15">
 				<license name="ASL" url="http://github.com/json4s/json4s/raw/HEAD/LICENSE"/>
-				<metadata-artifact status="no" details="" size="2516" time="0" location="/Users/ryanmccormack/.ivy2/cache/org.json4s/json4s-ast_2.11/ivy-3.2.10.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/json4s/json4s-ast_2.11/3.2.10/json4s-ast_2.11-3.2.10.pom"/>
+				<metadata-artifact status="no" details="" size="2637" time="0" location="/Users/ryanmccormack/.ivy2/cache/org.json4s/json4s-ast_2.11/ivy-3.2.10.xml" searched="false" origin-is-local="false" origin-location="file:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.json4s/json4s-ast_2.11/3.2.10/ivys/ivy.xml"/>
 				<caller organisation="org.json4s" name="json4s-core_2.11" conf="default, compile, runtime, master" rev="3.2.10" rev-constraint-default="3.2.10" rev-constraint-dynamic="3.2.10" callerrev="3.2.10"/>
 				<caller organisation="org.spire-math" name="json4s-support_2.11" conf="default, compile, runtime, master" rev="3.2.10" rev-constraint-default="3.2.10" rev-constraint-dynamic="3.2.10" callerrev="0.6.0"/>
 				<artifacts>
 					<artifact name="json4s-ast_2.11" type="jar" ext="jar" status="no" details="" size="82156" time="0" location="/Users/ryanmccormack/.ivy2/cache/org.json4s/json4s-ast_2.11/jars/json4s-ast_2.11-3.2.10.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/json4s/json4s-ast_2.11/3.2.10/json4s-ast_2.11-3.2.10.jar"/>
+						<origin-location is-local="false" location="file:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.json4s/json4s-ast_2.11/3.2.10/jars/json4s-ast_2.11.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
@@ -245,26 +245,26 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-lang" name="scala-compiler">
-			<revision name="2.11.4" status="release" pubdate="20141023113500" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="11">
+			<revision name="2.11.4" status="release" pubdate="20141023113523" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="11">
 				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
-				<metadata-artifact status="no" details="" size="3257" time="0" location="/Users/ryanmccormack/.ivy2/cache/org.scala-lang/scala-compiler/ivy-2.11.4.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/scala-lang/scala-compiler/2.11.4/scala-compiler-2.11.4.pom"/>
+				<metadata-artifact status="no" details="" size="3131" time="0" location="/Users/ryanmccormack/.ivy2/cache/org.scala-lang/scala-compiler/ivy-2.11.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.4/scala-compiler-2.11.4.pom"/>
 				<caller organisation="org.scala-lang.modules" name="scala-pickling_2.11" conf="default, compile, runtime, master" rev="2.11.4" rev-constraint-default="2.11.4" rev-constraint-dynamic="2.11.4" callerrev="0.10.0"/>
 				<artifacts>
 					<artifact name="scala-compiler" type="jar" ext="jar" status="no" details="" size="13619413" time="0" location="/Users/ryanmccormack/.ivy2/cache/org.scala-lang/scala-compiler/jars/scala-compiler-2.11.4.jar">
-						<origin-location is-local="false" location="https://jcenter.bintray.com/org/scala-lang/scala-compiler/2.11.4/scala-compiler-2.11.4.jar"/>
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.4/scala-compiler-2.11.4.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.scala-lang.modules" name="scala-parser-combinators_2.11">
-			<revision name="1.0.2" status="release" pubdate="20140723024500" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="13">
+			<revision name="1.0.2" status="release" pubdate="20140723024535" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="13">
 				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
-				<metadata-artifact status="no" details="" size="2929" time="0" location="/Users/ryanmccormack/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/ivy-1.0.2.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.2/scala-parser-combinators_2.11-1.0.2.pom"/>
+				<metadata-artifact status="no" details="" size="2918" time="0" location="/Users/ryanmccormack/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/ivy-1.0.2.xml" searched="false" origin-is-local="true" origin-location="/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.scala-lang.modules/scala-parser-combinators_2.11/1.0.2/ivys/ivy.xml"/>
 				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="1.0.2" rev-constraint-default="1.0.2" rev-constraint-dynamic="1.0.2" callerrev="2.11.4"/>
 				<caller organisation="org.scala-lang.modules" name="scala-pickling_2.11" conf="default, compile, runtime, master" rev="1.0.2" rev-constraint-default="1.0.2" rev-constraint-dynamic="1.0.2" callerrev="0.10.0"/>
 				<artifacts>
-					<artifact name="scala-parser-combinators_2.11" type="bundle" ext="jar" status="no" details="" size="416065" time="0" location="/Users/ryanmccormack/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.2.jar">
-						<origin-location is-local="false" location="https://jcenter.bintray.com/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.2/scala-parser-combinators_2.11-1.0.2.jar"/>
+					<artifact name="scala-parser-combinators_2.11" type="bundle" ext="jar" status="no" details="" size="416065" time="0" location="/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.scala-lang.modules/scala-parser-combinators_2.11/1.0.2/bundles/scala-parser-combinators_2.11.jar">
+						<origin-location is-local="true" location="/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.scala-lang.modules/scala-parser-combinators_2.11/1.0.2/bundles/scala-parser-combinators_2.11.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
@@ -284,13 +284,13 @@
 		<module organisation="org.scala-lang" name="scala-reflect">
 			<revision name="2.11.5" status="release" pubdate="20150106193224" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.5/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master, runtime(*), master(compile), compile(*)" position="8">
 				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
-				<metadata-artifact status="no" details="" size="2637" time="0" location="/Users/ryanmccormack/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.11.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.5/scala-reflect-2.11.5.pom"/>
+				<metadata-artifact status="no" details="" size="2812" time="0" location="/Users/ryanmccormack/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.11.5.xml" searched="false" origin-is-local="false" origin-location="file:/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.scala-lang/scala-reflect/2.11.5/ivys/ivy.xml"/>
 				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="2.11.4" rev-constraint-default="2.11.4" rev-constraint-dynamic="2.11.4" callerrev="2.11.4"/>
 				<caller organisation="org.scala-lang.modules" name="scala-pickling_2.11" conf="default, compile, runtime, master" rev="2.11.4" rev-constraint-default="2.11.4" rev-constraint-dynamic="2.11.4" callerrev="0.10.0"/>
 				<caller organisation="com.typesafe.sbtrc" name="client-2-11" conf="compile" rev="2.11.5" rev-constraint-default="2.11.5" rev-constraint-dynamic="2.11.5" callerrev="0.3.1"/>
 				<artifacts>
-					<artifact name="scala-reflect" type="jar" ext="jar" status="no" details="" size="4454732" time="0" location="/Users/ryanmccormack/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.5.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.5/scala-reflect-2.11.5.jar"/>
+					<artifact name="scala-reflect" type="jar" ext="jar" status="no" details="" size="4454732" time="0" location="/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.scala-lang/scala-reflect/2.11.5/jars/scala-reflect.jar">
+						<origin-location is-local="true" location="/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.scala-lang/scala-reflect/2.11.5/jars/scala-reflect.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
@@ -318,11 +318,11 @@
 		<module organisation="com.typesafe.play" name="build-link">
 			<revision name="2.4.2" status="release" pubdate="20150703013536" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="4">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
-				<metadata-artifact status="no" details="" size="2666" time="0" location="/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/build-link/ivy-2.4.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/build-link/2.4.2/build-link-2.4.2.pom"/>
+				<metadata-artifact status="no" details="" size="2781" time="0" location="/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/build-link/ivy-2.4.2.xml" searched="false" origin-is-local="true" origin-location="/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.typesafe.play/build-link/2.4.2/ivys/ivy.xml"/>
 				<caller organisation="com.typesafe.play" name="run-support_2.11" conf="compile, runtime" rev="2.4.2" rev-constraint-default="2.4.2" rev-constraint-dynamic="2.4.2" callerrev="2.4.2"/>
 				<artifacts>
-					<artifact name="build-link" type="jar" ext="jar" status="no" details="" size="3365" time="0" location="/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.4.2.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/build-link/2.4.2/build-link-2.4.2.jar"/>
+					<artifact name="build-link" type="jar" ext="jar" status="no" details="" size="3365" time="0" location="/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.typesafe.play/build-link/2.4.2/jars/build-link.jar">
+						<origin-location is-local="true" location="/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.typesafe.play/build-link/2.4.2/jars/build-link.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
@@ -332,11 +332,11 @@
 				<license name="MPL 1.1" url="http://www.mozilla.org/MPL/MPL-1.1.html"/>
 				<license name="LGPL 2.1" url="http://www.gnu.org/licenses/lgpl-2.1.html"/>
 				<license name="Apache License 2.0" url="http://www.apache.org/licenses/"/>
-				<metadata-artifact status="no" details="" size="3073" time="0" location="/Users/ryanmccormack/.ivy2/cache/org.javassist/javassist/ivy-3.19.0-GA.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/javassist/javassist/3.19.0-GA/javassist-3.19.0-GA.pom"/>
+				<metadata-artifact status="no" details="" size="3186" time="0" location="/Users/ryanmccormack/.ivy2/cache/org.javassist/javassist/ivy-3.19.0-GA.xml" searched="false" origin-is-local="true" origin-location="/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.javassist/javassist/3.19.0-GA/ivys/ivy.xml"/>
 				<caller organisation="com.typesafe.play" name="build-link" conf="compile, runtime" rev="3.19.0-GA" rev-constraint-default="3.19.0-GA" rev-constraint-dynamic="3.19.0-GA" callerrev="2.4.2"/>
 				<artifacts>
-					<artifact name="javassist" type="bundle" ext="jar" status="no" details="" size="749499" time="0" location="/Users/ryanmccormack/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.19.0-GA.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/javassist/javassist/3.19.0-GA/javassist-3.19.0-GA.jar"/>
+					<artifact name="javassist" type="bundle" ext="jar" status="no" details="" size="749499" time="0" location="/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.javassist/javassist/3.19.0-GA/bundles/javassist.jar">
+						<origin-location is-local="true" location="/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.javassist/javassist/3.19.0-GA/bundles/javassist.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
@@ -344,19 +344,19 @@
 		<module organisation="com.typesafe.play" name="play-exceptions">
 			<revision name="2.4.2" status="release" pubdate="20150703013532" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="5">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
-				<metadata-artifact status="no" details="" size="2352" time="0" location="/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-exceptions/ivy-2.4.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-exceptions/2.4.2/play-exceptions-2.4.2.pom"/>
+				<metadata-artifact status="no" details="" size="2467" time="0" location="/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-exceptions/ivy-2.4.2.xml" searched="false" origin-is-local="true" origin-location="/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.typesafe.play/play-exceptions/2.4.2/ivys/ivy.xml"/>
 				<caller organisation="com.typesafe.play" name="build-link" conf="compile, runtime" rev="2.4.2" rev-constraint-default="2.4.2" rev-constraint-dynamic="2.4.2" callerrev="2.4.2"/>
 				<artifacts>
-					<artifact name="play-exceptions" type="jar" ext="jar" status="no" details="" size="4597" time="0" location="/Users/ryanmccormack/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.4.2.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-exceptions/2.4.2/play-exceptions-2.4.2.jar"/>
+					<artifact name="play-exceptions" type="jar" ext="jar" status="no" details="" size="4597" time="0" location="/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.typesafe.play/play-exceptions/2.4.2/jars/play-exceptions.jar">
+						<origin-location is-local="true" location="/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/com.typesafe.play/play-exceptions/2.4.2/jars/play-exceptions.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.scala-lang" name="scala-library">
-			<revision name="2.11.6" status="release" pubdate="20150225200100" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.6/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master, master(*), default, default(compile)" position="1">
+			<revision name="2.11.6" status="release" pubdate="20150225200105" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.6/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master, default, default(compile)" position="1">
 				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
-				<metadata-artifact status="no" details="" size="2653" time="0" location="/Users/ryanmccormack/.ivy2/cache/org.scala-lang/scala-library/ivy-2.11.6.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/scala-lang/scala-library/2.11.6/scala-library-2.11.6.pom"/>
+				<metadata-artifact status="no" details="" size="2640" time="0" location="/Users/ryanmccormack/.ivy2/cache/org.scala-lang/scala-library/ivy-2.11.6.xml" searched="false" origin-is-local="true" origin-location="/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.scala-lang/scala-library/2.11.6/ivys/ivy.xml"/>
 				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="2.11.4" rev-constraint-default="2.11.4" rev-constraint-dynamic="2.11.4" callerrev="2.11.4"/>
 				<caller organisation="org.json4s" name="json4s-core_2.11" conf="default, compile, runtime, master" rev="2.11.0" rev-constraint-default="2.11.0" rev-constraint-dynamic="2.11.0" callerrev="3.2.10"/>
 				<caller organisation="org.scala-lang" name="scala-reflect" conf="default, compile, runtime, master" rev="2.11.5" rev-constraint-default="2.11.5" rev-constraint-dynamic="2.11.5" callerrev="2.11.5"/>
@@ -378,8 +378,8 @@
 				<caller organisation="com.typesafe.sbtrc" name="actor-client-2-11" conf="compile" rev="2.11.5" rev-constraint-default="2.11.5" rev-constraint-dynamic="2.11.5" callerrev="0.3.1"/>
 				<caller organisation="org.scala-lang.modules" name="scala-xml_2.11" conf="compile, runtime" rev="2.11.1" rev-constraint-default="2.11.1" rev-constraint-dynamic="2.11.1" callerrev="1.0.2"/>
 				<artifacts>
-					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5564007" time="0" location="/Users/ryanmccormack/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.6.jar">
-						<origin-location is-local="false" location="https://jcenter.bintray.com/org/scala-lang/scala-library/2.11.6/scala-library-2.11.6.jar"/>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5564007" time="0" location="/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.scala-lang/scala-library/2.11.6/jars/scala-library.jar">
+						<origin-location is-local="true" location="/Users/ryanmccormack/Downloads/activator-dist-1.3.11/repository/org.scala-lang/scala-library/2.11.6/jars/scala-library.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
@@ -390,7 +390,7 @@
 				<artifacts>
 				</artifacts>
 			</revision>
-			<revision name="2.11.2" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="master(*), compile, runtime(*), runtime, compile(*), master, default, master(compile), default(compile)" position="-1">
+			<revision name="2.11.2" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master, default, default(compile)" position="-1">
 				<evicted-by rev="2.11.6"/>
 				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="2.11.4" rev-constraint-default="2.11.4" rev-constraint-dynamic="2.11.4" callerrev="2.11.4"/>
 				<caller organisation="org.json4s" name="json4s-core_2.11" conf="default, compile, runtime, master" rev="2.11.0" rev-constraint-default="2.11.0" rev-constraint-dynamic="2.11.0" callerrev="3.2.10"/>
@@ -405,7 +405,7 @@
 				<artifacts>
 				</artifacts>
 			</revision>
-			<revision name="2.11.0" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="master(*), compile, runtime(*), runtime, compile(*), master, default, master(compile), default(compile)" position="-1">
+			<revision name="2.11.0" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master, default, default(compile)" position="-1">
 				<evicted-by rev="2.11.2"/>
 				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="2.11.4" rev-constraint-default="2.11.4" rev-constraint-dynamic="2.11.4" callerrev="2.11.4"/>
 				<caller organisation="org.json4s" name="json4s-core_2.11" conf="default, compile, runtime, master" rev="2.11.0" rev-constraint-default="2.11.0" rev-constraint-dynamic="2.11.0" callerrev="3.2.10"/>
@@ -428,7 +428,7 @@
 				<artifacts>
 				</artifacts>
 			</revision>
-			<revision name="2.11.4" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master, default, master(*), default(compile)" position="-1">
+			<revision name="2.11.4" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master, default, default(compile)" position="-1">
 				<evicted-by rev="2.11.6"/>
 				<caller organisation="com.typesafe.akka" name="akka-actor_2.11" conf="default, compile, runtime, master" rev="2.11.4" rev-constraint-default="2.11.4" rev-constraint-dynamic="2.11.4" callerrev="2.3.8"/>
 				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="2.11.4" rev-constraint-default="2.11.4" rev-constraint-dynamic="2.11.4" callerrev="2.11.4"/>
@@ -441,7 +441,7 @@
 				<artifacts>
 				</artifacts>
 			</revision>
-			<revision name="2.11.5" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="default, master(*), compile, runtime(*), runtime, default(compile), compile(*), master, master(compile)" position="-1">
+			<revision name="2.11.5" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="-1">
 				<evicted-by rev="2.11.6"/>
 				<caller organisation="com.typesafe.akka" name="akka-actor_2.11" conf="default, compile, runtime, master" rev="2.11.4" rev-constraint-default="2.11.4" rev-constraint-dynamic="2.11.4" callerrev="2.3.8"/>
 				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="2.11.4" rev-constraint-default="2.11.4" rev-constraint-dynamic="2.11.4" callerrev="2.11.4"/>

@@ -13,6 +13,13 @@ import play.api.libs.concurrent.Execution.Implicits.defaultContext
 import org.joda.time.LocalDate
 import models.user._
 import scala.concurrent.Future
+import play.api._
+import play.api.mvc._
+import play.api.libs.Files.TemporaryFile
+
+import java.io.File
+import scala.io.Source
+import java.io.{File, BufferedWriter,FileOutputStream,OutputStreamWriter}
 
 object ContestCreateService {
 
@@ -33,6 +40,34 @@ object ContestCreateService {
           case _ => Future("dang")
      
       }}
+    
+  def uploadTestSet(request: Request[MultipartFormData[TemporaryFile]],contest_id:String): String = {
+    Logger.error("Called uploadFile function" + request)
+    request.body.file("testset").map { testset =>
+      val contestFolder = new File(s"./data/contests/${contest_id}");
+      val successfulFolder = contestFolder.mkdir();
+      val testSetFolder = new File(s"./data/contests/${contest_id}/testset");
+      val successfulTestFolder = testSetFolder.mkdir();
+      val filename = testset.filename
+      val contentType = testset.contentType
+      Logger.error(s"File name : $filename, content type : $contentType")
+      //* VALIDATION + SUMMARY (number of lines,, etc)
+      val testAnswer = new File(s"./data/contests/${contest_id}/testset/testset_answers.csv")
+      testset.ref.moveTo(testAnswer)
+      val testPublic = Source.fromFile(testAnswer)
+      val testPublicFile = new File(s"./data/contests/${contest_id}/testset/testset_public.csv")
+      val bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(testPublicFile)))
+      val lines = testPublic.getLines
+      while(lines.hasNext){
+        bw.write(lines.next.split(",").init.mkString(",") + "\n")  
+      }
+      testPublic.close()
+      bw.close()
+      "File uploaded"
+    }.getOrElse {
+      "Missing file"
+    }
+  }  
     
   def remove = {}
 

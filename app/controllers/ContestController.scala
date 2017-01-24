@@ -4,7 +4,6 @@ import com.mohiva.play.silhouette.api.{ LoginEvent, LoginInfo, SignUpEvent }
 import com.mohiva.play.silhouette.impl.providers.{ CommonSocialProfile, CredentialsProvider }
 import models.user.{ RegistrationData, UserForms }
 
-import play.api.libs.Files.TemporaryFile
 import play.api.i18n.{ Messages, MessagesApi }
 import play.api.libs.concurrent.Execution.Implicits.defaultContext
 import play.api.mvc.AnyContent
@@ -52,42 +51,20 @@ class ContestController @javax.inject.Inject() (
   def create = UserAwareAction.async(parse.multipartFormData)  { implicit request =>
     request.identity match {
           case Some(u) => val contestSubmission = UserForms.contestForm.bindFromRequest()
-                        contestSubmission.fold(
-                              formWithErrors =>  Future.successful(BadRequest("Form Error")),
-                              contest =>  {
-                                 val insertContest = ContestCreateService.save(u,contest);
-                                 insertContest.onComplete {
-                                    case Success(contestFolder) =>
-                                        println(contestFolder)
-                                        val x = uploadTestSet(request,contestFolder.toString) 
-                                    case Failure(t) => println("FAILED")
-                                 }
-                                 Future.successful(Ok(s"Contest ${contest.contest_name} created successfully"));
-                                }
-                            )
+                contestSubmission.fold(
+                formWithErrors =>  Future.successful(BadRequest("Form Error")),
+                contest =>  {
+                    val insertContest = ContestCreateService.save(u,contest);
+                    insertContest.onComplete {
+                    case Success(contestFolder) =>
+                        val x = ContestCreateService.uploadTestSet(request,contestFolder.toString) 
+                    case Failure(t) => println("FAILED")
+                    }
+                    Future.successful(Ok(s"Contest ${contest.contest_name} created successfully"));
+                })
           case None => Future.successful(Redirect(controllers.routes.RegistrationController.registrationForm()))    
     }
   }
-  //move this to services
-  def uploadTestSet(request: Request[MultipartFormData[TemporaryFile]],contest_id:String): String = {
-    Logger.error("Called uploadFile function" + request)
-    request.body.file("testset").map { picture =>
-      import java.io.File
-      val contestFolder = new File(s"./data/contests/${contest_id}");
-      val successfulFolder = contestFolder.mkdir();
-      val testSetFolder = new File(s"./data/contests/${contest_id}/testset");
-      val successfulTestFolder = testSetFolder.mkdir();
-   
-      val filename = picture.filename
-      val contentType = picture.contentType
-      Logger.error(s"File name : $filename, content type : $contentType")
-      //* VALIDATION + SUMMARY (number of lines,, etc)
-      picture.ref.moveTo(new File(s"./data/contests/${contest_id}/testset/testset.csv"))
-      "File uploaded"
-    }.getOrElse {
-      "Missing file"
-    }
-  }  
 
 
 } 
